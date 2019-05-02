@@ -1,0 +1,45 @@
+﻿body {
+}
+.navbar-brand {
+    float: left;
+    min-height: 55px;
+    padding: 0 15px 5px;
+}
+
+body {
+    color: white;
+    background-size: auto;
+    background-image: url('https://images7.alphacoders.com/348/348455.jpg');
+    background-repeat: repeat;
+    padding: 25px;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+#yo {
+    width: 251px;
+    height: 359px;
+
+
+    box-shadow: 0 6px 40px 0 rgba(0, 0, 0, 0.19);
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+#noBullet {
+    list-style-type: none;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000000;
+    text-decoration: none;
+    color: white;
+}
+
