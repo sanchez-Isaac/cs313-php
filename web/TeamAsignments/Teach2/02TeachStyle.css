@@ -1,0 +1,46 @@
+.normal {
+    background-color: #85DC88;
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.nonormal {
+    background-color: #9480CA;
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.innormal {
+    background-color: #DC9C85;
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+
+.normal:hover {
+    font-weight:bold;
+    color: black;
+}
+
+
+.nonormal:hover {
+    font-weight:bold;
+    color: black;
+}
+
+.innormal:hover {
+    font-weight:bold;
+    color: black;
+}
