@@ -26,6 +26,7 @@
             <ul class="nav navbar-nav">
                 <li class="active"><a href="Prove2.php">Home</a></li>
                 <li><a href="assignments.html">Assignments</a></li>
+                <li class="active"><a href="teamAssignments.html">Team Assignments</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right"></ul>
         </div>
