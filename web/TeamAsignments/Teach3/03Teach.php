@@ -1,5 +1,5 @@
 <?php
-$continents = $_POST['continents'];
+
 
 ?>
 
@@ -19,8 +19,9 @@ comments:<?php echo htmlspecialchars($_POST["comment"]);?><br>
 
 
 
-Continents:<?php
-foreach ($continents as $val){
+Continents:<br><?php
+$continentss = $_POST["continent"];
+foreach ($continentss as $val){
     echo $val."<br>";
 }
 ?>
