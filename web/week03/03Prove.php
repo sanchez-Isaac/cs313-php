@@ -119,7 +119,7 @@ if($result):
         if(isset($_SESSION['shopping_cart'])):
         if (count($_SESSION['shopping_cart'])>0):
         ?>
-<a href="viewcart.php" class="button" > Checkout </a>
+<a href="viewcart.php" class="button" > View Cart </a>
     <?php endif; endif;?>
     </td>
 
