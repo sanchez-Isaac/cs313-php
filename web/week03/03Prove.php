@@ -147,7 +147,7 @@ function pre_r($array)
                         <td><?php echo $product['quantity']; ?>/td>
                         <td>$ <?php echo $product['price']; ?>/td>
                         <td>$ <?php echo number_format($product['quantity'] * $product['price'], 2); ?> </td>
-                        <td><a href="viewcart.php?action=delete&id<?php echo $product['id']; ?> ">
+                        <td><a href="03Prove.php?action=delete&id<?php echo $product['id']; ?> ">
                                 <div class="btn-danger"> Remove</div>
                             </a>
                         </td>
