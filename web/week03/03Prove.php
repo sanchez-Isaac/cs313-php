@@ -20,7 +20,7 @@ if(filter_input(INPUT_POST, 'add_to_cart')){
        else {
            for ($i = 0; $i < count($product_ids); $i++){
                if ($product_ids[$$i] == filter_input(INPUT_GET, 'id')){
-                   $_SESSION['shopping_cart'][$i]['quantity'] += filter_input(INPUT_POST,'QUANTITY');
+                   $_SESSION['shopping_cart'][$i]['quantity'] += filter_input(INPUT_POST,'quantity');
                }
            }
        }
