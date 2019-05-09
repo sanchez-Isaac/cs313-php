@@ -66,10 +66,6 @@ function pre_r($array)
 <h1>Shopping Cart</h1><br><br>
 <div class="container">
 
-
-
-
-
     <?php
 
     $host = "ec2-23-21-129-125.compute-1.amazonaws.com";
@@ -83,7 +79,7 @@ function pre_r($array)
     ?>
 
 
-    
+
 
 
 
