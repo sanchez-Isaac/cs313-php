@@ -73,7 +73,7 @@ if($result):
 
         ?>
         <div class="col-sm-4 col-md-3" >
-            <form method="post" action="03Prove.php.php?action=add&id=<?php echo $product['id']; ?>">
+            <form method="post" action="03Prove.php?action=add&id=<?php echo $product['id']; ?>">
                 <div class="products">
                     <img src="<?php echo $product['image']; ?>" class="img-responsive" />
                     <h4 class="text-info"><?php echo $product['name']; ?></h4>
