@@ -8,9 +8,13 @@ comments:<?php echo "<b>" . htmlspecialchars($_POST["comment"]). "</b>";?><br>
 <br>
 
 Continents:<br><?php
+
+$cont = array("na" => "North America", "sa"=> "South America", "eu"=>"Europe","au"=>"Australia", "as"=>"Asia","af"=>"Africa","an"=>"Antarctica");
+
+
 $continentss = $_POST["continent"];
 foreach ($continentss as $val){
-    echo "<b>". $val."<b>"."<br>";
+    echo "<b>". $cont[$val]."<b>"."<br>";
 }
 ?>
 
