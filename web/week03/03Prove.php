@@ -1,11 +1,20 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: idsm_
- * Date: 08/05/2019
- * Time: 06:33 PM
- */
+ $connect = mysqli_connect('localhost','id9559286_isaako1','mypass123','id9559286_cart');
+
+/*
+  * $query = 'SELECT * FROM products Order by id ASC';
+$RESULT = mysqli_query($CONNECT, $QUERY);
+
+if ($result){
+    if(mysqli_num_rows($result)>0){
+        while($product = mysqli_fetch_assoc($result)){
+            print_r($product);
+    }
+    }
+}
+*/
 ?>
+
 
 <!DOCTYPE html>
 <html>
@@ -23,8 +32,10 @@
 </head>
 <body>
 
-<h1>Available Items</h1>
-<p>This is a paragraph.</p>
+<h1>Available Items</h1><br><br>
+
+
+
 
 </body>
 </html>
