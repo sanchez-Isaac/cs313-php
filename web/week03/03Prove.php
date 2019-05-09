@@ -53,7 +53,7 @@ if($result):
                     <input type="text" name="quantity" class="form-control" value="1" />
                     <input type="hidden" name="name" value="<?php echo product['name']; ?>" />
                     <input type="hidden" name="price" value="<?php echo product['price']; ?>" />
-               <input type="submit" name="add_to_cart" class="btn btn-info" Value=add to cart />
+               <input type="submit" name="add_to_cart" style="margin-top:5px;" class="btn btn-info" Value="Add to Cart" />
                 </div>
             </form>
         </div>
