@@ -110,6 +110,20 @@ function pre_r($array)
     endif;
 
     ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <div style="clear:both"></div>
     <br/>
     <div class="table-responsive">
@@ -131,10 +145,10 @@ function pre_r($array)
             <tr>
                 <td><?php echo $product['name']; ?>/td>
                 <td><?php echo $product['quantity']; ?>/td>
-                <td><?php echo $product['price']; ?>/td>
-                <td><?php echo number_format($product['quantity'] * $product['price'], 2); ?> </td>
+                <td>$ <?php echo $product['price']; ?>/td>
+                <td>$ <?php echo number_format($product['quantity'] * $product['price'], 2); ?> </td>
                 <td><a href="viewcart.php?action=delete&id<?php echo $product['id']; ?> ">
-                        <div class="button-danger"> Remove</div>
+                        <div class="btn-danger"> Remove</div>
                     </a>
                 </td>
             </tr>
@@ -143,7 +157,7 @@ function pre_r($array)
             endforeach;
             ?>
             <tr>
-                <td colspan="3" align="right"> Total</td>
+                <td colspan="3" align="right">Total</td>
                 <td align="right">$ <?php echo number_format($total, 2); ?></td>
                 <td></td>
             </tr>
