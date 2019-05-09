@@ -48,7 +48,7 @@ if($result):
             <form method="post" action="viewcart.php?action=add&id=<?php echo $product['id']; ?>">
                 <div class="products">
                     <img src="<?php echo $product['image']; ?>" class="img-responsive" />
-                    <h4 class="text-info"><?php $product['name'] ?></h4>
+                    <h4 class="text-info"><?php $product['name']; ?></h4>
                     <h4>$ <?php echo $product['price']; ?></h4>
                     <input type="text" name="quantity" class="form-control" value="1" />
                     <input type="hidden" name="name" value="<?php echo product['name']; ?>" />
