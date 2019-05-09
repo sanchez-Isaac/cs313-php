@@ -1,5 +1,5 @@
 <?PHP
-session_start();
+//session_start();
 $product_ids = array();
 //session_destroy();
 if(filter_input(INPUT_POST, 'add_to_cart')){
