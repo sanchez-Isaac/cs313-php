@@ -37,7 +37,7 @@ if(filter_input(INPUT_POST, 'add_to_cart')){
 }
 
 if(filter_input(INPUT_GET, 'action')== 'delete') {
-    foreach ($_SESSION['shopping_cart'] as $key => $product) {
+    foreach($_SESSION['shopping_cart'] as $key => $product) {
         if ($product['id'] == filter_input(INPUT_GET, 'id')) {
             unset($_SESSION['shopping_cart'][$key]);
         }
@@ -46,7 +46,7 @@ if(filter_input(INPUT_GET, 'action')== 'delete') {
 }
 
 
-//pre_r($_SESSION);
+pre_r($_SESSION);
 
 function pre_r($array)
 {
