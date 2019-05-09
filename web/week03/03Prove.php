@@ -8,7 +8,22 @@ if(filter_input(INPUT_POST, 'add_to_cart')){
 
         $product_ids = array_column($_SESSION['shopping_cart'], 'id');
 
-        pre_r($product_ids);
+       if (!in_array(filter_input(INPUT_GET,'id'), $product_ids)){
+           $_SESSION['shopping_cart'][$count] = array
+           (
+               'id'=>filter_input(INPUT_GET,'id'),
+               'name' => filter_input(INPUT_POST, 'name'),
+               'price' => filter_input(INPUT_POST, 'price'),
+               'quantity' => filter_input(INPUT_POST, 'quantity')
+           );
+       }
+       else {
+           for ($i = 0; $i < count($product_ids); $i++){
+               if ($product_ids[$$i] == filter_input(INPUT_GET, 'id')){
+                   $_SESSION['shopping_cart'][$i]['quantity'] += filter_input(INPUT_POST,'QUANTITY');
+               }
+           }
+       }
     }
     else{
         $_SESSION['shopping_cart'][0] = array
@@ -20,7 +35,7 @@ if(filter_input(INPUT_POST, 'add_to_cart')){
         );
     }
 }
-//pre_r($_SESSION);
+pre_r($_SESSION);
 
 function pre_r($array)
 {
