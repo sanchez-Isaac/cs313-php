@@ -1,7 +1,7 @@
 <?PHP
 session_start();
 $product_ids = array();
-session_destroy();
+//session_destroy();
 if(filter_input(INPUT_POST, 'add_to_cart')){
     if(isset ($_SESSION['shopping_cart'])){
         $count = count($_SESSION['shopping_cart']);
