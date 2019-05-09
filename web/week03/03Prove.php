@@ -13,8 +13,6 @@ else
 
 $query = 'SELECT * FROM products ORDER by id ASC';
 $result = pg_query($con, $query);
-$resultArr = pg_fetch_all($result);
-print_r($resultArr);
 
 if($result){
     if(pg_num_rows($result)>0){
