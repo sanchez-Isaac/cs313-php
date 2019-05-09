@@ -140,7 +140,7 @@ function pre_r($array)
             if(!empty($_SESSION['shopping_cart'])):
 
             $total = 0;
-            foreach ($_SESSION['Shopping_cart'] as $key => $product):
+            foreach ($_SESSION['shopping_cart'] as $key => $product):
              ?>
             <tr>
                 <td><?php echo $product['name']; ?>/td>

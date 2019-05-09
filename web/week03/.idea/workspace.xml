@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="df076cfd-80c0-4156-bf58-f1bf63745bb5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/03Prove.php" beforeDir="false" afterPath="$PROJECT_DIR$/03Prove.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/viewcart.php" beforeDir="false" afterPath="$PROJECT_DIR$/viewcart.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,37 +34,36 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="263" />
-          <entry key="php" value="3487" />
+          <entry key="php" value="3490" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="263" />
-          <entry key="PHP" value="3487" />
+          <entry key="PHP" value="3490" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/03Prove.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="145" column="9" lean-forward="true" selection-start-line="145" selection-start-column="9" selection-end-line="145" selection-end-column="9" />
+            <state relative-caret-position="-1122">
+              <caret line="39" column="22" lean-forward="true" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
               <folding>
                 <element signature="n#style#0;n#input#3;n#div#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/viewcart.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="136" column="42" lean-forward="true" selection-end-line="179" selection-end-column="7" />
+            <state relative-caret-position="272">
+              <caret line="152" column="21" lean-forward="true" selection-start-line="152" selection-start-column="21" selection-end-line="152" selection-end-column="21" />
               <folding>
                 <element signature="n#style#0;n#input#3;n#div#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -105,8 +105,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/03ProveStyle.css" />
-        <option value="$PROJECT_DIR$/viewcart.php" />
         <option value="$PROJECT_DIR$/03Prove.php" />
+        <option value="$PROJECT_DIR$/viewcart.php" />
       </list>
     </option>
   </component>
@@ -173,12 +173,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1557369686042</updated>
-      <workItem from="1557369688596" duration="18567000" />
+      <workItem from="1557369688596" duration="18839000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18567000" />
+    <option name="totallyTimeSpent" value="18839000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="936" y="330" width="1176" height="658" extended-state="0" />
@@ -235,21 +235,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/viewcart.php">
+    <entry file="file://$PROJECT_DIR$/03Prove.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="136" column="42" lean-forward="true" selection-end-line="179" selection-end-column="7" />
+        <state relative-caret-position="-1122">
+          <caret line="39" column="22" lean-forward="true" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
           <folding>
             <element signature="n#style#0;n#input#3;n#div#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/03Prove.php">
+    <entry file="file://$PROJECT_DIR$/viewcart.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="145" column="9" lean-forward="true" selection-start-line="145" selection-start-column="9" selection-end-line="145" selection-end-column="9" />
+        <state relative-caret-position="272">
+          <caret line="152" column="21" lean-forward="true" selection-start-line="152" selection-start-column="21" selection-end-line="152" selection-end-column="21" />
           <folding>
             <element signature="n#style#0;n#input#3;n#div#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
