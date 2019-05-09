@@ -1,10 +1,14 @@
 <?PHP
 session_start();
 $product_ids = array();
-session_destroy();
+//session_destroy();
 if(filter_input(INPUT_POST, 'add_to_cart')){
     if(isset ($_SESSION['shopping_cart'])){
+        $count = count($_SESSION['shopping_cart']);
 
+        $product_ids = array_column($_SESSION['shopping_cart'], 'id');
+
+        pre_r($product_ids);
     }
     else{
         $_SESSION['shopping_cart'][0] = array
@@ -16,7 +20,7 @@ if(filter_input(INPUT_POST, 'add_to_cart')){
         );
     }
 }
-pre_r($_SESSION);
+//pre_r($_SESSION);
 
 function pre_r($array)
 {
