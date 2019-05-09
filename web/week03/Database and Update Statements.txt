@@ -1,0 +1,23 @@
+CREATE TABLE products (
+    id int NOT NULL
+  , name varchar(600) NOT NULL
+  , image varchar(600) NOT NULL
+  , price float NOT NULL
+  , PRIMARY KEY (id)
+);
+
+
+
+
+INSERT INTO products (id, name, price, image) VALUES
+(1,'HUAWEI P20 LITE', 200.45, 'https://www.achocom.net/server/Portal_0015185/img/products/huawei-p20-pro-128gb-dual-sim-azul_5201952_xxl.jpg'),
+(2,'REDMI NOTE 7 PRO', 175.00, 'https://cdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-redmi-note-7-pro-1.jpg'),
+(3,'IPHONE XS', 900.42, 'http://sgfm.elcorteingles.es/SGFM/dctm/MARKET/019/019/845/0190198458582_00_640x640.jpg'),
+(4,'MOTOROLA ONE', 100.45, 'https://www.yaphone.com/2092-tm_thickbox_default/motorola-one-xt1941-4-dual-sim-64gb-4gb-ram-negro.jpg')
+
+
+
+ UPDATE products
+ SET image = 'https://gloimg.gbtcdn.com/soa/gb/pdm-product-pic/Electronic/2019/03/19/goods_img_big-v1/20190319143429_19752.jpg'
+ WHERE name = 'REDMI NOTE 7 PRO';
+
