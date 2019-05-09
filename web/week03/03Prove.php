@@ -1,3 +1,28 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Browse Items</title>
+    <link href="styleSheet.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+</head>
+<body>
+
+<h1>Available Items</h1><br><br>
+<div class="container">
+
+
+
+
+
 <?php
 
 $host = "ec2-23-21-129-125.compute-1.amazonaws.com";
@@ -14,12 +39,43 @@ $query = 'SELECT * FROM products ORDER by id ASC';
 
 $result = pg_query( $con, $query);
 
-if($result){
-    if(pg_num_rows($result)>0){
-        while($product = pg_fetch_assoc($result)){
-            print_r($product);
-        }
-    }
-}
-pg_close($con);
+if($result):
+    if(pg_num_rows($result)>0):
+        while($product = pg_fetch_assoc($result)):
+
+        ?>
+        <div class="col-sm-4 col-md-3" >
+            <form method="post" action="viewcart.php?action=add&id=<?php echo $product['id']; ?>">
+                <div class="products">
+                    <img src="<?php echo $product['image']; ?>" class="img-responsive" />
+                    <h4 class="text-info"><?php $product['name'] ?></h4>
+                    <h4>$ <?php echo $product['price']; ?></h4>
+                    <input type="text" name="quantity" class="form-control" value="1" />
+                    <input type="hidden" name="name" value="<?php echo product['name']; ?>" />
+                    <input type="hidden" name="price" value="<?php echo product['price']; ?>" />
+               <input type="submit" name="add_to_cart" class="btn btn-info" Value=add to cart />
+                </div>
+            </form>
+        </div>
+    <?php
+        endwhile;
+        endif;
+        endif;
+
 ?>
+
+
+</div>
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
