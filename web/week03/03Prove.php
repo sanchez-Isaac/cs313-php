@@ -110,6 +110,7 @@ if($result):
         endif;
 
 ?>
+    <table class="table">
     <tr>
         <td colspan="5">
             <?php
@@ -121,6 +122,7 @@ if($result):
         </td>
 
     </tr>
+    </table>
 
 </div>
 
