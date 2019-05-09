@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df076cfd-80c0-4156-bf58-f1bf63745bb5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/03Prove.php" beforeDir="false" afterPath="$PROJECT_DIR$/03Prove.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03ProveStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/03ProveStyle.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,13 +32,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="93" />
+          <entry key="css" value="263" />
           <entry key="php" value="2465" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="93" />
+          <entry key="CSS" value="263" />
           <entry key="PHP" value="2465" />
         </counts>
       </usages-collector>
@@ -46,7 +46,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/03Prove.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="370">
@@ -58,11 +58,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/03ProveStyle.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="204">
+              <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -81,6 +81,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>product['name']</find>
+      <find>quantity</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -89,8 +90,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/03ProveStyle.css" />
         <option value="$PROJECT_DIR$/03Prove.php" />
+        <option value="$PROJECT_DIR$/03ProveStyle.css" />
       </list>
     </option>
   </component>
@@ -157,12 +158,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1557369686042</updated>
-      <workItem from="1557369688596" duration="15663000" />
+      <workItem from="1557369688596" duration="16230000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15663000" />
+    <option name="totallyTimeSpent" value="16230000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="819" y="164" width="1085" height="852" extended-state="0" />
@@ -212,13 +213,6 @@
     <entry file="file://$PROJECT_DIR$/confirmation page.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/03ProveStyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/03Prove.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="370">
@@ -226,6 +220,13 @@
           <folding>
             <element signature="n#style#0;n#input#3;n#div#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/03ProveStyle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
         </state>
       </provider>
     </entry>
