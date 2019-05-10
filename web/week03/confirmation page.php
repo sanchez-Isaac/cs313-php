@@ -1,9 +1,34 @@
 <?PHP
 session_start();
-$first_Name = $_POST['firstName'];
 
-print_r($first_Name);
+
+
+if (isset($_POST['Submit'])) {
+    $_SESSION['firstName'] = $_POST['firstName'];
+    $_SESSION['lastName'] = $_POST['lastName'];
+    $_SESSION['email'] = $_POST['email'];
+    $_SESSION['address'] = $_POST['address'];
+    $_SESSION['address2'] = $_POST['address2'];
+    $_SESSION['country'] = $_POST['country'];
+    $_SESSION['state'] = $_POST['state'];
+    $_SESSION['zip'] = $_POST['zip'];
+}
+
+
+
+
+pre_r($_SESSION);
+
+function pre_r($array)
+{
+    echo '<pre>';
+    print_r($array);
+    echo '</pre>';
+}
 ?>
+
+
+
 
 
 <!DOCTYPE html>
@@ -29,7 +54,7 @@ print_r($first_Name);
 <div>
 
         <h1 class="mb-3">Billing address</h1><br>
-        <form class="needs-validation" novalidate="" method="post" action="bought.php">
+        <form class="needs-validation" novalidate="" method="post" action="">
             <div class="row">
                 <div class="col-md-6 mb-3">
                     <label for="firstName">First name</label>
@@ -42,7 +67,7 @@ print_r($first_Name);
 
                 <div class="col-md-6 mb-3">
                     <label for="lastName">Last name</label>
-                    <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                    <input type="text" class="form-control" id="lastName" name="lastName" placeholder="" value="" required="">
                     <div class="invalid-feedback">
                         Valid last name is required.
                     </div>
@@ -53,7 +78,7 @@ print_r($first_Name);
 
             <div class="mb-3">
                 <label for="email">Email <span class="text-muted">(Optional)</span></label>
-                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="you@example.com">
+                <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="you@example.com">
                 <div class="invalid-feedback">
                     Please enter a valid email address for shipping updates.
                 </div>
@@ -62,7 +87,7 @@ print_r($first_Name);
 
             <div class="mb-3">
                 <label for="address">Address</label>
-                <input type="text" class="form-control" id="address" placeholder="1234 Main St" required="">
+                <input type="text" class="form-control" id="address" name="address" placeholder="1234 Main St" required="">
                 <div class="invalid-feedback">
                     Please enter your shipping address.
                 </div>
@@ -71,14 +96,14 @@ print_r($first_Name);
 
             <div class="mb-3">
                 <label for="address2">Address 2 <span class="text-muted">(Optional)</span></label>
-                <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+                <input type="text" class="form-control" id="address2" name="address2" placeholder="Apartment or suite">
             </div>
             <br>
 
             <div class="row">
                 <div class="col-md-5 mb-3">
                     <label for="country">Country</label>
-                    <select class="custom-select d-block w-100" id="country" required="">
+                    <select class="custom-select d-block w-100" id="country" name="country" required="">
                         <option value="">Choose...</option>
                         <option>United States</option>
 
@@ -92,7 +117,7 @@ print_r($first_Name);
 
                 <div class="col-md-4 mb-3">
                     <label for="state">State</label>
-                    <select class="custom-select d-block w-100" id="state" required="">
+                    <select class="custom-select d-block w-100" id="state" name="state" required="">
                         <option value="">Choose...</option>
                         <option>CA</option>
                         <option>MA</option>
@@ -110,13 +135,13 @@ print_r($first_Name);
 
                 <div class="col-md-3 mb-3">
                     <label for="zip">Zip</label>
-                    <input type="text" class="form-control" id="zip" placeholder="" required="">
+                    <input type="text" class="form-control" id="zip" placeholder=""  name="zip"required="">
                     <div class="invalid-feedback">
                         Zip code required.
                     </div>
                 </div>
             </div>
-            <button class="btn btn-success btn-lg" type="submit">Purchase</button>
+            <button class="btn btn-success btn-lg" name="Submit" type="submit">Purchase</button>
 
         </form>
 
