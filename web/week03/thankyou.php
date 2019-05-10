@@ -69,7 +69,7 @@ function pre_r($array)
                     endforeach;
                     ?>
                     <tr>
-                        <td colspan="2" align="right">Total</td>
+                        <td colspan="6" align="right">Total</td>
                         <td align="right">$ <?php echo number_format($total, 2); ?></td>
                         <td></td>
                     </tr>
