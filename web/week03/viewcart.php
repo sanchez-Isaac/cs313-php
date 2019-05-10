@@ -128,7 +128,7 @@ function pre_r($array)
                 <td>$ <?php echo $product['price']; ?></td>
                 <td>$ <?php echo number_format($product['quantity'] * $product['price'], 2); ?> </td>
                 <td><a href="viewcart.php?action=delete&id=<?php echo $product['id']; ?> ">
-                        <div class="btn-danger"> Remove</div>
+                        <div class="btn-danger" id="remove">Remove</div>
                     </a>
                 </td>
             </tr>
@@ -159,8 +159,7 @@ function pre_r($array)
     <div>
         <p class="back_btn">
             <a href="03Prove.php">
-
-               "Back to Search"
+               Back to Search
             </a>
         </p>
     </div>
