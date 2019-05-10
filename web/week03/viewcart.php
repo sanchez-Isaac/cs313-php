@@ -32,7 +32,7 @@ if(filter_input(INPUT_GET, 'action')== 'delete') {
 </head>
 <body>
 
-<h1>Shopping Cart</h1><br><br>
+<h1>View Cart</h1><br><br>
 <div class="container">
 
     <?php
@@ -104,7 +104,7 @@ if(filter_input(INPUT_GET, 'action')== 'delete') {
         </table>
     </div>
     <div>
-        <p class="back_btn">
+        <p class="btn-warning btn btn-lg">
             <a href="03Prove.php">
                Back to Search
             </a>

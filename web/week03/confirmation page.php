@@ -1,22 +1,22 @@
 <?PHP
 session_start();
-
-
-
 if (isset($_POST['Submit'])) {
-    $_SESSION['firstName'] = $_POST['firstName'];
-    $_SESSION['lastName'] = $_POST['lastName'];
-    $_SESSION['email'] = $_POST['email'];
-    $_SESSION['address'] = $_POST['address'];
-    $_SESSION['address2'] = $_POST['address2'];
-    $_SESSION['country'] = $_POST['country'];
-    $_SESSION['state'] = $_POST['state'];
-    $_SESSION['zip'] = $_POST['zip'];
+    $_SESSION['firstName'] = test_input($_POST['firstName']);
+    $_SESSION['lastName'] = test_input($_POST['lastName']);
+    $_SESSION['email'] = test_input($_POST['email']);
+    $_SESSION['address'] = test_input($_POST['address']);
+    $_SESSION['address2'] = test_input($_POST['address2']);
+    $_SESSION['country'] = test_input($_POST['country']);
+    $_SESSION['state'] = test_input($_POST['state']);
+    $_SESSION['zip'] = test_input($_POST['zip']);
 }
-
-
-
-
+function test_input($data) {
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
+}
+/*
 pre_r($_SESSION);
 
 function pre_r($array)
@@ -25,6 +25,7 @@ function pre_r($array)
     print_r($array);
     echo '</pre>';
 }
+**/
 ?>
 
 
@@ -35,7 +36,7 @@ function pre_r($array)
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Confirmation Page</title>
+    <title>Checkout</title>
     <link href="03ProveStyle.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -54,7 +55,7 @@ function pre_r($array)
 <div>
 
         <h1 class="mb-3">Billing address</h1><br>
-        <form class="needs-validation" novalidate="" method="post" action="">
+        <form class="needs-validation" novalidate="" method="post" action="thankyou.php">
             <div class="row">
                 <div class="col-md-6 mb-3">
                     <label for="firstName">First name</label>
@@ -141,8 +142,18 @@ function pre_r($array)
                     </div>
                 </div>
             </div>
-            <button class="btn btn-success btn-lg" name="Submit" type="submit">Purchase</button>
 
+            <button class="btn btn-success btn-lg" name="Submit" type="submit">Purchase</button>
+            <br>
+            <br>
+
+            <div>
+                <button class="btn-warning btn btn-lg">
+                    <a href="viewcart.php">
+                        Back to Shopping cart
+                    </a>
+                </button>
+            </div>
         </form>
 
 </div>
