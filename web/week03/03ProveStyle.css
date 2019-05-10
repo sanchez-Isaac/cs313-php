@@ -49,3 +49,11 @@
     font-weight: bold;
 
 }
+
+#firstName, #lastName, #email, #address, #address2{
+    width: 70%;
+}
+#zip {
+    width: 30%;
+}
+

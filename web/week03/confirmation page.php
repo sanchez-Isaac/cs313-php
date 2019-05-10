@@ -1,61 +1,5 @@
 <?PHP
 session_start();
-$product_ids = array();
-//session_destroy();
-if(filter_input(INPUT_POST, 'add_to_cart')){
-    if(isset ($_SESSION['shopping_cart'])){
-        $count = count($_SESSION['shopping_cart']);
-
-        $product_ids = array_column($_SESSION['shopping_cart'], 'id');
-
-        if (!in_array(filter_input(INPUT_GET,'id'), $product_ids)){
-            $_SESSION['shopping_cart'][$count] = array
-            (
-                'id'=>filter_input(INPUT_GET,'id'),
-                'name' => filter_input(INPUT_POST, 'name'),
-                'price' => filter_input(INPUT_POST, 'price'),
-                'quantity' => filter_input(INPUT_POST, 'quantity')
-            );
-        }
-        else {
-            for ($i = 0; $i < count($product_ids); $i++){
-                if ($product_ids[$i] == filter_input(INPUT_GET, 'id')){
-                    $_SESSION['shopping_cart'][$i]['quantity'] += filter_input(INPUT_POST,'quantity');
-                }
-            }
-        }
-    }
-    else{
-        $_SESSION['shopping_cart'][0] = array
-        ('id'=>filter_input(INPUT_GET,'id'),
-            'name' => filter_input(INPUT_POST, 'name'),
-            'price' => filter_input(INPUT_POST, 'price'),
-            'quantity' => filter_input(INPUT_POST, 'quantity')
-
-        );
-    }
-}
-
-if(filter_input(INPUT_GET, 'action')== 'delete') {
-    foreach($_SESSION['shopping_cart'] as $key => $product) {
-        if ($product['id'] == filter_input(INPUT_GET, 'id')) {
-            unset($_SESSION['shopping_cart'][$key]);
-        }
-    }
-    $_SESSION['shopping_cart'] = array_values($_SESSION['shopping_cart']);
-}
-
-
-//pre_r($_SESSION);
-
-function pre_r($array)
-{
-    echo '<pre>';
-    print_r($array);
-    echo '</pre>';
-}
-
-
 ?>
 
 <!DOCTYPE html>
@@ -63,12 +7,134 @@ function pre_r($array)
 <head>
     <meta charset="utf-8" />
     <title>Confirmation Page</title>
-    <link href="styleSheet.css" rel="stylesheet" />
+    <link href="03ProveStyle.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="CustomStyles.css" rel="stylesheet"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 </head>
+
 <body>
 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
+<div class="container">
+<div style="clear:both"></div>
+<br/>
+<div>
+
+        <h4 class="mb-3">Billing address</h4>
+        <form class="needs-validation" novalidate="">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="firstName">First name</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                    <div class="invalid-feedback">
+                        Valid first name is required.
+                    </div>
+                </div>
+
+
+                <div class="col-md-6 mb-3">
+                    <label for="lastName">Last name</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                    <div class="invalid-feedback">
+                        Valid last name is required.
+                    </div>
+                </div>
+            </div>
+            <br>
+
+
+            <div class="mb-3">
+                <label for="email">Email <span class="text-muted">(Optional)</span></label>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="you@example.com">
+                <div class="invalid-feedback">
+                    Please enter a valid email address for shipping updates.
+                </div>
+            </div>
+            <br>
+
+            <div class="mb-3">
+                <label for="address">Address</label>
+                <input type="text" class="form-control" id="address" placeholder="1234 Main St" required="">
+                <div class="invalid-feedback">
+                    Please enter your shipping address.
+                </div>
+            </div>
+            <br>
+
+            <div class="mb-3">
+                <label for="address2">Address 2 <span class="text-muted">(Optional)</span></label>
+                <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+            </div>
+            <br>
+
+            <div class="row">
+                <div class="col-md-5 mb-3">
+                    <label for="country">Country</label>
+                    <select class="custom-select d-block w-100" id="country" required="">
+                        <option value="">Choose...</option>
+                        <option>United States</option>
+
+
+                    </select>
+                    <div class="invalid-feedback">
+                        Please select a valid country.
+                    </div>
+                </div>
+
+
+                <div class="col-md-4 mb-3">
+                    <label for="state">State</label>
+                    <select class="custom-select d-block w-100" id="state" required="">
+                        <option value="">Choose...</option>
+                        <option>CA</option>
+                        <option>MA</option>
+                        <option>NH</option>
+                        <option>NC</option>
+                        <option>SC</option>
+                        <option>NY</option>
+
+                    </select>
+                    <div class="invalid-feedback">
+                        Please provide a valid state.
+                    </div>
+                </div>
+
+
+                <div class="col-md-3 mb-3">
+                    <label for="zip">Zip</label>
+                    <input type="text" class="form-control" id="zip" placeholder="" required="">
+                    <div class="invalid-feedback">
+                        Zip code required.
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-success btn-lg" type="submit">Purchase</button>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </body>
 </html>

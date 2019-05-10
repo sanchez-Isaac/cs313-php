@@ -51,17 +51,6 @@ if(filter_input(INPUT_GET, 'action')== 'delete') {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 <div style="clear:both"></div>
     <br/>
     <div class="table-responsive">
