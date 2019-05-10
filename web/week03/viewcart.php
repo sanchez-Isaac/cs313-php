@@ -158,7 +158,7 @@ function pre_r($array)
     </div>
     <div>
         <p class="back_btn">
-            <a href="03Prove.php" ::before
+            <a href="03Prove.php"> ::before
                "Back to Search"
             </a>
         </p>
