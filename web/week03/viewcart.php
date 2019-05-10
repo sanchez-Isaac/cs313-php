@@ -156,5 +156,14 @@ function pre_r($array)
             ?>
         </table>
     </div>
+    <div>
+        <p class="back_btn">
+            <a href="03Prove.php" ::before
+               "Back to Search"
+            </a>
+        </p>
+    </div>
+
+
 </body>
 </html>
