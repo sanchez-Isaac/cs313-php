@@ -1,6 +1,10 @@
 <?PHP
 session_start();
+$first_Name = $_POST['firstName'];
+
+print_r($first_Name);
 ?>
+
 
 <!DOCTYPE html>
 <html>
@@ -24,12 +28,12 @@ session_start();
 <br/>
 <div>
 
-        <h4 class="mb-3">Billing address</h4>
-        <form class="needs-validation" novalidate="">
+        <h1 class="mb-3">Billing address</h1><br>
+        <form class="needs-validation" novalidate="" method="post" action="bought.php">
             <div class="row">
                 <div class="col-md-6 mb-3">
                     <label for="firstName">First name</label>
-                    <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                    <input type="text" class="form-control" name="firstName" id="firstName" placeholder="" value="" required="">
                     <div class="invalid-feedback">
                         Valid first name is required.
                     </div>
@@ -114,6 +118,7 @@ session_start();
             </div>
             <button class="btn btn-success btn-lg" type="submit">Purchase</button>
 
+        </form>
 
 </div>
 

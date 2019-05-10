@@ -94,7 +94,7 @@ if(filter_input(INPUT_GET, 'action')== 'delete') {
                     if (isset($_SESSION['shopping_cart'])):
                     if (count($_SESSION['shopping_cart'])> 0):
                     ?>
-                    <a href="#" class="button">Checkout</a>
+                    <a href="confirmation%20page.php" class="button">Checkout</a>
                     <?php endif; endif; ?>
                 </td>
             </tr>
