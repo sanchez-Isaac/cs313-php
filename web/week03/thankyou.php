@@ -17,6 +17,13 @@ function pre_r($array)
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8" />
+    <title>Browse Items</title>
+    <link href="03ProveStyle.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <title>Confirmation page</title>
 </head>
 <body>
@@ -42,7 +49,7 @@ function pre_r($array)
                     <th width="10%">Quantity</th>
                     <th width="20%">Price</th>
                     <th width="15%">Total</th>
-                    <th width="5%">Action</th>
+                    
                 </tr>
                 <?php
                 if(!empty($_SESSION['shopping_cart'])):
@@ -55,10 +62,7 @@ function pre_r($array)
                             <td><?php echo $product['quantity']; ?></td>
                             <td>$ <?php echo $product['price']; ?></td>
                             <td>$ <?php echo number_format($product['quantity'] * $product['price'], 2); ?> </td>
-                            <td><a href="viewcart.php?action=delete&id=<?php echo $product['id']; ?> ">
-                                    <div class="btn-danger" id="remove">Remove</div>
-                                </a>
-                            </td>
+
                         </tr>
                         <?php
                         $total = $total + ($product['quantity'] * $product['price']);
