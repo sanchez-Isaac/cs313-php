@@ -49,7 +49,7 @@ function pre_r($array)
                     <th width="10%">Quantity</th>
                     <th width="20%">Price</th>
                     <th width="15%">Total</th>
-                    
+
                 </tr>
                 <?php
                 if(!empty($_SESSION['shopping_cart'])):
@@ -69,7 +69,7 @@ function pre_r($array)
                     endforeach;
                     ?>
                     <tr>
-                        <td colspan="3" align="right">Total</td>
+                        <td colspan="4" align="right">Total</td>
                         <td align="right">$ <?php echo number_format($total, 2); ?></td>
                         <td></td>
                     </tr>
