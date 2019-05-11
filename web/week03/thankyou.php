@@ -1,7 +1,7 @@
 <?PHP
 session_start();
 
-
+/*
 pre_r($_SESSION);
 
 function pre_r($array)
@@ -10,7 +10,7 @@ function pre_r($array)
     print_r($array);
     echo '</pre>';
 }
-
+*/
 
 ?>
 
@@ -37,6 +37,28 @@ function pre_r($array)
 
 
     </div>
+
+    <br>
+    <br>
+
+    <div style="clear:both"></div>
+    <br/>
+    <div class="table-responsive">
+        <table class="table">
+            <tr><th colspan="5"><h3>Your items will be shipped to:</h3></th> </tr>
+            <br>
+            <tr><th><?php echo$_SESSION['firstName'] ?>  <?php echo$_SESSION['lastName']?> <br>
+                    <?php echo$_SESSION['address'] ?> <br>
+                    <?php echo$_SESSION['address2'] ?> <br>
+                    <?php echo$_SESSION['country'] ?> <br>
+                    <?php echo$_SESSION['state']?> <br>
+                    <?php echo$_SESSION['zip'] ?>  </th></tr>
+        </table>
+
+
+
+
+    <br>
 
     <div>
         <div style="clear:both"></div>
