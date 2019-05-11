@@ -26,6 +26,7 @@ function pre_r($array)
     echo '</pre>';
 }
 
+
 ?>
 
 
@@ -55,7 +56,7 @@ function pre_r($array)
 <div>
 
         <h1 class="mb-3">Billing address</h1><br>
-        <form class="needs-validation" novalidate="" method="post" action="confirmation%20page.php?action=add">
+        <form class="needs-validation" novalidate="" method="post" action="confirmation%20page.php?action=add&id=<?php echo $_SESSION['firstName']; ?>">
             <div class="row">
                 <div class="col-md-6 mb-3">
                     <label for="firstName">First name</label>
