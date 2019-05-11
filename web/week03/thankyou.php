@@ -32,7 +32,7 @@ function pre_r($array)
     <div style="clear:both"></div>
     <br/>
     <div>
-<h1>Thank you your purchase</h1>
+<h1>Thank you for your purchase <?php echo $_SESSION['firstName'] ?></h1>
 
 
 
@@ -73,16 +73,6 @@ function pre_r($array)
                         <td colspan="3" align="right">Total</td>
                         <td align="right">$ <?php echo number_format($total, 2); ?></td>
                         <td></td>
-                    </tr>
-                    <tr>
-                        <td colspan="4">
-                            <?php
-                            if (isset($_SESSION['shopping_cart'])):
-                                if (count($_SESSION['shopping_cart'])> 0):
-                                    ?>
-                                    <a href="confirmation%20page.php" class="button">Checkout</a>
-                                <?php endif; endif; ?>
-                        </td>
                     </tr>
                 <?php
                 endif;

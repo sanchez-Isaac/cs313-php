@@ -140,7 +140,7 @@ function pre_r($array)
                 </div>
             </div>
 
-            <button class="btn btn-success btn-lg" name="Submit" type="submit">Purchase</button>
+            <button class=" btn btn-success btn-lg" name="Submit" type="submit">Purchase</button>
             <br>
             <br>
 
