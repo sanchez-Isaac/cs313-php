@@ -1,7 +1,7 @@
 <?PHP
 session_start();
 
-/*
+
 pre_r($_SESSION);
 
 function pre_r($array)
@@ -10,7 +10,7 @@ function pre_r($array)
     print_r($array);
     echo '</pre>';
 }
-**/
+
 
 ?>
 
@@ -32,7 +32,7 @@ function pre_r($array)
     <div style="clear:both"></div>
     <br/>
     <div>
-<h1>Thank you for your purchase <?php echo $_SESSION['firstName'] ?></h1>
+<h1>Thank you for your purchase <?php echo $_SESSION['firstName']; ?></h1>
 
 
 

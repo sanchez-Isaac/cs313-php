@@ -16,7 +16,7 @@ function test_input($data) {
     $data = htmlspecialchars($data);
     return $data;
 }
-/*
+
 pre_r($_SESSION);
 
 function pre_r($array)
@@ -25,7 +25,7 @@ function pre_r($array)
     print_r($array);
     echo '</pre>';
 }
-**/
+
 ?>
 
 
