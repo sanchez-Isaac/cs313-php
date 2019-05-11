@@ -36,12 +36,15 @@ function pre_r($array)
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Browse Items</title>
+    <title>Confirmation Page</title>
     <link href="03ProveStyle.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="CustomStyles.css" rel="stylesheet"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 </head>
 
 <body>
@@ -52,7 +55,7 @@ function pre_r($array)
 <div>
 
         <h1 class="mb-3">Billing address</h1><br>
-        <form class="needs-validation" novalidate="" method="post" action="thankyou.php">
+        <form class="needs-validation" novalidate="" method="post" action="confirmation%20page.php?action=add">
             <div class="row">
                 <div class="col-md-6 mb-3">
                     <label for="firstName">First name</label>
@@ -140,7 +143,7 @@ function pre_r($array)
                 </div>
             </div>
 
-            <button class=" btn btn-success btn-lg" name="Submit" type="submit">Purchase</button>
+            <button class="btn btn-success btn-lg" name="Submit" type="submit"><a href="thankyou.php"</a>Purchase</button>
             <br>
             <br>
 
