@@ -32,15 +32,9 @@ function pre_r($array)
     <div style="clear:both"></div>
     <br/>
     <div>
-<h1>Thank you for your purchase <?php echo $_SESSION['firstName']; ?></h1>
-
-
+<h1>Thank you for your purchase</h1>
 
     </div>
-
-    <br>
-    <br>
-
     <div style="clear:both"></div>
     <br/>
     <div class="table-responsive">
@@ -54,12 +48,6 @@ function pre_r($array)
                     <?php echo$_SESSION['state']?> <br>
                     <?php echo$_SESSION['zip'] ?>  </th></tr>
         </table>
-
-
-
-
-    <br>
-
     <div>
         <div style="clear:both"></div>
         <br/>
