@@ -22,6 +22,7 @@ require('connection.php');
 <br>
 <form action="05Prove.php" class="search" method="post"
 <b><label for="name">Items:</label></b>
+<input type="text" name="name" id="name">
 <input type="submit" value="Search">
 </form>
 
