@@ -59,6 +59,9 @@ CREATE TABLE "identification" (
   PRIMARY KEY ("login_id")
 );
 
+
+
+
              
 _____________USER INSERTS________________________
 INSERT INTO customers(customer_id, first_name, middle_name, last_name, address_id, login_id) VALUES
