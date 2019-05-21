@@ -19,7 +19,7 @@ CREATE TABLE "orders" (
   "to_state" varchar(2),
   "To_zip" varchar(5),
   "item_id" int,
-  "ship_date" datetime,
+  "ship_date" date,
   PRIMARY KEY ("order_id")
 );
 
