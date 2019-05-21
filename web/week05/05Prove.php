@@ -3,7 +3,7 @@ require('connection.php');
 
 
 $query_one = 'SELECT DISTINCT item_type FROM items';
-$result = pg_query($sql);
+$result = pg_query($query_one);
 ?>
 
 <!doctype html>
