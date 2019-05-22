@@ -13,7 +13,7 @@ or die ("Could not connect to server\n");
 
 
 
-$query = 'SELECT item_type FROM items';
+$query = 'SELECT DISTINCT item_type FROM items';
 $result = pg_query( $con, $query);
 ?>
 
