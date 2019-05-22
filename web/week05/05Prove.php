@@ -37,8 +37,10 @@ $result = pg_query( $con, $query);
 <h1>Items available</h1>
 <?php
 $item_typ_name = $_POST['item_type_name'];
-echo $item_typ_name;
-echo "test";
+
+if($_SERVER["REQUEST_METHOD"]=="POST"){
+echo 'Searching items with the : ' . $item_typ_name . 'section';
+}
 ?>
 <br>
 <br>
