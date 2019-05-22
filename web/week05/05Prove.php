@@ -69,7 +69,7 @@ $result2 = pg_query( $con, $sqlQuery);
 
 if (pg_num_rows($result2)>0){
     while($row=pg_fetch_array($result2)){
-        echo "TEST id ".$row[0]. " TEST Barcode ".$row[1]. " TEST Name ".$row[2]. " TEST type ".$row[3]. " TEST price ".$row[4]. "TEST quantity ". $row[5];
+        echo $row[0]. " ".$row[1]. " ".$row[2]. " ".$row[3]. " ".$row[4]. " ". $row[5];
         echo"<br>";
     }
 }
