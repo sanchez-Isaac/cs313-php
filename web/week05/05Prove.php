@@ -12,7 +12,7 @@ or die ("Could not connect to server\n");
 
 
 $username = $_POST['user'];
-echo $username;
+echo $_SESSION["user"];
 $_SESSION["user"] = $username;
 $password = $_POST['pass'];
 $_SESSION["pass"] = $password;
