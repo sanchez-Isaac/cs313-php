@@ -10,7 +10,7 @@ $port = "5432";
 $con = pg_connect("host=$host port=$port dbname=$db user=$user password=$pass")
 or die ("Could not connect to server\n");
 ​
-$bookName = $_POST['Book'];
+
 $query = 'SELECT * FROM Scriptures WHERE book ='. $bookName;
 $result = pg_query( $con, $query);
 ​
