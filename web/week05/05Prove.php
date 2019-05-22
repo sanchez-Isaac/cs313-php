@@ -23,13 +23,13 @@ $result = pg_query( $con, $query);
 
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+    <meta charset="utf-8">
 
-  <title>Query and Insert Items</title>
-  <meta name="description" content="The HTML5 Herald">
-  <meta name="author" content="SitePoint">
+    <title>Query and Insert Items</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
 
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
+    <link rel="stylesheet" href="css/styles.css?v=1.0">
 
 </head>
 
@@ -39,7 +39,7 @@ $result = pg_query( $con, $query);
 $item_typ_name = $_POST['item_type_name'];
 
 if($_SERVER["REQUEST_METHOD"]=="POST"){
-echo 'Searching items the: '.'<b>' . $item_typ_name .'</b>' . ' section';
+    echo 'Searching items the: '.'<b>' . $item_typ_name .'</b>' . ' section';
 }
 ?>
 <br>
