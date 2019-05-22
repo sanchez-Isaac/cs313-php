@@ -48,6 +48,8 @@ if (pg_num_rows($result) > 0) {
 
 
 ?>
+
+<a href="05TeachStr.php">Stretch Challenges</a>
 </body>
 
 <?php
