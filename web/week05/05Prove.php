@@ -16,8 +16,7 @@ or die ("Could not connect to server\n");
 $query = 'SELECT DISTINCT item_type FROM items';
 $result = pg_query( $con, $query);
 
-$item_typ_name = $_POST["item_type_name"];
-echo $item_typ_name;
+
 ?>
 
 <!doctype html>
@@ -36,6 +35,11 @@ echo $item_typ_name;
 
 <body>
 <h1>Items available</h1>
+<?php
+$item_typ_name = $_POST["item_type_name"];
+echo $item_typ_name;
+echo "test";
+?>
 <br>
 <br>
 <form action="05Prove.php" class="search" method="post"
