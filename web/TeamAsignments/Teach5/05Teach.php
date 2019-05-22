@@ -40,7 +40,7 @@ $result = pg_query( $con, $query);
 if (pg_num_rows($result) > 0) {
     // output data of each row
     while($row = pg_fetch_assoc($result)) {
-        echo $row["book"]. " " . $row["chapter"]. ":" . $row["verse"]. "<br>" . $row["verse"] . "<br><br>";
+        echo $row["book"]. " " . $row["chapter"]. ":" . $row["verse"]. "<br>" . $row["content"] . "<br><br>";
     }
 } else {
     echo "0 results";
