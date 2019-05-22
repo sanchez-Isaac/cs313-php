@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b5589424-fa81-48fe-8aa6-848806ec9329" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/teach05.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../teamAssignments.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../teamAssignments.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../week05/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../week05/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../week05/05Prove.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../week05/05Prove.php" afterDir="false" />
-    </list>
+    <list default="true" id="b5589424-fa81-48fe-8aa6-848806ec9329" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,28 +33,28 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="3" />
-          <entry key="php" value="59" />
+          <entry key="php" value="67" />
           <entry key="sql" value="401" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="3" />
-          <entry key="PHP" value="59" />
+          <entry key="PHP" value="67" />
           <entry key="Scratch" value="401" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="html" value="1" />
-          <entry key="php" value="1" />
+          <entry key="php" value="2" />
           <entry key="sql" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HTML" value="1" />
-          <entry key="PHP" value="1" />
+          <entry key="PHP" value="2" />
           <entry key="Scratch" value="2" />
         </counts>
       </usages-collector>
@@ -69,28 +63,19 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/teach05.php">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/567d8bb5-23e8-4d48-882a-b8c02f129824/console.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+            <state relative-caret-position="110">
+              <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../../teamAssignments.html">
+        <entry file="file://$PROJECT_DIR$/05Teach.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="49" column="73" lean-forward="true" selection-start-line="49" selection-start-column="73" selection-end-line="49" selection-end-column="73" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/567d8bb5-23e8-4d48-882a-b8c02f129824/console.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
+            <state relative-caret-position="255">
+              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -106,6 +91,7 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/567d8bb5-23e8-4d48-882a-b8c02f129824/console.sql" />
         <option value="$PROJECT_DIR$/teach05.php" />
         <option value="$PROJECT_DIR$/../../teamAssignments.html" />
+        <option value="$PROJECT_DIR$/05Teach.php" />
       </list>
     </option>
   </component>
@@ -132,7 +118,17 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="ProjectPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Teach5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Teach5" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -164,18 +160,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1558559567200</updated>
-      <workItem from="1558559568715" duration="2887000" />
+      <workItem from="1558559568715" duration="3139000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2887000" />
+    <option name="totallyTimeSpent" value="3139000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="874" y="66" width="1036" height="969" extended-state="0" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.031762294" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.09938525" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="PHP-CGI Server" />
@@ -207,13 +203,6 @@
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/9204ec0a-d083-4688-b6b3-6c81bbcc8bac/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/567d8bb5-23e8-4d48-882a-b8c02f129824/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../week03/03Prove.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-202">
@@ -221,7 +210,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/teach05.php">
+    <entry file="file://$PROJECT_DIR$/Teach05.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
@@ -230,8 +219,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../../teamAssignments.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="49" column="73" lean-forward="true" selection-start-line="49" selection-start-column="73" selection-end-line="49" selection-end-column="73" />
+        <state relative-caret-position="204">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/567d8bb5-23e8-4d48-882a-b8c02f129824/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/05Teach.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
         </state>
       </provider>
     </entry>

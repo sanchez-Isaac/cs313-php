@@ -13,7 +13,7 @@ or die ("Could not connect to server\n");
 
 $query = 'SELECT * FROM Scriptures';
 $result = pg_query( $con, $query);
-echo $result;
+
 
 ?>
 
@@ -34,5 +34,19 @@ echo $result;
 
 <body>
 <script src="js/scripts.js"></script>
+
+
+<?php
+if (pg_num_rows($result) > 0) {
+    // output data of each row
+    while($row = pg_fetch_assoc($result)) {
+        echo "book " . $row["book"]. " " . $row["chapter"]. ":" . $row["verse"]. "<br>";
+    }
+} else {
+    echo "0 results";
+}
+$conn->close();
+
+?>
 </body>
 </html>
