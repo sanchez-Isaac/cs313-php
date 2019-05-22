@@ -10,21 +10,31 @@ $con = pg_connect("host=$host port=$port dbname=$db user=$user password=$pass")
 or die ("Could not connect to server\n");
 
 
+if(isset($_POST['login_btn'])){
 
-$username = $_POST['user'];
-echo $_SESSION["user"];
-$_SESSION["user"] = $username;
-$password = $_POST['pass'];
-$_SESSION["pass"] = $password;
-$username = stripcslashes($username);
-$password = stripcslashes($password);
-$username = pg_escape_string($username);
-$password = pg_escape_string($password);
+    $username = pg_escape_string($_POST['username']);
+    $password = pg_escape_string($_POST['password']);
+    $password= md5($password);
+    $query = "SELECT * FROM admin WHERE user_name = '$username' AND password = '$password'";
+    $resultLogin = pg_query( $con, $query);
+
+    if(pg_num_rows($resultLogin) == 1) {
+        $_SESSION['message'] = "You are logged in";
+        $_SESSION['username'] = $username;
+        header("loccation: 05Prove.php");
+    }
+    else{
+        $_SESSION['message'] = "ERROR, User or password incorrect";
+    }
+}
 
 
-$query = "SELECT * FROM admin WHERE user_name = '" . $username . "'" . "and password = '" . $password . "'";
-$resultLogin = pg_query( $con, $query);
-$row = pg_fetch_array($resultLogin);
+
+
+
+
+
+
 
 
 ?>
@@ -45,35 +55,26 @@ $row = pg_fetch_array($resultLogin);
 </head>
 <body>
 
-<div class="container" id="frm">
-    <img id="img" src="https://kooledge.com/assets/default_medium_avatar-57d58da4fc778fbd688dcbc4cbc47e14ac79839a9801187e42a796cbd6569847.png" width="100" height="100" alt="login image"
-         <form action="05Prove.php" method="post">
-             <div class="form-input">
-                 <i class="fa fa-user fa-2x cust" aria-hidden="true"></i>
+<form method="post" action="05Prove.php">
+    <table>
+        <tr>
+            <td>Username:</td>
+            <td><input type="username" name="username" class="textInput"></td>
+        </tr>
+        <tr>
+            <td>Password:</td>
+            <td><input type="password" name="password" class="textInput"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" name="login_btn" class="Login"></td>
+        </tr>
+    </table>
 
-                 <input type="text" id="user" name="user" value="" placeholder="Enter Username" required><br />
 
-                 <i class="fa fa-lock fa-2x cust" aria-hidden="true"></i>
+</form>
 
-                 <input type="text" id="pass" name="pass" value="" placeholder="Enter Password" required><br/>
 
-                 <input type="submit" id="btn" name="submit" value="Login"><br/>
-                 <a href="#">FORGET PASSWORD</a>
-             </div>
-
-         </form>
-    <?php
-
-    if ($row['username'] == $username && $row['password'] == $password ){
-    echo "Login Success!! Welcome" . $row['username'];
-    }
-    else
-    {
-    echo "failed to login";
-    }
-?>
-
-</div>
 
 </body>
 </html>
