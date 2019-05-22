@@ -36,7 +36,7 @@ $result = pg_query( $con, $query);
 <body>
 <h1>Items available</h1>
 <?php
-$item_typ_name = $_POST["item_type_name"];
+$item_typ_name = $_POST['item_type_name'];
 echo $item_typ_name;
 echo "test";
 ?>
@@ -44,14 +44,14 @@ echo "test";
 <br>
 <form action="05Prove.php" class="search" method="post"
 <b><label for="name">Items type:</label></b>
-<select name="items">
+<select name="item_type_name">
     <?php
     // the pg_fetch_assoc($result) will use the query and assign it to rows variable
     while($rows = pg_fetch_assoc($result))
     {
         //auto population of an option drop down menu from a database
         $item_type = $rows['item_type'];
-        echo "<option value='$item_type' name='item_type_name'>$item_type</option>";
+        echo "<option value='$item_type' >$item_type</option>";
     }
     ?>
 </select>
