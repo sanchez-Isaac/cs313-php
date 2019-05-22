@@ -1,11 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: idsm_
- * Date: 22/05/2019
- * Time: 12:07 AM
- */
-
+session_start();
 ?>
 
     <!DOCTYPE html>
