@@ -33,7 +33,7 @@ $result = pg_query( $con, $query);
 <body>
 <script src="js/scripts.js"></script>
 ​
-<form action = "05TeachStr.php.php" method = "POST">
+<form action = "05TeachStr.php" method = "POST">
     <select name = "Book">
         <option value = "John">John</option>
         <option value = "Doctrine and Covenants">D&C</option>
