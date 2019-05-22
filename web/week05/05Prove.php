@@ -21,7 +21,7 @@ if(isset($_POST['login_btn'])){
     if(pg_num_rows($resultLogin) == 1) {
         $_SESSION['message'] = "You are logged in";
         $_SESSION['username'] = $username;
-        header("loccation: 05Prove.php");
+        header("location: 05Prove.php");
     }
     else{
         $_SESSION['message'] = "ERROR, User or password incorrect";
