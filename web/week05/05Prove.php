@@ -7,11 +7,13 @@ $db = "dedc617q6k4b6s";
 $port = "5432";
 
 $con = pg_connect("host=$host port=$port dbname=$db user=$user password=$pass")
+
 or die ("Could not connect to server\n");
 
 
 
-$query_one = 'SELECT DISTINCT item_type FROM items';
+
+$query_one = 'SELECT item_type FROM items';
 $result = pg_query( $con, $query_one);
 ?>
 
@@ -43,7 +45,7 @@ $result = pg_query( $con, $query_one);
 
 <select name="items">
     <?php
-    while($rows = $result->fetch_assoc())
+    while($rows = $result->pg_fetch_assoc())
     {
         $item_type = $rows['item_type'];
         echo "<option value='$item_type'>$item_type</option>";
