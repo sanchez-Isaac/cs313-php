@@ -59,6 +59,15 @@ CREATE TABLE "identification" (
   PRIMARY KEY ("login_id")
 );
 
+CREATE TABLE "admin"(
+"admin_id" SERIAL NOT NULL,
+"name" varchar(50),
+"last_name" varchar(50),
+"user_name" varchar(50) NOT NULL,
+"email" varchar(50) NOT NULL,
+"password" varchar(50) NOT NULL,
+PRIMARY KEY ("admin_id")
+); 
 
 
 
@@ -92,3 +101,7 @@ INSERT INTO items(item_id, item_barcode, item_name, item_type, item_price, item_
 ___________________________________________________
 
 
+_______________ADMIN INSERTS_____________________
+INSERT INTO admin(admin_id, name, last_name, user_name, email, password) VALUES
+(1,'Isaac','Sanchez', 'isaako1', 'san16044@byui.edu','san16044');
+__________________________________________________________

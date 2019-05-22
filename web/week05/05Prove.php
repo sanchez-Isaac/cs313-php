@@ -1,20 +1,29 @@
 <?php
+session_start();
 
 $host = "ec2-54-235-167-210.compute-1.amazonaws.com";
 $user = "bgioyeuxgspzay";
 $pass = "2bde081d61adcb0a3e6eb77f86b4832fa740494bb0fcfa470ab271c5f5dd80fa";
 $db = "dedc617q6k4b6s";
 $port = "5432";
-
 $con = pg_connect("host=$host port=$port dbname=$db user=$user password=$pass")
-
 or die ("Could not connect to server\n");
 
 
 
+$username = $_POST['user'];
+$_SESSION["user"] = $username;
+$password = $_POST['pass'];
+$_SESSION["pass"] = $password;
+$username = stripcslashes($username);
+$password = stripcslashes($password);
+$username = pg_escape_string($username);
+$password = pg_escape_string($password);
 
-$query = 'SELECT DISTINCT item_type FROM items';
-$result = pg_query( $con, $query);
+
+$query = "SELECT * FROM admin WHERE user_name = '" . $username . "'" . "and password = '" . $password . "'";
+$resultLogin = pg_query( $con, $query);
+$row = pg_fetch_array($resultLogin);
 
 
 ?>
@@ -23,61 +32,47 @@ $result = pg_query( $con, $query);
 
 <html lang="en">
 <head>
-    <meta charset="utf-8">
+<meta charset="utf-8">
 
-    <title>Query and Insert Items</title>
-    <meta name="description" content="The HTML5 Herald">
-    <meta name="author" content="SitePoint">
 
-    <link rel="stylesheet" href="css/styles.css?v=1.0">
+<meta name="description" content="The HTML5 Herald">
+<meta name="author" content="SitePoint">
 
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Login Page</title>
 </head>
-
 <body>
-<h1>Items available</h1>
-<?php
-$item_typ_name = $_POST['item_type_name'];
 
-if($_SERVER["REQUEST_METHOD"]=="POST"){
-    echo 'Searching items the: '.'<b>' . $item_typ_name .'</b>' . ' section';
-}
-?>
-<br>
-<br>
-<form action="05Prove.php" class="search" method="post"
-<b><label for="name">Items type:</label></b>
-<select name="item_type_name">
+<div class="container" id="frm">
+    <img id="img" src="https://kooledge.com/assets/default_medium_avatar-57d58da4fc778fbd688dcbc4cbc47e14ac79839a9801187e42a796cbd6569847.png" width="100" height="100" alt="login image"
+         <form action="05Prove.php" method="post">
+             <div class="form-input">
+                 <i class="fa fa-user fa-2x cust" aria-hidden="true"></i>
+
+                 <input type="text" id="user" name="user" value="" placeholder="Enter Username" required><br />
+
+                 <i class="fa fa-lock fa-2x cust" aria-hidden="true"></i>
+
+                 <input type="text" id="pass" name="pass" value="" placeholder="Enter Password" required><br/>
+
+                 <input type="submit" id="btn" name="submit" value="Login"><br/>
+                 <a href="#">FORGET PASSWORD</a>
+             </div>
+
+         </form>
     <?php
-    // the pg_fetch_assoc($result) will use the query and assign it to rows variable
-    while($rows = pg_fetch_assoc($result))
+
+    if ($row['username'] == $username && $row['password'] == $password ){
+    echo "Login Success!! Welcome" . $row['username'];
+    }
+    else
     {
-        //auto population of an option drop down menu from a database
-        $item_type = $rows['item_type'];
-        echo "<option value='$item_type' >$item_type</option>";
+    echo "failed to login";
     }
-    ?>
-</select>
-<input type="submit" value="Search">
-
-</form>
-<br>
-<br>
-
-<?php
-if($_SERVER["REQUEST_METHOD"]=="POST") {
-
-    $sqlQuery = "SELECT item_name, item_type, item_price, item_quantity FROM items WHERE item_type = '" . $item_typ_name . "'";
-    $result2 = pg_query($con, $sqlQuery);
-
-    if (pg_num_rows($result2) > 0) {
-        while ($row = pg_fetch_array($result2)) {
-            echo $row[0] . " " . $row[1] . " " . $row[2] . " " . $row[3] . " " . $row[4] . " " . $row[5];
-            echo "<br>";
-        }
-    }
-
-}
 ?>
+
+</div>
 
 </body>
 </html>
