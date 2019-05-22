@@ -19,10 +19,19 @@ session_start();
 <body>
 
 <div class="header">
-    <h1>HomePage</h1>
+    <h1>Home Page</h1>
 
 </div>
 <div> Welcome <?php echo $_SESSION['username']; ?></div>
+
+<?php
+if(isset($_SESSION['username']))
+{
+    echo '<br>';
+    echo '<a href="itemsSearch.php" target="_blank">See the items in the store</a>';
+
+}
+?>
 
 </body>
 </html>
