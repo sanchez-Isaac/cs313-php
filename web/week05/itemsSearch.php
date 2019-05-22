@@ -79,5 +79,10 @@ if($_SERVER["REQUEST_METHOD"]=="POST") {
 }
 ?>
 
+<br>
+<br>
+<a href="home.php" target="_blank">Go back to Home</a>
+
+
 </body>
 </html>
