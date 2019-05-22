@@ -10,8 +10,8 @@ $port = "5432";
 $con = pg_connect("host=$host port=$port dbname=$db user=$user password=$pass")
 or die ("Could not connect to server\n");
 
-$bookName = $_POST['Book'];
-$query = 'SELECT * FROM Scriptures WHERE book ='. $bookName;
+
+$query = 'SELECT * FROM Scriptures';
 $result = pg_query( $con, $query);
 
 
@@ -36,21 +36,11 @@ $result = pg_query( $con, $query);
 <script src="js/scripts.js"></script>
 
 
-<form action = "05Teach.php" method = "POST">
-<select name = "Book">
-    <option value = "John">John</option>
-    <option value = "Doctrine and Covenants">D&C</option>
-    <option value = "Mosiah">Mosiah</option>
-    <input type = "submit" value = "Search">
-</select>
-</form>
-
-
 <?php
-if (pg_num_rows($bookName) > 0) {
+if (pg_num_rows($result) > 0) {
     // output data of each row
-    while($row = pg_fetch_assoc($bookName)) {
-         echo "<b>".$row["book"]. "<b></b>" . " - " . $row["chapter"]. ":" . $row["verse"]. "<br>" . $row["content"] . "<br><br>";
+    while($row = pg_fetch_assoc($result)) {
+        echo "<b>".$row["book"]. "<b></b>" . " - " . $row["chapter"]. ":" . $row["verse"]. "<br>" . $row["content"] . "<br><br>";
     }
 } else {
 
