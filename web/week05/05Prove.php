@@ -13,8 +13,8 @@ or die ("Could not connect to server\n");
 
 
 
-$query_one = 'SELECT item_type FROM items';
-$result = pg_query( $con, $query_one);
+$query = 'SELECT item_type FROM items';
+$result = pg_query( $con, $query);
 ?>
 
 <!doctype html>
@@ -45,7 +45,7 @@ $result = pg_query( $con, $query_one);
 
 <select name="items">
     <?php
-    while($rows = $result->pg_fetch_assoc())
+    while($rows = pg_fetch_assoc($result))
     {
         $item_type = $rows['item_type'];
         echo "<option value='$item_type'>$item_type</option>";
