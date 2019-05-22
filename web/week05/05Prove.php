@@ -14,7 +14,7 @@ if(isset($_POST['login_btn'])){
 
     $username = pg_escape_string($_POST['username']);
     $password = pg_escape_string($_POST['password']);
-   // $password= md5($password);
+   // $password= md5($password); // Hashes the passwords (this is only to register new users)
     $query = "SELECT * FROM admin WHERE user_name = '$username' AND password = '$password'";
     $resultLogin = pg_query( $con, $query);
 
