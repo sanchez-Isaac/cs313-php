@@ -64,21 +64,20 @@ echo 'Searching items the: '.'<b>' . $item_typ_name .'</b>' . ' section';
 <br>
 
 <?php
-$sqlQuery="SELECT item_name, item_type, item_price, item_quantity FROM items WHERE item_type = '" .$item_typ_name ."'";
-$result2 = pg_query( $con, $sqlQuery);
+if($_SERVER["REQUEST_METHOD"]=="POST") {
 
-if (pg_num_rows($result2)>0){
-    while($row=pg_fetch_array($result2)){
-        echo $row[0]. " ".$row[1]. " ".$row[2]. " ".$row[3]. " ".$row[4]. " ". $row[5];
-        echo"<br>";
+    $sqlQuery = "SELECT item_name, item_type, item_price, item_quantity FROM items WHERE item_type = '" . $item_typ_name . "'";
+    $result2 = pg_query($con, $sqlQuery);
+
+    if (pg_num_rows($result2) > 0) {
+        while ($row = pg_fetch_array($result2)) {
+            echo $row[0] . " " . $row[1] . " " . $row[2] . " " . $row[3] . " " . $row[4] . " " . $row[5];
+            echo "<br>";
+        }
     }
+
 }
-
-$r
 ?>
-
-
-
 
 </body>
 </html>
