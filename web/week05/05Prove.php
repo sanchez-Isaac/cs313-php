@@ -38,13 +38,12 @@ $result = pg_query( $con, $query);
 <form action="05Prove.php" class="search" method="post"
 
 
-<b><label for="name">Items:</label></b>
-<input type="text" name="name" id="name">
-<input type="submit" value="Search">
 
 
+<b><label for="name">Items type:</label></b>
 <select name="items">
     <?php
+    // the pg_fetch_assoc($result) will use the query and assign it to rows variable
     while($rows = pg_fetch_assoc($result))
     {
         $item_type = $rows['item_type'];
@@ -52,8 +51,10 @@ $result = pg_query( $con, $query);
     }
 
     ?>
-
 </select>
+<input type="submit" value="Search">
+
+
 
 
 
