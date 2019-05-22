@@ -13,7 +13,7 @@ or die ("Could not connect to server\n");
 
 $query = 'SELECT * FROM Scriptures';
 $result = pg_query( $con, $query);
-
+echo $result;
 
 ?>
 
