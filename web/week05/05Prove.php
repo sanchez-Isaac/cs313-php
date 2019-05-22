@@ -39,7 +39,7 @@ $result = pg_query( $con, $query);
 $item_typ_name = $_POST['item_type_name'];
 
 if($_SERVER["REQUEST_METHOD"]=="POST"){
-echo 'Searching items with the : ' . $item_typ_name . 'section';
+echo 'Searching items the: '.'<b>' . $item_typ_name .'</b>' . ' section';
 }
 ?>
 <br>
