@@ -33,7 +33,7 @@ $con = get_db();
     <br><br>
 
     <?php
-    $query = 'SELECT * FROM scripture_and_topic';
+    $query = 'SELECT * FROM topic';
     $result = pg_query( $con, $query);
 
     if (pg_num_rows($result) > 0) {
