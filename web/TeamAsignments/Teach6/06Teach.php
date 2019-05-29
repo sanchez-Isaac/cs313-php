@@ -53,6 +53,8 @@ $con = get_db();
 
 </form>
 
+<a href="query_scriptures.php">See DB scriptures</a>
+
 
 </body>
 </html>
