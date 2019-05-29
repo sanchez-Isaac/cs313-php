@@ -21,3 +21,26 @@ INSERT INTO products (id, name, price, image) VALUES
  SET image = 'https://gloimg.gbtcdn.com/soa/gb/pdm-product-pic/Electronic/2019/03/19/goods_img_big-v1/20190319143429_19752.jpg'
  WHERE name = 'REDMI NOTE 7 PRO';
 
+
+Host
+ec2-23-21-129-125.compute-1.amazonaws.com
+
+Database
+dbe43cu3qv6rjv
+
+User
+qvuhdtpvtfgheg
+
+Port
+5432
+
+Password
+e50137efad45ae63f6a5fa81a0f202027a32756361cc2b8c818d5acecc268e08
+
+URI
+postgres://qvuhdtpvtfgheg:e50137efad45ae63f6a5fa81a0f202027a32756361cc2b8c818d5acecc268e08@ec2-23-21-129-125.compute-1.amazonaws.com:5432/dbe43cu3qv6rjv
+
+Heroku CLI
+heroku pg:psql postgresql-asymmetrical-60123 --app rocky-atoll-73188
+
+
