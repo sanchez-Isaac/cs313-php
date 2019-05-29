@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9aa14cf5-8668-4cb8-a1e4-a96931fa91c6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/insert_query.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/insert_items.php" beforeDir="false" afterPath="$PROJECT_DIR$/insert_items.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -73,25 +75,25 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="php" value="3" />
+          <entry key="php" value="4" />
           <entry key="sql" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PHP" value="3" />
+          <entry key="PHP" value="4" />
           <entry key="Scratch" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="php" value="841" />
+          <entry key="php" value="941" />
           <entry key="sql" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PHP" value="840" />
+          <entry key="PHP" value="940" />
           <entry key="SQL" value="1" />
           <entry key="Scratch" value="8" />
         </counts>
@@ -127,11 +129,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/insert_items.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="160">
+              <caret line="8" selection-start-line="8" selection-end-line="12" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/insert_query.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="53" lean-forward="true" selection-start-line="7" selection-start-column="53" selection-end-line="7" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -192,6 +203,7 @@
         <option value="$PROJECT_DIR$/06Prove.php" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/9298879e-f6d5-4875-8d18-b8d88f2e580d/console.sql" />
         <option value="$PROJECT_DIR$/insert_items.php" />
+        <option value="$PROJECT_DIR$/insert_query.php" />
       </list>
     </option>
   </component>
@@ -264,17 +276,18 @@
       <updated>1558489582565</updated>
       <workItem from="1558489586011" duration="11447000" />
       <workItem from="1558559521901" duration="43000" />
-      <workItem from="1559097352018" duration="8841000" />
+      <workItem from="1559097352018" duration="9569000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20331000" />
+    <option name="totallyTimeSpent" value="21059000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="957" height="1057" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.0" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.09476031" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info active="true" anchor="bottom" id="Database Console" visible="true" weight="0.23726977" />
@@ -352,8 +365,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/insert_items.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="160">
+          <caret line="8" selection-start-line="8" selection-end-line="12" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/insert_query.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="53" lean-forward="true" selection-start-line="7" selection-start-column="53" selection-end-line="7" selection-end-column="53" />
         </state>
       </provider>
     </entry>

@@ -1,32 +1,28 @@
 <?php
 session_start();
 require ('DbConnect.php');
+
 $con = get_db();
 
 
+/*
+   $item_name = pg_escape_string($_POST['item_name']);
+   $item_type = pg_escape_string($_POST['item_type']);
+   $item_price = pg_escape_string($_POST['item_price']);
+   $item_quantity = pg_escape_string($_POST['item_quantity']);
+   $photo_desc = pg_escape_string($_POST['photo_desc']);
 
-    $item_name = pg_escape_string($_POST['item_name']);
-    $item_type = pg_escape_string($_POST['item_type']);
-    $item_price = pg_escape_string($_POST['item_price']);
-    $item_quantity = pg_escape_string($_POST['item_quantity']);
-    $photo_desc = pg_escape_string($_POST['photo_desc']);
-    /*
-        $query = $con->prepare ('INSERT INTO items(item_id, item_barcode, item_name, item_type, item_price, item_quantity)
-    VALUES(DEFAULT, DEFAULT, :$item_name, :$item_type, :$item_price,:$item_quantity, :$photo_desc);') ;
-        $query->bindValue(':$item_name', $item_name, PDO::PARAM_STR);
-        $query->bindValue(':$item_type', $item_type, PDO::PARAM_STR);
-        $query->bindValue(':$item_price', $item_price, PDO::PARAM_INT);
-        $query->bindValue(':$item_quantity', $item_quantity, PDO::PARAM_INT);
-        $query->bindValue(':$photo_desc', $photo_desc, PDO::PARAM_STR);
-        $query->execute();
+       $query = $con->prepare ('INSERT INTO items(item_id, item_barcode, item_name, item_type, item_price, item_quantity)
+   VALUES(DEFAULT, DEFAULT, :$item_name, :$item_type, :$item_price,:$item_quantity, :$photo_desc);') ;
+       $query->bindValue(':$item_name', $item_name, PDO::PARAM_STR);
+       $query->bindValue(':$item_type', $item_type, PDO::PARAM_STR);
+       $query->bindValue(':$item_price', $item_price, PDO::PARAM_INT);
+       $query->bindValue(':$item_quantity', $item_quantity, PDO::PARAM_INT);
+       $query->bindValue(':$photo_desc', $photo_desc, PDO::PARAM_STR);
+       $query->execute();
 
-    */
+   */
 
-
-    $sql = "INSERT INTO items(item_name, item_type, item_price, item_quantity)
-VALUES($item_name, $item_type, $item_price,$item_quantity, $photo_desc);";
-
-    pg_query($con ,$sql);
 
 
 
@@ -42,7 +38,7 @@ VALUES($item_name, $item_type, $item_price,$item_quantity, $photo_desc);";
 <div><h1>Inserting new Items</h1></div>
 <div>
 
-<form method="post" action="insert_items.php">
+<form method="post" action="insert_query.php">
     Item name:<br>
     <input type="text" name="item_name" >
     <br>
