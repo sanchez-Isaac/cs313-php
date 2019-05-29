@@ -41,7 +41,7 @@ $con = get_db();
     if (pg_num_rows($result) > 0) {
         // output data of each row
         while($row = pg_fetch_assoc($result)) {
-            echo " <input type='checkbox' name='". $row['name'] . "'>" . $row['name'] . "<br>" ;
+            echo " <input type='checkbox' name='". $row['id'] . "'>" . $row['name'] . "<br>" ;
         }
     } else {
 

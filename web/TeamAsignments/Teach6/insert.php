@@ -24,31 +24,12 @@ while($rows = pg_fetch_assoc($result))
 }
 
 
-
-
-
 $sql = "INSERT INTO scriptures(id, book, chapter, verse, content)
 VALUES($item_id, '$book', $chapter, $verse, '$content');";
 pg_query($con ,$sql);
 
-if ($topic_charity != null) {
 
-    $sql2 = "INSERT INTO topic(id, name)
-             VALUES($item_id, '$topic_charity';";
-    pg_query($con, $sql2);
 
-}
-if ($topic_faith != null){
-    $sql2 = "INSERT INTO topic(id, name)
-             VALUES($item_id, '$topic_faith';";
-    pg_query($con, $sql2);
-
-}
-if ($topic_sacrifice != null){
-    $sql2 = "INSERT INTO topic(id, name)
-             VALUES($item_id, '$topic_sacrifice';";
-    pg_query($con, $sql2);
-}
 
 $sql3 = "INSERT INTO scripture_and_topic(srip_id, topic_id)
              VALUES($item_id, $item_id;";
