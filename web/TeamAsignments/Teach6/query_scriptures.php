@@ -41,7 +41,7 @@ $result2 = pg_query( $con, $query2);
 if (pg_num_rows($result) > 0) {
     // output data of each row
     while($row = pg_fetch_assoc($result)) {
-        echo "<br><b>".$row["book"]. "</b>" . " - " . $row["chapter"]. ":" . $row["verse"]. "<br>" . $row["content"] . "<br>" . "<b> Topic: " . $row["name"] . "<br>";
+        echo "<br><b>".$row["book"]. "</b>" . " - " . $row["chapter"]. ":" . $row["verse"]. "<br>" . $row["content"] . "<br>" . "<b> Topic: <b>" . $row["name"] . "<br>";
     }
 
 }
