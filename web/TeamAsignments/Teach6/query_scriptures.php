@@ -10,6 +10,12 @@ $query = 'SELECT * FROM Scriptures';
 $result = pg_query( $con, $query);
 
 
+$query2 = 'SELECT s.book, s.chapter, s.verse, s.content, t.name
+FROM scriptures s   join topic t USING(id);';
+$result2 = pg_query( $con, $query2);
+
+
+
 ?>
 
 
@@ -36,6 +42,11 @@ if (pg_num_rows($result) > 0) {
     // output data of each row
     while($row = pg_fetch_assoc($result)) {
         echo "<b>".$row["book"]. "</b>" . " - " . $row["chapter"]. ":" . $row["verse"]. "<br>" . $row["content"] . "<br><br>";
+
+        if (pg_num_rows($result2) > 0) {
+            echo "<b>" .$row["name"] . "<br>";
+        }
+
     }
 } else {
 
@@ -44,7 +55,7 @@ if (pg_num_rows($result) > 0) {
 
 ?>
 
-<a href="05TeachStr.php">Stretch Challenges</a>
+
 </body>
 
 <?php
