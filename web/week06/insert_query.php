@@ -1,5 +1,5 @@
 <?php
-include_once 'DbConnect.php.php';
+include_once 'DbConnect.php';
 
 $item_name = $_POST['item_name'];
 $item_type = $_POST['item_type'];
