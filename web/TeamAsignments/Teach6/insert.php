@@ -41,15 +41,15 @@ pg_query($con ,$sql);
 
 
 $sql2 = "INSERT INTO scripture_and_topic(srip_id, topic_id)
-             VALUES($item_id, $topic_charity;";
+             VALUES($item_id, $topic_charity);";
 pg_query($con, $sql2);
 
 $sql3 = "INSERT INTO scripture_and_topic(srip_id, topic_id)
-             VALUES($item_id, $topic_faith;";
+             VALUES($item_id, $topic_faith);";
 pg_query($con, $sql3);
 
 $sql4 = "INSERT INTO scripture_and_topic(srip_id, topic_id)
-             VALUES($item_id, $topic_sacrifice;";
+             VALUES($item_id, $topic_sacrifice);";
 pg_query($con, $sql4);
 
 
