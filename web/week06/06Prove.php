@@ -48,7 +48,7 @@ if(isset($_POST['login_btn'])){
 </head>
 <body>
 
-<form method="post" action="05Prove.php">
+<form method="post" action="06Prove.php">
     <table>
         <tr>
             <td>Username:</td>
