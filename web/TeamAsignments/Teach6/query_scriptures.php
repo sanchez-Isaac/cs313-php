@@ -1,7 +1,15 @@
 <?php
+
 session_start();
 require ('DbConnect.php');
 $con = get_db();
+
+
+
+$query = 'SELECT * FROM Scriptures';
+$result = pg_query( $con, $query);
+
+
 ?>
 
 
