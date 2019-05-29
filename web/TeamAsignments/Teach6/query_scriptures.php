@@ -41,12 +41,12 @@ $result2 = pg_query( $con, $query2);
 if (pg_num_rows($result) > 0) {
     // output data of each row
     while($row = pg_fetch_assoc($result)) {
-        echo "<b>".$row["book"]. "</b>" . " - " . $row["chapter"]. ":" . $row["verse"]. "<br>" . $row["content"] . "<br><br>";
+        echo "<b>".$row["book"]. "</b>" . " - " . $row["chapter"]. ":" . $row["verse"]. "<br>" . $row["content"] . "<br>";
 
        if (pg_num_rows($result2) > 0) {
            // output data of each row
            while ($row = pg_fetch_assoc($result2)) {
-               echo "<b>" . $row["name"] . "<br>";
+               echo "<b> Topic:" . $row["name"] . "<br>";
            }
        }
 
