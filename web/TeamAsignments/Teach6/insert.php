@@ -9,9 +9,16 @@ $verse = pg_escape_string($_POST['verse']);
 $content = pg_escape_string($_POST['content']);
 
 
-$topic_charity = pg_escape_string($_POST['3']);
-$topic_faith = pg_escape_string($_POST['1']);
-$topic_sacrifice = pg_escape_string($_POST['2']);
+if (isset($_POST['1'])){
+    $topic_faith = 1;
+}
+if (isset($_POST['2'])){
+    $topic_sacrifice = 2;
+}
+if (isset($_POST['3'])){
+    $topic_charity = 3;
+}
+
 
 $item_id = 1 ;
 
