@@ -51,5 +51,5 @@ VALUES(:DEFAULT, :DEFAULT, :$item_name, :$item_type, :$item_price,:$item_quantit
     <input type="submit" name="insert" value="Insert">
 </form>
 </body>
-<?php echo  ?>
+
 </html>
