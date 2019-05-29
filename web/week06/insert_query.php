@@ -1,6 +1,8 @@
 <?php
 include_once 'DbConnect.php';
 
+$con = get_db();
+
 $item_name = $_POST['item_name'];
 $item_type = $_POST['item_type'];
 $item_price = $_POST['item_price'];
