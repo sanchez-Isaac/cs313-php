@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$item_type = $_SESSION['item_type'];
+
 ?>
 
 <!DOCTYPE html>
@@ -14,7 +14,7 @@ $item_type = $_SESSION['item_type'];
 
 <body>
 
-<div> <?php echo $item_type ?></div>
+<div> <?php echo  ?></div>
 
 </body>
 
