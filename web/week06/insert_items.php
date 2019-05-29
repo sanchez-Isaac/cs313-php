@@ -4,7 +4,6 @@ require ('DbConnect.php');
 $con = get_db();
 
 
-if(isset($_POST['insert'])) {
 
     $item_name = pg_escape_string($_POST['item_name']);
     $item_type = pg_escape_string($_POST['item_type']);
@@ -27,8 +26,8 @@ if(isset($_POST['insert'])) {
     $sql = "INSERT INTO items(item_name, item_type, item_price, item_quantity)
 VALUES($item_name, $item_type, $item_price,$item_quantity, $photo_desc);";
 
-    $result = pg_query($con ,$sql);
-}
+    pg_query($con ,$sql);
+
 
 
 
