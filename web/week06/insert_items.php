@@ -12,9 +12,14 @@ if(isset($_POST['insert'])) {
     $item_quantity = pg_escape_string($_POST['item_quantity']);
     $photo_desc = pg_escape_string($_POST['photo_desc']);
 
-    $query = "INSERT INTO items(item_id, item_barcode, item_name, item_type, item_price, item_quantity)
-VALUES(:DEFAULT, :DEFAULT, :$item_name, :$item_type, :$item_price,:$item_quantity, :$photo_desc),";
-
+    $query = $con->prepare ('INSERT INTO items(item_id, item_barcode, item_name, item_type, item_price, item_quantity)
+VALUES(DEFAULT, DEFAULT, :$item_name, :$item_type, :$item_price,:$item_quantity, :$photo_desc);') ;
+    $query->bindValue(':$item_name', $item_name, PDO::PARAM_INT);
+    $query->bindValue(':$item_type', $item_type, PDO::PARAM_INT);
+    $query->bindValue(':$item_price', $item_price, PDO::PARAM_INT);
+    $query->bindValue(':$item_quantity', $item_quantity, PDO::PARAM_INT);
+    $query->bindValue(':$photo_desc', $photo_desc, PDO::PARAM_INT);
+    $query->execute();
 
     $result = pg_query($con, $query);
 }
