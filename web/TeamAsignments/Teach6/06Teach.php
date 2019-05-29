@@ -29,7 +29,7 @@ $con = get_db();
     Verse:<br>
     <input type="text" name="verse"><br>
     Content:<br>
-    <textarea name="content"></textarea><br>
+    <textarea  rows="4" cols="50" name="content"></textarea><br>
     <br><br>
 
     <?php
@@ -40,17 +40,12 @@ $con = get_db();
         // output data of each row
         while($row = pg_fetch_assoc($result)) {
             echo " <input type='checkbox' name='". $row['name'] . "'>" . $row['name'] . "<br>" ;
-
         }
     } else {
 
     }
-
-
     ?>
-
-
-
+    <br><br>
     <button type="submit" name="insert">Insert</button>
 
 

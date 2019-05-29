@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05809678-ff16-488e-95d0-b340b94ab281" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../week03/Database and Update Statements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../week03/Database and Update Statements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../week06/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../week06/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06Teach.php" beforeDir="false" afterPath="$PROJECT_DIR$/06Teach.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,13 +47,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="php" value="266" />
+          <entry key="php" value="276" />
           <entry key="sql" value="208" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PHP" value="266" />
+          <entry key="PHP" value="276" />
           <entry key="Scratch" value="208" />
         </counts>
       </usages-collector>
@@ -65,8 +64,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/06Teach.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="41" column="70" selection-start-line="41" selection-start-column="70" selection-end-line="41" selection-end-column="70" />
+            <state relative-caret-position="413">
+              <caret line="41" column="93" selection-start-line="41" selection-start-column="93" selection-end-line="41" selection-end-column="93" />
             </state>
           </provider>
         </entry>
@@ -186,16 +185,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1559161716776</updated>
-      <workItem from="1559161719695" duration="3498000" />
+      <workItem from="1559161719695" duration="3739000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3498000" />
+    <option name="totallyTimeSpent" value="3739000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="7" width="1299" height="1037" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.054075867" />
@@ -204,9 +202,9 @@
       <window_info anchor="bottom" id="PHP-CGI Server" />
       <window_info anchor="bottom" id="Database Changes" weight="0.32890365" />
       <window_info anchor="bottom" id="Version Control" weight="0.32890365" />
-      <window_info anchor="bottom" id="Terminal" weight="0.32890365" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32890365" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Database Console" visible="true" weight="0.32890365" />
+      <window_info anchor="bottom" id="Database Console" weight="0.32890365" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -264,8 +262,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/06Teach.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="41" column="70" selection-start-line="41" selection-start-column="70" selection-end-line="41" selection-end-column="70" />
+        <state relative-caret-position="413">
+          <caret line="41" column="93" selection-start-line="41" selection-start-column="93" selection-end-line="41" selection-end-column="93" />
         </state>
       </provider>
     </entry>
