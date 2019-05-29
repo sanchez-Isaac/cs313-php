@@ -28,12 +28,7 @@ VALUES(DEFAULT, DEFAULT, :$item_name, :$item_type, :$item_price,:$item_quantity,
     $sql = "INSERT INTO items(item_id, item_barcode, item_name, item_type, item_price, item_quantity)
 VALUES(DEFAULT, DEFAULT, $item_name, $item_type, $item_price,$item_quantity, $photo_desc)";
 
-    if ($con->query($sql) === TRUE) {
-        echo "New record created successfully";
-    } else {
-        echo "Error: " . $sql . "<br>" . $con->error;
-    }
-}
+$result = pg_query($sql);
 
 
 
