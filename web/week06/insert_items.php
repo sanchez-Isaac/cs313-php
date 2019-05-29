@@ -11,7 +11,7 @@ if(isset($_POST['insert'])) {
     $item_price = pg_escape_string($_POST['item_price']);
     $item_quantity = pg_escape_string($_POST['item_quantity']);
     $photo_desc = pg_escape_string($_POST['photo_desc']);
-
+/*
     $query = $con->prepare ('INSERT INTO items(item_id, item_barcode, item_name, item_type, item_price, item_quantity)
 VALUES(DEFAULT, DEFAULT, :$item_name, :$item_type, :$item_price,:$item_quantity, :$photo_desc);') ;
     $query->bindValue(':$item_name', $item_name, PDO::PARAM_STR);
@@ -21,7 +21,18 @@ VALUES(DEFAULT, DEFAULT, :$item_name, :$item_type, :$item_price,:$item_quantity,
     $query->bindValue(':$photo_desc', $photo_desc, PDO::PARAM_STR);
     $query->execute();
 
+*/
 
+
+
+    $sql = "INSERT INTO items(item_id, item_barcode, item_name, item_type, item_price, item_quantity)
+VALUES(DEFAULT, DEFAULT, $item_name, $item_type, $item_price,$item_quantity, $photo_desc)";
+
+    if ($con->query($sql) === TRUE) {
+        echo "New record created successfully";
+    } else {
+        echo "Error: " . $sql . "<br>" . $con->error;
+    }
 }
 
 
