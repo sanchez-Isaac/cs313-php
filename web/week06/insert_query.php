@@ -29,4 +29,6 @@ VALUES($item_id, $item_id, '$item_name', '$item_type', $item_price, $item_quanti
 
 pg_query($con ,$sql);
 
+pg_close($con);
+
 header("Location: insert_items.php?insert=");
