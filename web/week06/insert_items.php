@@ -25,7 +25,7 @@ if(isset($_POST['insert'])) {
 
 
     $sql = "INSERT INTO items(item_name, item_type, item_price, item_quantity)
-VALUES($item_name, $item_type, $item_price,$item_quantity, $photo_desc)";
+VALUES($item_name, $item_type, $item_price,$item_quantity, $photo_desc);";
 
     $result = pg_query($con ,$sql);
 }
