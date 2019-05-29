@@ -19,7 +19,7 @@ $con = get_db();
 </head>
 
 <body>
-<header>Insert Scripture</header>
+<h1>Insert Scripture</h1>
 
 <form method="post" action="insert.php">
 
@@ -31,9 +31,8 @@ $con = get_db();
     <input type="text" name="verse"><br>
     Content:<br>
     <textarea  rows="4" cols="50" name="content"></textarea><br>
-    <br>
+
     <h2><b>Topic</b></h2>
-    <br>
 
     <?php
     $query = 'SELECT * FROM topic';
