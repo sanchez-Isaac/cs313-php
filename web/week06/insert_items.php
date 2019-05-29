@@ -37,7 +37,7 @@ VALUES(DEFAULT, DEFAULT, :$item_name, :$item_type, :$item_price,:$item_quantity,
 <div><h1>Inserting new Items</h1></div>
 <div>
 
-<form method="post" action="itemsSearch.php">
+<form method="post" action="">
     Item name:<br>
     <input type="text" name="item_name" >
     <br>
