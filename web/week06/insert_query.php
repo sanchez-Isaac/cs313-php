@@ -8,7 +8,8 @@ $item_type = $_POST['item_type'];
 $item_price = $_POST['item_price'];
 $item_quantity = $_POST['item_quantity'];
 $photo_desc = $_POST['photo_desc'];
-$item_id;
+$item_id = 0 ;
+
 
 $query = 'SELECT item_id FROM items';
 $result = pg_query( $con, $query);
