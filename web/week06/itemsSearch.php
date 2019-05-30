@@ -80,7 +80,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST") {
 <?php
 if(isset($_SESSION['username']))
 {
-    echo '<a href="insert_items.php" target="_blank">Insert new items</a>';
+    echo '<a href="insert_items.php">Insert new items</a>';
 }
 ?>
 

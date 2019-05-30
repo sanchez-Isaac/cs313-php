@@ -28,7 +28,7 @@ session_start();
 if(isset($_SESSION['username']))
 {
     echo '<br>';
-    echo '<a href="itemsSearch.php" target="_blank">Search and edit the items in the store</a>';
+    echo '<a href="itemsSearch.php" >Search and edit the items in the store</a>';
 
 }
 ?>
