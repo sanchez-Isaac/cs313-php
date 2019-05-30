@@ -35,6 +35,12 @@ $con = get_db();
     <title>Insert into the DB</title>
 </head>
 <body>
+<?php
+if(!isset($_SESSION['username']))
+{
+    header('location: 06Prove.php?Login=False');
+}
+?>
 <div><h1>Inserting new Items</h1></div>
 <div>
 

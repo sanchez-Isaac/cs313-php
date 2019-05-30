@@ -9,15 +9,19 @@ session_start();
 <meta charset="utf-8">
 
 
-<meta name="description" content="The HTML5 Herald">
-<meta name="author" content="SitePoint">
+
 
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Home Page</title>
 </head>
 <body>
-
+<?php
+if(!isset($_SESSION['username']))
+{
+    header('location: 06Prove.php?Login=False');
+}
+?>
 <div class="header">
     <h1>Home Page</h1>
 

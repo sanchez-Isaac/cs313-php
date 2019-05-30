@@ -17,8 +17,7 @@ $result = pg_query( $con, $query);
     <meta charset="utf-8">
 
     <title>Query and Insert Items</title>
-    <meta name="description" content="The HTML5 Herald">
-    <meta name="author" content="SitePoint">
+
 
     <link rel="stylesheet" href="css/styles.css?v=1.0">
 
