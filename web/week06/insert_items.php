@@ -54,7 +54,15 @@ $con = get_db();
     Item picture: (URL)<br>
     <input type="text" name="photo_desc" >
     <br><br>
-    <input type="submit" name="insert" value="Insert">
+
+    <?php
+    if(isset($_SESSION['username']))
+    {
+        echo '<input type="submit" name="insert" value="Insert">';
+    }
+    ?>
+
+
 </form>
 </body>
 
