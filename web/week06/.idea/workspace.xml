@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9aa14cf5-8668-4cb8-a1e4-a96931fa91c6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../TeamAsignments/Teach6/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TeamAsignments/Teach6/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TeamAsignments/Teach6/query_scriptures.php" beforeDir="false" afterPath="$PROJECT_DIR$/../TeamAsignments/Teach6/query_scriptures.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/itemsSearch.php" beforeDir="false" afterPath="$PROJECT_DIR$/itemsSearch.php" afterDir="false" />
-    </list>
+    <list default="true" id="9aa14cf5-8668-4cb8-a1e4-a96931fa91c6" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -279,16 +275,15 @@
       <workItem from="1558489586011" duration="11447000" />
       <workItem from="1558559521901" duration="43000" />
       <workItem from="1559097352018" duration="13619000" />
-      <workItem from="1559177851459" duration="1035000" />
+      <workItem from="1559177851459" duration="1288000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26144000" />
+    <option name="totallyTimeSpent" value="26397000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1818" height="1057" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.048919227" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -304,7 +299,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" weight="0.32936078" />
       <window_info anchor="bottom" id="PHP-CGI Server" order="10" weight="0.32936078" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.33261105" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.33261105" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info active="true" anchor="bottom" id="Database Console" order="13" visible="true" weight="0.23726977" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
