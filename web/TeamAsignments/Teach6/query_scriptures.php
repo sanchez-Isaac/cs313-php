@@ -6,14 +6,8 @@ $con = get_db();
 
 
 
-$query = 'SELECT * FROM scriptures s, scripture_and_topic st,topic t WHERE s.id = st.scrip_id and st.topic_Id=t.id;';
+$query = 'SELECT * FROM scriptures s, scripture_and_topic st,topic t WHERE s.id = st.scrip_id and st.topic_Id = t.id;';
 $result = pg_query( $con, $query);
-
-
-$query2 = 'SELECT s.book, s.chapter, s.verse, s.content, t.name
-FROM scriptures s   join topic t USING(id);';
-$result2 = pg_query( $con, $query2);
-
 
 
 ?>

@@ -1,6 +1,8 @@
 <?php
 require ('DbConnect.php');
+session_start();
 $con = get_db();
+
 
 $query = 'SELECT DISTINCT item_type FROM items';
 $result = pg_query( $con, $query);
@@ -46,7 +48,14 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     }
     ?>
 </select>
-<input type="submit" value="Search">
+
+<?php
+if(isset($_SESSION['username']))
+{
+ echo '<input type="submit" value="Search">';
+}
+?>
+
 
 </form>
 <br>
