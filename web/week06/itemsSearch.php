@@ -25,6 +25,13 @@ $result = pg_query( $con, $query);
 </head>
 
 <body>
+<?php
+if(!isset($_SESSION['username']))
+{
+    header('location: 06Prove.php?Login=False');
+}
+    ?>
+
 <h1>Items available</h1>
 <?php
 $item_typ_name = $_POST['item_type_name'];
@@ -88,7 +95,7 @@ if(isset($_SESSION['username']))
 
 <br>
 <br>
-<a href="home.php" target="_blank">Go back to Home</a>
+<a href="home.php" >Go back to Home</a>
 
 
 </body>
