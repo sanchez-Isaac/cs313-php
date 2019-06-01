@@ -19,8 +19,8 @@ if(isset($_POST['login_btn'])){
     }
     else{
         $_SESSION['message'] = "ERROR, User or password incorrect";
-
-        echo "<script type='text/javascript'>alert(\" $_SESSION['message']  \");</script>";
+       $error = $_SESSION['message'];
+        echo "<script type='text/javascript'>alert(\"$error\");</script>";
     }
 }
 
