@@ -2,11 +2,11 @@
 session_start();
 ?>
 
-    <!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="en">
 <head>
-<meta charset="utf-8">
+    <meta charset="utf-8">
 
 
 
@@ -24,10 +24,12 @@ if(!isset($_SESSION['username']))
 ?>
 <div class="header">
     <h1>Home Page</h1>
+
     <br>
     <br>
     <a href="logout.php">Logout</a>
     <br>
+
 </div>
 <div> Welcome <?php echo $_SESSION['username']; ?></div>
 
@@ -35,7 +37,7 @@ if(!isset($_SESSION['username']))
 if(isset($_SESSION['username']))
 {
     echo '<br>';
-    echo '<a href="itemsSearch.php" >Search and edit the items in the store</a>';
+    echo '<a href="itemsSearch.php" >Go to the Store</a>';
 
 }
 ?>
