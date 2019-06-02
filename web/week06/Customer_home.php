@@ -37,7 +37,7 @@ if(!isset($_SESSION['username']))
 if(isset($_SESSION['username']))
 {
     echo '<br>';
-    echo '<a href="itemsSearch.php" >Go to the Store</a>';
+    echo '<a href="store.php" >Go to the Store</a>';
 
 }
 ?>
