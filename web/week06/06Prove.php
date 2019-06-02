@@ -23,7 +23,7 @@ if(isset($_POST['login_btn'])){
     }
     else if(pg_num_rows($resultLogin) != 1) { // NEW LINE FOR SECOND LOGIN
         if(pg_num_rows($resultLogin2) == 1) {
-            $_SESSION['message'] = "You are logged in";
+            $_SESSION['message'] = "You are logged in ";
             $_SESSION['username'] = $username;
             header("location: home.php");
     }

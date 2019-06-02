@@ -93,16 +93,16 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="6" />
-          <entry key="php" value="1380" />
-          <entry key="sql" value="381" />
+          <entry key="php" value="1453" />
+          <entry key="sql" value="387" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="6" />
-          <entry key="PHP" value="1379" />
+          <entry key="PHP" value="1452" />
           <entry key="SQL" value="1" />
-          <entry key="Scratch" value="381" />
+          <entry key="Scratch" value="387" />
         </counts>
       </usages-collector>
     </session>
@@ -163,20 +163,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/06Prove.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="11" column="91" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="91" />
+            <state relative-caret-position="350">
+              <caret line="26" column="35" lean-forward="true" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/9298879e-f6d5-4875-8d18-b8d88f2e580d/console.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="549">
-              <caret line="21" selection-start-line="21" selection-end-line="21" selection-end-column="26" />
+            <state relative-caret-position="570">
+              <caret line="19" selection-start-line="19" selection-end-line="19" selection-end-column="89" />
             </state>
           </provider>
         </entry>
@@ -210,8 +210,8 @@
         <option value="$PROJECT_DIR$/insert_items.php" />
         <option value="$PROJECT_DIR$/home.php" />
         <option value="$PROJECT_DIR$/itemsSearch.php" />
-        <option value="$PROJECT_DIR$/06Prove.php" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/9298879e-f6d5-4875-8d18-b8d88f2e580d/console.sql" />
+        <option value="$PROJECT_DIR$/06Prove.php" />
       </list>
     </option>
   </component>
@@ -286,16 +286,15 @@
       <workItem from="1558559521901" duration="43000" />
       <workItem from="1559097352018" duration="13619000" />
       <workItem from="1559177851459" duration="4611000" />
-      <workItem from="1559424686994" duration="2194000" />
+      <workItem from="1559424686994" duration="2578000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31914000" />
+    <option name="totallyTimeSpent" value="32298000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.0026652452" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -311,9 +310,9 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" weight="0.32936078" />
       <window_info anchor="bottom" id="PHP-CGI Server" order="10" weight="0.32936078" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.2167382" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.2167382" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Database Console" order="13" visible="true" weight="0.23712446" />
+      <window_info anchor="bottom" id="Database Console" order="13" weight="0.23712446" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -383,17 +382,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/06Prove.php">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/9298879e-f6d5-4875-8d18-b8d88f2e580d/console.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="11" column="91" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="91" />
+        <state relative-caret-position="570">
+          <caret line="19" selection-start-line="19" selection-end-line="19" selection-end-column="89" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/9298879e-f6d5-4875-8d18-b8d88f2e580d/console.sql">
+    <entry file="file://$PROJECT_DIR$/06Prove.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="549">
-          <caret line="21" selection-start-line="21" selection-end-line="21" selection-end-column="26" />
+        <state relative-caret-position="350">
+          <caret line="26" column="35" lean-forward="true" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
         </state>
       </provider>
     </entry>
