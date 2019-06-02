@@ -12,14 +12,26 @@ if(isset($_POST['login_btn'])){
     $query = "SELECT * FROM admin WHERE user_name = '$username' AND password = '$password'";
     $resultLogin = pg_query( $con, $query);
 
+// SECOND LOGIN - NOT ADMIN
+    $query2 = "SELECT * FROM identification WHERE email = '$username' and password = '$password';";
+    $resultLogin2 = pg_query( $con, $query2);
+
     if(pg_num_rows($resultLogin) == 1) {
         $_SESSION['message'] = "You are logged in";
         $_SESSION['username'] = $username;
         header("location: home.php");
     }
+    else if(pg_num_rows($resultLogin) != 1) { // NEW LINE FOR SECOND LOGIN
+        if(pg_num_rows($resultLogin2) == 1) {
+            $_SESSION['message'] = "You are logged in";
+            $_SESSION['username'] = $username;
+            header("location: home.php");
+    }
+
+    }
     else{
         $_SESSION['message'] = "ERROR, User or password incorrect";
-       $error = $_SESSION['message'];
+        $error = $_SESSION['message'];
         echo "<script type='text/javascript'>alert(\"$error\");</script>";
     }
 }
