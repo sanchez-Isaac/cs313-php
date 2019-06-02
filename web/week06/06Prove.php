@@ -26,7 +26,12 @@ if(isset($_POST['login_btn'])){
             $_SESSION['message'] = "You are logged in ";
             $_SESSION['username'] = $username;
             header("location: home.php");
-    }
+            else{
+                $_SESSION['message'] = "ERROR, User or password incorrect";
+                $error = $_SESSION['message'];
+                echo "<script type='text/javascript'>alert(\"$error\");</script>";
+            }
+        }
 
     }
     else{
