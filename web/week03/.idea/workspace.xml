@@ -3,7 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="df076cfd-80c0-4156-bf58-f1bf63745bb5" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/../week06/Customer_home.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../week06/logout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week06/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../week06/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../week06/06Prove.php" beforeDir="false" afterPath="$PROJECT_DIR$/../week06/06Prove.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week06/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/../week06/home.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

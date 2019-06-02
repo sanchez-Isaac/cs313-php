@@ -2,5 +2,5 @@
 session_start();
 session_unset();
 session_destroy();
-header('Location: 06prove.php');
+header('Location: 06Prove.php');
 exit();
