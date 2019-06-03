@@ -68,15 +68,15 @@ function pre_r($array)
                         foreach ($_SESSION['shopping_cart'] as $key => $product):
                             ?>
                             <tr>
-                                <td><?php echo $product['name']; ?></td>
-                                <td><?php echo $product['quantity']; ?></td>
-                                <td>$ <?php echo $product['price']; ?></td>
-                                <td>$ <?php echo number_format($product['quantity'] * $product['price'], 2); ?> </td>
+                                <td><?php echo $product['item_name']; ?></td>
+                                <td><?php echo $product['item_quantity']; ?></td>
+                                <td>$ <?php echo $product['item_price']; ?></td>
+                                <td>$ <?php echo number_format($product['item_quantity'] * $product['item_price'], 2); ?> </td>
                                 <td> </td>
 
                             </tr>
                             <?php
-                            $total = $total + ($product['quantity'] * $product['price']);
+                            $total = $total + ($product['item_quantity'] * $product['item_price']);
                         endforeach;
                         ?>
                         <tr>
