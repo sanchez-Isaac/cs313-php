@@ -5,7 +5,7 @@ $product_ids = array();
 
 if(filter_input(INPUT_GET, 'action')== 'delete') {
     foreach($_SESSION['shopping_cart'] as $key => $product) {
-        if ($product['id'] == filter_input(INPUT_GET, 'id')) {
+        if ($product['item_id'] == filter_input(INPUT_GET, 'item_id')) {
             unset($_SESSION['shopping_cart'][$key]);
         }
     }
@@ -37,14 +37,9 @@ if(filter_input(INPUT_GET, 'action')== 'delete') {
 
     <?php
 
-    $host = "ec2-23-21-129-125.compute-1.amazonaws.com";
-    $user = "qvuhdtpvtfgheg";
-    $pass = "e50137efad45ae63f6a5fa81a0f202027a32756361cc2b8c818d5acecc268e08";
-    $db = "dbe43cu3qv6rjv";
-    $port = "5432";
+    require ('DbConnect.php');
+    $con = get_db();
 
-    $con = pg_connect("host=$host port=$port dbname=$db user=$user password=$pass")
-    or die ("Could not connect to server\n");
     ?>
 
 
@@ -74,7 +69,7 @@ if(filter_input(INPUT_GET, 'action')== 'delete') {
                         <td><?php echo $product['item_quantity']; ?></td>
                         <td>$ <?php echo $product['item_price']; ?></td>
                         <td>$ <?php echo number_format($product['item_quantity'] * $product['item_price'], 2); ?> </td>
-                        <td><a href="viewcart.php?action=delete&id=<?php echo $product['id']; ?> ">
+                        <td><a href="viewcart.php?action=delete&item_id=<?php echo $product['item_id']; ?> ">
                                 <div class="btn-danger" id="remove">Remove</div>
                             </a>
                         </td>
