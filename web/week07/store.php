@@ -76,7 +76,7 @@ function pre_r($array)
     $con = get_db();
 
 
-    $query = 'SELECT * FROM items ORDER by id ASC';
+    $query = 'SELECT * FROM items ORDER by item_id ASC';
 
     $result = pg_query( $con, $query);
 
