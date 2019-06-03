@@ -6,36 +6,36 @@ if(filter_input(INPUT_POST, 'add_to_cart')){
     if(isset ($_SESSION['shopping_cart'])){
         $count = count($_SESSION['shopping_cart']);
 
-        $product_ids = array_column($_SESSION['shopping_cart'], 'item_id');
+        $product_ids = array_column($_SESSION['shopping_cart'], 'id');
 
-        if (!in_array(filter_input(INPUT_GET,'item_id'), $product_ids)){
+        if (!in_array(filter_input(INPUT_GET,'id'), $product_ids)){
             $_SESSION['shopping_cart'][$count] = array
             (
-                'item_id'=>filter_input(INPUT_GET,'item_id'),
-                'item_name' => filter_input(INPUT_POST, 'item_name'),
-                'item_price' => filter_input(INPUT_POST, 'item_price'),
-                'item_quantity' => filter_input(INPUT_POST, 'item_quantity')
+                'id'=>filter_input(INPUT_GET,'id'),
+                'name' => filter_input(INPUT_POST, 'name'),
+                'price' => filter_input(INPUT_POST, 'price'),
+                'quantity' => filter_input(INPUT_POST, 'quantity')
             );
         }
         else {
             for ($i = 0; $i < count($product_ids); $i++){
-                if ($product_ids[$i] == filter_input(INPUT_GET, 'item_id')){
-                    $_SESSION['shopping_cart'][$i]['item_quantity'] += filter_input(INPUT_POST,'item_quantity');
+                if ($product_ids[$i] == filter_input(INPUT_GET, 'id')){
+                    $_SESSION['shopping_cart'][$i]['quantity'] += filter_input(INPUT_POST,'quantity');
                 }
             }
         }
     }
     else{
         $_SESSION['shopping_cart'][0] = array
-        ('item_id'=>filter_input(INPUT_GET,'item_id'),
-            'item_name' => filter_input(INPUT_POST, 'item_name'),
-            'item_price' => filter_input(INPUT_POST, 'item_price'),
-            'item_quantity' => filter_input(INPUT_POST, 'item_quantity')
+        ('id'=>filter_input(INPUT_GET,'id'),
+            'name' => filter_input(INPUT_POST, 'name'),
+            'price' => filter_input(INPUT_POST, 'price'),
+            'quantity' => filter_input(INPUT_POST, 'quantity')
 
         );
     }
 }
-pre_r($_SESSION);
+//pre_r($_SESSION);
 
 function pre_r($array)
 {
@@ -72,10 +72,17 @@ function pre_r($array)
 
     <?php
 
-  require ('DbConnect.php');
-    $con = get_db();
+    $host = "ec2-23-21-129-125.compute-1.amazonaws.com";
+    $user = "qvuhdtpvtfgheg";
+    $pass = "e50137efad45ae63f6a5fa81a0f202027a32756361cc2b8c818d5acecc268e08";
+    $db = "dbe43cu3qv6rjv";
+    $port = "5432";
 
-    $query = 'SELECT * FROM items ORDER by id ASC';
+    $con = pg_connect("host=$host port=$port dbname=$db user=$user password=$pass")
+    or die ("Could not connect to server\n");
+
+
+    $query = 'SELECT * FROM products ORDER by id ASC';
 
     $result = pg_query( $con, $query);
 
@@ -85,14 +92,14 @@ function pre_r($array)
 
                 ?>
                 <div class="col-sm-4 col-md-3" >
-                    <form method="post" action="store.php?action=add&id=<?php echo $product['item_id']; ?>">
+                    <form method="post" action="store.php?action=add&id=<?php echo $product['id']; ?>">
                         <div class="products">
-                            <img src="<?php echo $product['photo_desc']; ?>" class="img-responsive" />
-                            <h4 class="text-info"><?php echo $product['item_name']; ?></h4>
-                            <h4>$ <?php echo $product['item_price']; ?></h4>
-                            <input type="text" name="item_quantity" class="form-control" value="1" />
-                            <input type="hidden" name="item_name" value="<?php echo $product['item_name']; ?>" />
-                            <input type="hidden" name="item_price" value="<?php echo $product['item_price']; ?>" />
+                            <img src="<?php echo $product['image']; ?>" class="img-responsive" />
+                            <h4 class="text-info"><?php echo $product['name']; ?></h4>
+                            <h4>$ <?php echo $product['price']; ?></h4>
+                            <input type="text" name="quantity" class="form-control" value="1" />
+                            <input type="hidden" name="name" value="<?php echo $product['name']; ?>" />
+                            <input type="hidden" name="price" value="<?php echo $product['price']; ?>" />
                             <input type="submit" name="add_to_cart" style="margin-top:5px;" class="btn btn-info" Value="Add to Cart" />
                         </div>
                     </form>
