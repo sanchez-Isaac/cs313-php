@@ -86,7 +86,7 @@ function pre_r($array)
 
                 ?>
                 <div class="col-sm-4 col-md-3" >
-                    <form method="post" action="store.php?action=add&id=<?php echo $product['item_id']; ?>">
+                    <form method="post" action="store.php?action=add&item_id=<?php echo $product['item_id']; ?>">
                         <div class="products">
                             <img src="<?php echo $product['photo_desc']; ?>" class="img-responsive" />
                             <h4 class="text-info"><?php echo $product['item_name']; ?></h4>
