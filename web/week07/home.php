@@ -24,14 +24,17 @@ session_start();
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
     <title>Home Page</title>
 </head>
 <body>
 
-<div class="navbar navbar-expand-md bg-dark navbar-dark">
-    <a class="active navbar-brand" href="#home">Home</a>
-    <a class="nav-item" href="#about">About</a>
-    <a class="nav-item" href="#contact">Contact</a>
+<div class="topnav">
+    <a class="active" href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
     <div class="login-container">
         <form action="logout.php">
 
@@ -67,6 +70,85 @@ if(isset($_SESSION['username']))
 
 }
 ?>
+
+
+<br>
+
+<div class="w3-container">
+    <h2>Responsive Pricing Tables</h2>
+</div>
+
+<div class="w3-row-padding">
+
+    <div class="w3-third w3-margin-bottom">
+        <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+            <li class="w3-black w3-xlarge w3-padding-32">Basic</li>
+            <li class="w3-padding-16"><b>10GB</b> Storage</li>
+            <li class="w3-padding-16"><b>10</b> Emails</li>
+            <li class="w3-padding-16"><b>10</b> Domains</li>
+            <li class="w3-padding-16"><b>Endless</b> Support</li>
+            <li class="w3-padding-16">
+                <h2 class="w3-wide">$ 10</h2>
+                <span class="w3-opacity">per month</span>
+            </li>
+            <li class="w3-light-grey w3-padding-24">
+                <button class="w3-button w3-green w3-padding-large">Sign Up</button>
+            </li>
+        </ul>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+
+        <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+            <li class="w3-green w3-xlarge w3-padding-32">Pro</li>
+            <li class="w3-padding-16"><b>25GB</b> Storage</li>
+            <li class="w3-padding-16"><b>25</b> Emails</li>
+            <li class="w3-padding-16"><b>25</b> Domains</li>
+            <li class="w3-padding-16"><b>Endless</b> Support</li>
+            <li class="w3-padding-16">
+                <h2 class="w3-wide">$ 25</h2>
+                <span class="w3-opacity">per month</span>
+            </li>
+            <li class="w3-light-grey w3-padding-24">
+                <button class="w3-button w3-green w3-padding-large">Sign Up</button>
+            </li>
+        </ul>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+        <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+            <li class="w3-black w3-xlarge w3-padding-32">Premium</li>
+            <li class="w3-padding-16"><b>50GB</b> Storage</li>
+            <li class="w3-padding-16"><b>50</b> Emails</li>
+            <li class="w3-padding-16"><b>50</b> Domains</li>
+            <li class="w3-padding-16"><b>Endless</b> Support</li>
+            <li class="w3-padding-16">
+                <h2 class="w3-wide">$ 50</h2>
+                <span class="w3-opacity">per month</span>
+            </li>
+            <li class="w3-light-grey w3-padding-24">
+                <button class="w3-button w3-green w3-padding-large">Sign Up</button>
+            </li>
+        </ul>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
