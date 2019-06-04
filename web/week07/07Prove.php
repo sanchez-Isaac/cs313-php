@@ -60,9 +60,10 @@ if(isset($_POST['login_btn'])){
 <div class="container">
     <div class="col-sm-4 col-sm-offset-4">
         <div class="jumbotron">
-            <div class="pic"><img src="https://www.fit2work.com.au/assets/img/avatars/LoginIconAppl.png" width="150px;"></div>
-            <br>
+
             <div class="row">
+                <div class="pic"><img src="https://www.fit2work.com.au/assets/img/avatars/LoginIconAppl.png" width="150px;"></div>
+                <br>
 
                 <form method="post" action="07Prove.php">
 
@@ -76,7 +77,7 @@ if(isset($_POST['login_btn'])){
                     <label>Password</label>
                     <input size="35" type="password" name="password" class="form-control" required>
                 </div>
-                <input type="submit"  name="login_btn" value="login" class="btn btn-primary btn-block">
+                <input type="submit"  name="login_btn" value="Login" class="btn btn-primary btn-block">
                 </form>
             </div>
         </div>
