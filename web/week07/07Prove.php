@@ -54,8 +54,8 @@ if(isset($_POST['login_btn'])){
 <body>
 
 <div class="container">
-    <div class="col-sm-4">
-        <div class="jumbotron">
+    <div class="col-sm-4 col-sm-offset-4">
+        <div class="jumbotron" >
             <div class="row">
                 <form method="post" action="07Prove.php">
 
@@ -78,24 +78,5 @@ if(isset($_POST['login_btn'])){
 
 
 </div>
-
-<br><br><br><br><br>
-
-<form method="post" action="07Prove.php">
-    <table>
-        <tr>
-            <td>Username:</td>
-            <td><input type="username" name="username" class="textInput"></td>
-        </tr>
-        <tr>
-            <td>Password:</td>
-            <td><input type="password" name="password" class="textInput"></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td><input type="submit" name="login_btn" class="Login"></td>
-        </tr>
-    </table>
-</form>
 </body>
 </html>
