@@ -115,7 +115,9 @@ if(isset($_SESSION['username']))
                 <span class="w3-opacity">To use the Store</span>
             </li>
             <li class="w3-light-grey w3-padding-24">
-                <button class="w3-button w3-green w3-padding-large">Sign Up</button>
+                <input type="button" class="w3-button w3-green w3-padding-large" value="Create Account">
+                <a href="itemsSearch.php.php">
+                </a>
             </li>
         </ul>
     </div>
