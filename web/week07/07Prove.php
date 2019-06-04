@@ -55,7 +55,7 @@ if(isset($_POST['login_btn'])){
 
 <div class="container">
     <div class="col-sm-4 col-sm-offset-4">
-        <div >
+        <div class="jumbotron">
             <div class="row">
                 <form method="post" action="07Prove.php">
 
