@@ -75,14 +75,14 @@ if(isset($_SESSION['username']))
 <br>
 
 <div class="w3-container">
-    <h2>Responsive Pricing Tables</h2>
+    <h2>Select Admin tool</h2>
 </div>
 
 <div class="w3-row-padding">
 
     <div class="w3-third w3-margin-bottom">
         <ul class="w3-ul w3-border w3-center w3-hover-shadow">
-            <li class="w3-black w3-xlarge w3-padding-32">Basic</li>
+            <li class="w3-black w3-xlarge w3-padding-32">Add Items</li>
             <li class="w3-padding-16">
                 <h2 class="w3-wide">$ 10</h2>
                 <span class="w3-opacity">per month</span>
@@ -96,7 +96,7 @@ if(isset($_SESSION['username']))
     <div class="w3-third w3-margin-bottom">
 
         <ul class="w3-ul w3-border w3-center w3-hover-shadow">
-            <li class="w3-green w3-xlarge w3-padding-32">Pro</li>
+            <li class="w3-green w3-xlarge w3-padding-32">Add Admin</li>
             <li class="w3-padding-16">
                 <h2 class="w3-wide">$ 25</h2>
                 <span class="w3-opacity">per month</span>
@@ -109,7 +109,7 @@ if(isset($_SESSION['username']))
 
     <div class="w3-third w3-margin-bottom">
         <ul class="w3-ul w3-border w3-center w3-hover-shadow">
-            <li class="w3-black w3-xlarge w3-padding-32">Premium</li>
+            <li class="w3-black w3-xlarge w3-padding-32">Add Users</li>
             <li class="w3-padding-16">
                 <h2 class="w3-wide">$ 50</h2>
                 <span class="w3-opacity">per month</span>
