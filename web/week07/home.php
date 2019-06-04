@@ -102,11 +102,10 @@ if(isset($_SESSION['username']))
                 <span class="w3-opacity">Items in/to the store</span>
             </li>
             <li class="w3-light-grey w3-padding-24">
-                <button class="w3-button w3-green w3-padding-large">Sign Up</button>
-                <input type="button" class="w3-button w3-green w3-padding-large" value="Create Account">
+                <button type="button" class="w3-button w3-green w3-padding-large" value="Query/Add items">
                 <a href="itemsSearch.php">
                 </a>
-                </input>
+                </button>
             </li>
         </ul>
     </div>
