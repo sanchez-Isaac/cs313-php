@@ -102,7 +102,7 @@ if(isset($_SESSION['username']))
                 <span class="w3-opacity">Items in/to the store</span>
             </li>
             <li class="w3-light-grey w3-padding-24">
-                <button type="button" formaction="itemsSearch.php" class="w3-button w3-green w3-padding-large" value="Query/Add items"></button>
+                <button formaction="itemsSearch.php" class="w3-button w3-green w3-padding-large" >Query/Add items</button>
             </li>
         </ul>
     </div>
