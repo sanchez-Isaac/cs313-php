@@ -82,7 +82,7 @@ if(isset($_POST['login_btn'])){
                 <input type="submit"  name="login_btn" value="Login" class="btn btn-info btn-block">
                 </form>
             </div>
-            <h3 class="labelor">Or</h3><br>
+            <small class="labelor">Or</small>
             <input type="button" class="btn btn-success btn-block" value="Create Account">
                 <a href="store.php">
                 </a>
