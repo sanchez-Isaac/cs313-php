@@ -13,18 +13,12 @@ session_start();
 
     <link rel="stylesheet" href="homestyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
-
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-
-
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
     <title>Home Page</title>
@@ -53,23 +47,13 @@ if(!isset($_SESSION['username']))
 }
 ?>
 <div class="header">
-    <h1>Admin Home Page</h1>
+    <h1> Welcome <?php echo $_SESSION['username']; ?></h1>
     <br>
     <br>
     <br>
 </div>
-<div> Welcome <?php echo $_SESSION['username']; ?></div>
 
 
-
-<?php
-if(isset($_SESSION['username']))
-{
-    echo '<br>';
-    echo '<a href="itemsSearch.php" >Search and edit the items in the store</a>';
-
-}
-?>
 
 
 <br>
@@ -88,13 +72,12 @@ if(isset($_SESSION['username']))
                 <span class="w3-opacity">To manage the store</span>
             </li>
             <li class="w3-light-grey w3-padding-24">
-                <button class="w3-button w3-green w3-padding-large">Sign Up</button>
+                <button class="w3-button w3-green w3-padding-large">Add Admins</button>
             </li>
         </ul>
     </div>
 
     <div class="w3-third w3-margin-bottom">
-
         <ul class="w3-ul w3-border w3-center w3-hover-shadow">
             <li class="w3-green w3-xlarge w3-padding-32">Add Items</li>
             <li class="w3-padding-16">
@@ -115,7 +98,7 @@ if(isset($_SESSION['username']))
                 <span class="w3-opacity">To use the Store</span>
             </li>
             <li class="w3-light-grey w3-padding-24">
-                <button class="w3-button w3-green w3-padding-large">Sign Up</button>
+                <button class="w3-button w3-green w3-padding-large">Add Users</button>
             </li>
         </ul>
     </div>
