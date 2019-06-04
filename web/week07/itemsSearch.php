@@ -57,12 +57,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     ?>
 </select>
 
-<?php
-if(isset($_SESSION['username']))
-{
- echo '<input type="submit" value="Search">';
-}
-?>
+
 
 
 </form>
