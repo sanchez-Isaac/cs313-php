@@ -28,10 +28,10 @@ session_start();
 </head>
 <body>
 
-<div class="topnav">
-    <a class="active" href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
+<div class="navbar navbar-expand-md bg-dark navbar-dark">
+    <a class="active navbar-brand" href="#home">Home</a>
+    <a class="nav-item" href="#about">About</a>
+    <a class="nav-item" href="#contact">Contact</a>
     <div class="login-container">
         <form action="logout.php">
 
@@ -50,13 +50,14 @@ if(!isset($_SESSION['username']))
 }
 ?>
 <div class="header">
-    <h1>Home Page</h1>
+    <h1>Admin Home Page</h1>
     <br>
     <br>
-    <a href="logout.php">Logout</a>
     <br>
 </div>
 <div> Welcome <?php echo $_SESSION['username']; ?></div>
+
+
 
 <?php
 if(isset($_SESSION['username']))
