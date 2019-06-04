@@ -107,19 +107,14 @@ if($_SERVER["REQUEST_METHOD"]=="POST") {
 }
 ?>
 <br><br>
-
+<form action="itemsSearch.php?" method="post">
 <div>
-<button type="button" class="btn btn-primary btn-block" value="Insert new items">
-<a href="insert_items.php">
-</a>
-</button>
+<button type="button" formaction="insert_item.php" class="btn btn-primary btn-block" value="Insert new items"></button>
 <br>
 <br>
-<button type="button" class="btn btn-success btn-block" value="Go back to Home">
-<a href="home.php">
-</a>
-</button>
+<button type="button" formaction="home.php" class="btn btn-success btn-block" value="Go back to Home"></button>
 </div>
+</form>
 <br>
 
 <div>
