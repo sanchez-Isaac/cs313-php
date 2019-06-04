@@ -82,8 +82,9 @@ if(isset($_POST['login_btn'])){
                 <input type="submit"  name="login_btn" value="Login" class="btn btn-info btn-block">
                 </form>
             </div>
+            <div><a href="newuser.php">Create new user</div>
         </div>
-<div><a href="newuser.php">Create new user</div>
+
     </div>
 
 
