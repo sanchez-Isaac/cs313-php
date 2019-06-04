@@ -65,7 +65,6 @@ if(isset($_POST['login_btn'])){
 
 
                 <div class="form-group">
-                    <div class="pic"><img src="https://www.fit2work.com.au/assets/img/avatars/LoginIconAppl.png" width="150px;"></div>
                     <br>
                     <label>Username</label>
                     <input size="35" type="username" name="username" class="form-control" required>
