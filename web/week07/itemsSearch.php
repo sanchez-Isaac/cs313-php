@@ -110,16 +110,26 @@ if($_SERVER["REQUEST_METHOD"]=="POST") {
 <?php
 if(isset($_SESSION['username']))
 {
+
+
+
     echo '<a href="insert_items.php">Insert new items</a>';
 }
 ?>
+<input type="button" class="btn btn-primary btn-block" value="Insert new items">
+<a href="insert_items.php">
+</a>
+</input>
 
 
 
 <br>
 <br>
 <a href="home.php" >Go back to Home</a>
-
+<input type="button" class="btn btn-primary btn-block" value="Go back to Home">
+<a href="home.php">
+</a>
+</input>
 
 </body>
 </html>
