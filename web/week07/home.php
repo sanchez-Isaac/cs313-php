@@ -82,10 +82,10 @@ if(isset($_SESSION['username']))
 
     <div class="w3-third w3-margin-bottom">
         <ul class="w3-ul w3-border w3-center w3-hover-shadow">
-            <li class="w3-black w3-xlarge w3-padding-32">Add Items</li>
+            <li class="w3-black w3-xlarge w3-padding-32">Admin</li>
             <li class="w3-padding-16">
-                <h2 class="w3-wide">Query and Search</h2>
-                <span class="w3-opacity">Items in/to the store</span>
+                <h2 class="w3-wide">Add Admins </h2>
+                <span class="w3-opacity">To manage the store</span>
             </li>
             <li class="w3-light-grey w3-padding-24">
                 <button class="w3-button w3-green w3-padding-large">Sign Up</button>
@@ -96,10 +96,10 @@ if(isset($_SESSION['username']))
     <div class="w3-third w3-margin-bottom">
 
         <ul class="w3-ul w3-border w3-center w3-hover-shadow">
-            <li class="w3-green w3-xlarge w3-padding-32">Admin</li>
+            <li class="w3-green w3-xlarge w3-padding-32">Add Items</li>
             <li class="w3-padding-16">
-                <h2 class="w3-wide">Add Admins</h2>
-                <span class="w3-opacity">To manage the store</span>
+                <h2 class="w3-wide">Query and Search</h2>
+                <span class="w3-opacity">Items in/to the store</span>
             </li>
             <li class="w3-light-grey w3-padding-24">
                 <button class="w3-button w3-green w3-padding-large">Sign Up</button>
