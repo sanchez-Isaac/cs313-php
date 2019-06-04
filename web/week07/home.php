@@ -47,10 +47,10 @@ session_start();
 
 
 <?php
-if(!isset($_SESSION['username']))
-{
-    header('location: 07Prove.php?Login=False');
-}
+//if(!isset($_SESSION['username']))
+//{
+//    header('location: 07Prove.php?Login=False');
+//}
 ?>
 <div class="header">
     <h1>Admin Home Page</h1>
@@ -102,10 +102,10 @@ if(isset($_SESSION['username']))
                 <span class="w3-opacity">Items in/to the store</span>
             </li>
             <li class="w3-light-grey w3-padding-24">
-                <button type="button" class="w3-button w3-green w3-padding-large" value="Query/Add items">
+                <input type="button" class="w3-button w3-green w3-padding-large" value="Query/Add items">
                 <a href="itemsSearch.php">
                 </a>
-                </button>
+                </input>
             </li>
         </ul>
     </div>
