@@ -62,7 +62,9 @@ if(isset($_POST['login_btn'])){
         <div class="jumbotron">
 
             <div class="row">
+                <div>
                 <div class="pic"><img src="https://www.fit2work.com.au/assets/img/avatars/LoginIconAppl.png" width="150px;"></div>
+                </div>
                 <br>
 
                 <form method="post" action="07Prove.php">
