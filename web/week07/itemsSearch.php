@@ -109,16 +109,16 @@ if($_SERVER["REQUEST_METHOD"]=="POST") {
 <br><br>
 
 <div>
-<input type="button" class="btn btn-primary btn-block" value="Insert new items">
+<button type="button" class="btn btn-primary btn-block" value="Insert new items">
 <a href="insert_items.php">
 </a>
-</input>
+</button>
 <br>
 <br>
-<input type="button" class="btn btn-primary btn-block" value="Go back to Home">
+<button type="button" class="btn btn-success btn-block" value="Go back to Home">
 <a href="home.php">
 </a>
-</input>
+</button>
 </div>
 </body>
 </html>
