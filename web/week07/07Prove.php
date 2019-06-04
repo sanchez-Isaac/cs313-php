@@ -64,11 +64,11 @@ if(isset($_POST['login_btn'])){
                     <div class="pic"><img src="https://www.fit2work.com.au/assets/img/avatars/LoginIconAppl.png" width="150px;"></div>
                     <br>
                     <label>Username</label>
-                    <input type="username" name="username" class="form-control" required>
+                    <input size="35" type="username" name="username" class="form-control" required>
                 </div>
                 <div class="form-group">
                     <label>Password</label>
-                    <input type="password" name="password" class="form-control" required>
+                    <input size="35" type="password" name="password" class="form-control" required>
                 </div>
                 <input type="submit"  name="login_btn" value="login" class="btn btn-primary btn-block">
                 </form>
