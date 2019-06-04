@@ -83,7 +83,7 @@ if(isset($_POST['login_btn'])){
                 </form>
             </div>
         </div>
-
+<div><a href="newuser.php">Create new user</div>
     </div>
 
 
