@@ -33,9 +33,9 @@ session_start();
     <a href="#about">About</a>
     <a href="#contact">Contact</a>
     <div class="login-container">
-        <form action="/logout.php">
+        <form action="logout.php">
 
-            <button type="submit">LogOut</button>
+            <button type="submit">Log Out</button>
         </form>
     </div>
 </div>
