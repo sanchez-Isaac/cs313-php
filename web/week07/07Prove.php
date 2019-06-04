@@ -59,7 +59,7 @@ if(isset($_POST['login_btn'])){
             <div class="row">
                 <form method="post" action="07Prove.php">
 
-                <div style="text-align:center"><img src="test.pgn" width="150px;"></div>
+                <div style="text-align:center"><img src="https://www.fit2work.com.au/assets/img/avatars/LoginIconAppl.png" width="150px;"></div>
                 <br>
                 <div class="form-group">
                     <label>Username</label>
