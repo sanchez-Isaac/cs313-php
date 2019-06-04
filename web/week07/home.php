@@ -124,7 +124,10 @@ if(!isset($_SESSION['username']))
 
 
 
+<div class="footer">
+    <p>CS 313 - Web Engineering II    &copy; 2016 - <?php echo date("Y");?> </p>
 
+</div>
 
 </body>
 </html>
