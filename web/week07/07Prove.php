@@ -79,7 +79,7 @@ if(isset($_POST['login_btn'])){
                     <label>Password</label>
                     <input size="35" type="password" name="password" class="form-control" required>
                 </div>
-                <input type="submit"  name="login_btn" value="Login" class="btn btn-primary btn-block">
+                <input type="submit"  name="login_btn" value="Login" class="btn btn-info btn-block">
                 </form>
             </div>
         </div>
