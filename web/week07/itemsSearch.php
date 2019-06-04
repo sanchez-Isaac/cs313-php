@@ -25,11 +25,11 @@ $result = pg_query( $con, $query);
 
 <body>
 <?php
-/*
+
 if(!isset($_SESSION['username']))
 {
     header('location: 07Prove.php?Login=False');
-}*/
+}
     ?>
 
 <h1>Items available</h1>
@@ -57,7 +57,12 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     ?>
 </select>
 
-
+<?php
+if(isset($_SESSION['username']))
+{
+ echo '<input type="submit" value="Search">';
+}
+?>
 
 
 </form>
