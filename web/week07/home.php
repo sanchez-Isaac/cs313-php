@@ -46,6 +46,7 @@ if(!isset($_SESSION['username']))
     header('location: 07Prove.php?Login=False');
 }
 ?>
+<br>
 <div class="header">
     <h1 class="headtitle"> Welcome <?php echo $_SESSION['username']; ?></h1>
     <br>
