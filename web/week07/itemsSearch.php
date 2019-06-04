@@ -25,10 +25,11 @@ $result = pg_query( $con, $query);
 
 <body>
 <?php
+/*
 if(!isset($_SESSION['username']))
 {
     header('location: 07Prove.php?Login=False');
-}
+}*/
     ?>
 
 <h1>Items available</h1>
@@ -38,6 +39,7 @@ $item_typ_name = $_POST['item_type_name'];
 if($_SERVER["REQUEST_METHOD"]=="POST"){
     echo 'Searching items in the: '.'<b>' . $item_typ_name .'</b>' . ' section';
 }
+
 ?>
 <br>
 <br>
@@ -75,7 +77,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST") {
 
     if (pg_num_rows($result2) > 0) {
         while ($row = pg_fetch_array($result2)) {
-            echo $row[0] . " " . $row[1] . " " . $row[2] . " " . $row[3] . " " . $row[4] . " " . $row[5];
+            echo "Name :" .$row[0] . "<br>" ."Type of Item: ". $row[1] . "<br>" ."Price: ". $row[2] . "<br>" . $row[3] . "Quantity availible: " . $row[4] . " " . $row[5];
             echo "<br>";
         }
     }

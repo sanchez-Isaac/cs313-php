@@ -59,7 +59,7 @@ if(!isset($_SESSION['username']))
 <br>
 
 <div class="w3-container">
-    <h2>Select Admin tool</h2><br><br>
+    <h2>Select Admin tool</h2><br>
 </div>
 <form action="home.php" type="POST">
 <div class="w3-row-padding">
