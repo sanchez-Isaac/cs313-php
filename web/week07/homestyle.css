@@ -87,3 +87,7 @@ body {
     padding-top: 25px;
     padding-bottom: 25px;
 }
+.headtitle{
+    position: fixed;
+    text-align: center;
+}
