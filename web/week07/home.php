@@ -118,6 +118,7 @@ if(isset($_SESSION['username']))
                 <input type="button" class="w3-button w3-green w3-padding-large" value="Create Account">
                 <a href="itemsSearch.php.php">
                 </a>
+                </input>
             </li>
         </ul>
     </div>
