@@ -2,8 +2,6 @@
 session_start();
 require ('DbConnect.php');
 $con = get_db();
-
-
 if(isset($_POST['login_btn'])){
 
     $username = pg_escape_string($_POST['username']);
@@ -33,32 +31,55 @@ if(isset($_POST['login_btn'])){
                 echo "<script type='text/javascript'>alert(\"$error\");</script>";
             }
         }
-
-
     else{
         $_SESSION['message'] = "ERROR, User or password incorrect";
         $error = $_SESSION['message'];
         echo "<script type='text/javascript'>alert(\"$error\");</script>";
     }
 }
-
-
-
 ?>
 
 <!doctype html>
-
 <html lang="en">
 <head>
 <meta charset="utf-8">
-
-
-
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="stylelogin.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <title>Login Page</title>
 </head>
 <body>
+
+<div class="container">
+    <div class="col-sm-4">
+        <div class="jumbotron">
+            <div class="row">
+                <form method="post" action="07Prove.php">
+
+                <div style="text-align:center"><img src="test.pgn" width="150px;"></div>
+                <br>
+                <div class="form-group">
+                    <label>Username</label>
+                    <input type="username" name="username" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" name="password" class="form-control" required>
+                </div>
+                <input type="submit"  name="login_btn" value="login" class="btn btn-primary btn-block">
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+<br><br><br><br><br>
 
 <form method="post" action="07Prove.php">
     <table>
@@ -75,11 +96,6 @@ if(isset($_POST['login_btn'])){
             <td><input type="submit" name="login_btn" class="Login"></td>
         </tr>
     </table>
-
-
 </form>
-
-
-
 </body>
 </html>
