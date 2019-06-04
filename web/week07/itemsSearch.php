@@ -120,5 +120,16 @@ if($_SERVER["REQUEST_METHOD"]=="POST") {
 </a>
 </button>
 </div>
+<br>
+
+<div>
+    <p class="btn-warning btn btn-lg">
+        <a href="home.php">
+            Back to Search
+        </a>
+    </p>
+</div>
+
+
 </body>
 </html>
