@@ -77,7 +77,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST") {
 
     if (pg_num_rows($result2) > 0) {
         while ($row = pg_fetch_array($result2)) {
-            echo "Name :" .$row[0] . "<br>" ."Type of Item: ". $row[1] . "<br>" ."Price: ". $row[2] . "<br>" . $row[3] . "Quantity availible: " . $row[4] . " " . $row[5];
+            echo "Name: " .$row[0] . "<br>" ."Type of Item: ". $row[1] . "<br>" ."Price: $". $row[2] . "<br>" ."Quantity available: ". $row[3] . "<br>";
             echo "<br>";
         }
     }
