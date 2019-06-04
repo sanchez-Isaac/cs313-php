@@ -58,7 +58,7 @@ if(isset($_POST['login_btn'])){
 <body>
 
 <div class="container">
-    <div class="col-sm-4 col-sm-offset-4">
+    <div class="col-md-offset-2 col-md-8 text-center">
         <div class="jumbotron">
 
             <div class="row">
