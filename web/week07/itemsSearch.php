@@ -112,10 +112,10 @@ if($_SERVER["REQUEST_METHOD"]=="POST") {
 
     if (pg_num_rows($result2) > 0) {
         while ($row = pg_fetch_array($result2)) {
-            echo "<div class=\"card-columns\" >";
-            echo  "<div class=\"card bg-light\">";
-            echo "<div class=\"card-body text-center\">";
-            echo "<p class=\"card-text\"><b>Name: </b>" .$row[0] . "<br>" ."<b>Type of Item: </b>". $row[1] . "<br>" ."<b>Price: </b>$". $row[2] . "<br>" ."<b>Quantity available: </b>". $row[3] . "<br></p>";
+            echo "<div class='card-columns'>";
+            echo  "<div class='card bg-light'>";
+            echo "<div class='card-body text-center'>";
+            echo "<p class='card-text'><b>Name: </b>" .$row[0] . "<br>" ."<b>Type of Item: </b>". $row[1] . "<br>" ."<b>Price: </b>$". $row[2] . "<br>" ."<b>Quantity available: </b>". $row[3] . "<br></p>";
             echo "<br></div></div></div>";
 
         }
