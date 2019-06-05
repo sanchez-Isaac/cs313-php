@@ -129,17 +129,36 @@ if($_SERVER["REQUEST_METHOD"]=="POST") {
 <br>
 <br>
 <br>
-    <div class="card bg-light">
-        <div class="card-body text-center">
-            <p class="card-text">Some text inside the fifth card</p>
+    <div class="card-columns">
+        <div class="card bg-light">
+            <div class="card-body text-center">
+                <p class="card-text">Some text inside the fifth card</p>
+            </div>
         </div>
-    </div> <div class="card bg-light">
-        <div class="card-body text-center">
-            <p class="card-text">Some text inside the fifth card</p>
+        <div class="card bg-light">
+            <div class="card-body text-center">
+                <p class="card-text">Some text inside the fifth card</p>
+            </div>
         </div>
-    </div> <div class="card bg-light">
-        <div class="card-body text-center">
-            <p class="card-text">Some text inside the fifth card</p>
+        <div class="card bg-light">
+            <div class="card-body text-center">
+                <p class="card-text">Some text inside the fifth card</p>
+            </div>
+        </div>
+        <div class="card bg-light">
+            <div class="card-body text-center">
+                <p class="card-text">Some text inside the fifth card</p>
+            </div>
+        </div>
+        <div class="card bg-light">
+            <div class="card-body text-center">
+                <p class="card-text">Some text inside the fifth card</p>
+            </div>
+        </div>
+        <div class="card bg-light">
+            <div class="card-body text-center">
+                <p class="card-text">Some text inside the fifth card</p>
+            </div>
         </div>
     </div>
 <br>
