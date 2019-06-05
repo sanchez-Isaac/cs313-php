@@ -95,7 +95,10 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
 ?>
 <br>
 <br>
-
+<div class="container">
+    <div class="card-columns">
+        <div class="card bg-primary">
+            <div class="card-body text-center">
 <?php
 if($_SERVER["REQUEST_METHOD"]=="POST") {
 
@@ -106,7 +109,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST") {
         while ($row = pg_fetch_array($result2)) {
 
 
-            echo "<b>Name: </b>" .$row[0] . "<br>" ."<b>Type of Item: </b>". $row[1] . "<br>" ."<b>Price: </b>$". $row[2] . "<br>" ."<b>Quantity available: </b>". $row[3] . "<br>";
+            echo "<p class=\"card-text\"><b>Name: </b>" .$row[0] . "<br>" ."<b>Type of Item: </b>". $row[1] . "<br>" ."<b>Price: </b>$". $row[2] . "<br>" ."<b>Quantity available: </b>". $row[3] . "<br></p>";
             echo "<br>";
 
         }
@@ -114,6 +117,10 @@ if($_SERVER["REQUEST_METHOD"]=="POST") {
 
 }
 ?>
+</div>
+</div>
+</div>
+</div>
 <br><br>
 
 
