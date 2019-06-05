@@ -22,7 +22,7 @@ WHERE cu.customer_id = ad.address_id and cu.customer_id = id.login_id and '$user
     $resultUserData = pg_query( $con, $query);
 
 
-
+/*
     if(pg_num_rows($resultLogin) == 1) {
         $_SESSION['message'] = "You are logged in";
         $_SESSION['username'] = $username;
@@ -45,11 +45,17 @@ WHERE cu.customer_id = ad.address_id and cu.customer_id = id.login_id and '$user
         $error = $_SESSION['message'];
         echo "<script type='text/javascript'>alert(\"$error\");</script>";
     }
+*/
 
 
-
-
-    if (pg_num_rows($resultUserData) > 0) {
+    if(pg_num_rows($resultLogin) == 1) {
+        $_SESSION['message'] = "You are logged in";
+        $_SESSION['username'] = $username;
+        header("location: home.php");
+    }
+    else if (pg_num_rows($resultUserData) == 1) {
+        $_SESSION['message'] = "You are logged in";
+        $_SESSION['username'] = $username;
         while ($row = pg_fetch_array($resultUserData)) {
 
             $_SESSION['customer_id'] = $row[0];
@@ -63,13 +69,22 @@ WHERE cu.customer_id = ad.address_id and cu.customer_id = id.login_id and '$user
             $_SESSION['first_name'] = $row[8];
             $_SESSION['middle_name'] = $row[9];
             $_SESSION['last_name'] = $row[10];
-
-
         }
+        header("location: Customer_home.php");
     }
-
-
+    else{
+        $_SESSION['message'] = "ERROR, User or password incorrect";
+        $error = $_SESSION['message'];
+        echo "<script type='text/javascript'>alert(\"$error\");</script>";
+    }
 }
+else{
+    $_SESSION['message'] = "ERROR, User or password incorrect";
+    $error = $_SESSION['message'];
+    echo "<script type='text/javascript'>alert(\"$error\");</script>";
+}
+
+
 ?>
 
 <!doctype html>
