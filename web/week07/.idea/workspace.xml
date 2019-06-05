@@ -4,7 +4,7 @@
     <list default="true" id="9aa14cf5-8668-4cb8-a1e4-a96931fa91c6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../../db/myDb.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../db/myDb.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../week06/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../week06/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/confirmation.php" beforeDir="false" afterPath="$PROJECT_DIR$/confirmation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/viewcart.php" beforeDir="false" afterPath="$PROJECT_DIR$/viewcart.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -163,14 +163,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="167" />
-          <entry key="php" value="3734" />
+          <entry key="php" value="3742" />
           <entry key="sql" value="471" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="167" />
-          <entry key="PHP" value="3734" />
+          <entry key="PHP" value="3742" />
           <entry key="Scratch" value="471" />
         </counts>
       </usages-collector>
@@ -223,11 +223,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/viewcart.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="120" column="32" lean-forward="true" selection-start-line="120" selection-start-column="32" selection-end-line="120" selection-end-column="32" />
+            <state relative-caret-position="353">
+              <caret line="122" column="96" selection-start-line="122" selection-start-column="96" selection-end-line="122" selection-end-column="96" />
               <folding>
                 <element signature="e#4640#4646#0#HTML" expanded="true" />
               </folding>
@@ -244,11 +244,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/confirmation.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="174" column="18" selection-start-line="174" selection-start-column="18" selection-end-line="174" selection-end-column="18" />
+            <state relative-caret-position="208">
+              <caret line="93" lean-forward="true" selection-start-line="93" selection-end-line="93" />
             </state>
           </provider>
         </entry>
@@ -308,6 +308,7 @@
       <find>topnav a</find>
       <find>card-columns</find>
       <find>password</find>
+      <find>Type in</find>
       <find>ship</find>
     </findStrings>
   </component>
@@ -340,8 +341,8 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/9298879e-f6d5-4875-8d18-b8d88f2e580d/console.sql" />
         <option value="$PROJECT_DIR$/07Prove.php" />
         <option value="$PROJECT_DIR$/thankyou.php" />
-        <option value="$PROJECT_DIR$/viewcart.php" />
         <option value="$PROJECT_DIR$/confirmation.php" />
+        <option value="$PROJECT_DIR$/viewcart.php" />
       </list>
     </option>
   </component>
@@ -356,9 +357,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="876" />
+    <option name="x" value="798" />
     <option name="y" value="17" />
-    <option name="width" value="957" />
+    <option name="width" value="1035" />
     <option name="height" value="1009" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -422,11 +423,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77052000" />
+    <option name="totallyTimeSpent" value="77639000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="876" y="17" width="957" height="1009" extended-state="0" />
-    <editor active="true" />
+    <frame x="798" y="17" width="1035" height="1009" extended-state="0" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.0" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -448,7 +448,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.02341137" />
+      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.02153846" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -626,13 +626,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/viewcart.php">
+    <entry file="file://$PROJECT_DIR$/confirmation.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="120" column="32" lean-forward="true" selection-start-line="120" selection-start-column="32" selection-end-line="120" selection-end-column="32" />
-          <folding>
-            <element signature="e#4640#4646#0#HTML" expanded="true" />
-          </folding>
+        <state relative-caret-position="208">
+          <caret line="93" lean-forward="true" selection-start-line="93" selection-end-line="93" />
         </state>
       </provider>
     </entry>
@@ -643,10 +640,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/confirmation.php">
+    <entry file="file://$PROJECT_DIR$/viewcart.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="174" column="18" selection-start-line="174" selection-start-column="18" selection-end-line="174" selection-end-column="18" />
+        <state relative-caret-position="353">
+          <caret line="122" column="96" selection-start-line="122" selection-start-column="96" selection-end-line="122" selection-end-column="96" />
+          <folding>
+            <element signature="e#4640#4646#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

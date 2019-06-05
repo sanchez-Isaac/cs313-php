@@ -65,18 +65,8 @@ function pre_r($array)
     <div style="clear:both"></div>
     <br/>
     <div>
-
-
-
-
-
-
-
-
-
-
         <h1 class="mb-3">Billing address</h1><br>
-        <form class="needs-validation" novalidate="" method="post" action="">
+        <form  method="post" action="">
             <div class="row">
                 <div class="col-md-6 mb-3">
                     <label for="firstName">First name</label>
@@ -91,8 +81,7 @@ function pre_r($array)
                     <div class="invalid-feedback">
                     </div>
                 </div>
-
-
+                <br>
                 <div class="col-md-6 mb-3">
                     <label for="lastName">Last name</label>
                     <input type="text" class="form-control" id="last_name" name="last_name" placeholder="" value="" required>
@@ -111,10 +100,10 @@ function pre_r($array)
 
                 </div>
             </div>
-
+            <br>
             <div class="mb-3">
-                <label for="telephone">Email </label>
-                <input type="tel" class="form-control" id="telephone" name="telephone" aria-describedby="emailHelp" placeholder="you@example.com">
+                <label for="telephone">Telephone </label>
+                <input type="tel" class="form-control" id="telephone" name="telephone"  placeholder="9784274489">
                 <div class="invalid-feedback">
 
                 </div>
@@ -135,8 +124,6 @@ function pre_r($array)
                 <input type="text" class="form-control" id="ext_home_number" name="ext_home_number" placeholder="567">
             </div>
             <br>
-
-
             <div class="row">
                 <div class="col-md-5 mb-3">
                     <label for="country">Country</label>
