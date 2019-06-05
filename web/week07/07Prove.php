@@ -135,10 +135,8 @@ WHERE cu.customer_id = ad.address_id and cu.customer_id = id.login_id and id.ema
             </div>
 
             <div class="labelor"><b>Or</b></div>
-            <input type="button" class="btn btn-success btn-block" value="Create Account">
-                <a href="store.php">
-                </a>
-            </input>
+
+            <a class="btn btn-warning btn-lg" href="create_account.php" role="button">Create Account</a>
         </div>
 
     </div>
