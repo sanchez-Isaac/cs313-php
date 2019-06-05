@@ -43,7 +43,7 @@ if(!isset($_SESSION['username']))
 ?>
 <br>
 <div class="header">
-    <h1 class="headtitle"> Welcome <?php echo $_SESSION['first_name']. "" . $_SESSION['last_name'] ; ?></h1>
+    <h1 class="headtitle"> Welcome <?php echo $_SESSION['first_name']. " " . $_SESSION['last_name'] ; ?></h1>
     <br>
     <br>
 </div>
