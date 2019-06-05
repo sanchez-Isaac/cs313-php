@@ -130,11 +130,11 @@ WHERE cu.customer_id = ad.address_id and cu.customer_id = id.login_id and id.ema
                 <input type="submit" name="login_btn" value="Login" class="btn btn-info btn-block">
                     <div class="labelor"><b>Or</b></div>
                     <button type="submit" class="btn btn-success btn-block" formaction="create_account.php">Create Account</button>
-                    <a class="btn btn-warning btn-lg" href="create_account.php" role="button">Create Account</a>
+
             </div>
                 </form>
-            <button type="button" class="btn btn-success btn-block" >Create Account</button>
-            <a class="btn btn-warning btn-lg" href="create_account.php" role="button">Create Account</a>
+
+            <a class="btn btn-success btn-lg" href="create_account.php" role="button">Create Account</a>
             </div>
 
 
