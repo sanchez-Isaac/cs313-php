@@ -29,8 +29,29 @@ if(!isset($_SESSION['username']))
     header('location: 07Prove.php?Login=False');
 }
 ?>
-<div><h1>Inserting new Items</h1></div>
-<div>
+
+
+<div class="topnav">
+    <a class="active" href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <div class="login-container">
+        <form action="logout.php">
+
+            <button type="submit">Log Out</button>
+        </form>
+    </div>
+</div>
+<br>
+
+
+<div class="header">
+    <h1 class="headtitle">Inserting new Items</h1>
+    <br>
+    <br>
+</div>
+
+
 
 <form method="post" action="insert_query.php">
     Item name:<br>
@@ -59,7 +80,7 @@ if(!isset($_SESSION['username']))
     ?>
 
 </form>
-
+    <br>
     <div class="container">
         <a class="btn btn-success" href="home.php" role="button">Back Home</a>
     </div>
