@@ -132,7 +132,10 @@ if(filter_input(INPUT_GET, 'action')== 'delete') {
             </a>
         </p>
     </div>
+    <br><br><br><br><br>
+    <div class="footer">
+        <p>CS 313 - Web Engineering II    &copy; 2016 - <?php echo date("Y");?> </p>
 
-
+    </div>
 </body>
 </html>
