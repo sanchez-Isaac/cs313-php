@@ -51,7 +51,16 @@ if(!isset($_SESSION['username']))
 </div>
 
 
-<h1>Items available</h1>
+<br>
+<div class="header">
+    <h1 class="headtitle"> Items Available</h1>
+    <br>
+    <br>
+</div>
+
+
+
+
 <?php
 $item_typ_name = $_POST['item_type_name'];
 
