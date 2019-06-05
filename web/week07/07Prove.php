@@ -84,11 +84,6 @@ WHERE cu.customer_id = ad.address_id and cu.customer_id = id.login_id and id.ema
         echo "<script type='text/javascript'>alert(\"$error\");</script>";
     }
 }
-else{
-    $_SESSION['message'] = "ERROR, User or password incorrect";
-    $error = $_SESSION['message'];
-    echo "<script type='text/javascript'>alert(\"$error\");</script>";
-}
 
 
 ?>
