@@ -73,7 +73,6 @@ function pre_r($array)
                     <input type="text" class="form-control" name="first_name" id="first_name" placeholder="" value="" required>
                     <div class="invalid-feedback">
                     </div>
-
                 </div>
                  <div class="col-md-6 mb-3">
                     <label for="firstName">Middle Name</label>
@@ -152,7 +151,7 @@ function pre_r($array)
                         <div class="invalid-feedback">
                         </div>
                     </div>
-                <br>
+                <br><br>
                 <div class="col-md-4 mb-3">
                     <label for="zip">Zip</label>
                     <input type="text" class="form-control" id="zip" placeholder=""  name="zip" required>
