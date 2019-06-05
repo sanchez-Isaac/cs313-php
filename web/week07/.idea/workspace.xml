@@ -4,7 +4,6 @@
     <list default="true" id="9aa14cf5-8668-4cb8-a1e4-a96931fa91c6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../../db/myDb.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../db/myDb.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../week06/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../week06/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/07Prove.php" beforeDir="false" afterPath="$PROJECT_DIR$/07Prove.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -164,14 +163,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="167" />
-          <entry key="php" value="4165" />
+          <entry key="php" value="4224" />
           <entry key="sql" value="471" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="167" />
-          <entry key="PHP" value="4165" />
+          <entry key="PHP" value="4224" />
           <entry key="Scratch" value="471" />
         </counts>
       </usages-collector>
@@ -240,7 +239,7 @@
         <entry file="file://$PROJECT_DIR$/07Prove.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="487">
-              <caret line="141" column="6" lean-forward="true" selection-start-line="141" selection-start-column="6" selection-end-line="141" selection-end-column="6" />
+              <caret line="141" column="10" lean-forward="true" selection-start-line="141" selection-start-column="10" selection-end-line="141" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -248,8 +247,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/confirmation.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="70" column="9" selection-start-line="70" selection-start-column="9" selection-end-line="70" selection-end-column="9" />
+            <state relative-caret-position="374">
+              <caret line="178" column="105" lean-forward="true" selection-start-line="178" selection-start-column="12" selection-end-line="178" selection-end-column="105" />
             </state>
           </provider>
         </entry>
@@ -314,6 +313,7 @@
       <find>zip</find>
       <find>password</find>
       <find>formactio</find>
+      <find>md</find>
       <find>formaction</find>
     </findStrings>
   </component>
@@ -428,7 +428,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80530000" />
+    <option name="totallyTimeSpent" value="80792000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="374" y="108" width="1524" height="962" extended-state="0" />
@@ -621,13 +621,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/confirmation.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="70" column="9" selection-start-line="70" selection-start-column="9" selection-end-line="70" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Customer_home.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="424">
@@ -648,10 +641,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/confirmation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="178" column="105" lean-forward="true" selection-start-line="178" selection-start-column="12" selection-end-line="178" selection-end-column="105" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/07Prove.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="487">
-          <caret line="141" column="6" lean-forward="true" selection-start-line="141" selection-start-column="6" selection-end-line="141" selection-end-column="6" />
+          <caret line="141" column="10" lean-forward="true" selection-start-line="141" selection-start-column="10" selection-end-line="141" selection-end-column="10" />
         </state>
       </provider>
     </entry>
