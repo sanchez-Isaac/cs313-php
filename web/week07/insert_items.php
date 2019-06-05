@@ -25,9 +25,9 @@ $con = get_db();
 <body>
 
 <?php
-//if(!isset($_SESSION['username']))
+if(!isset($_SESSION['username']))
 {
-   // header('location: 07Prove.php?Login=False');
+    header('location: 07Prove.php?Login=False');
 }
 ?>
 
