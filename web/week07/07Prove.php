@@ -119,10 +119,7 @@ WHERE cu.customer_id = ad.address_id and cu.customer_id = id.login_id and id.ema
                 <br>
 
                 <form method="post" action="07Prove.php">
-
-
                 <div class="form-group">
-
                     <label>Username</label>
                     <input size="35" type="username" name="username" class="form-control" required>
                 </div>
@@ -132,12 +129,9 @@ WHERE cu.customer_id = ad.address_id and cu.customer_id = id.login_id and id.ema
                 </div>
                 <input type="submit" name="login_btn" value="Login" class="btn btn-info btn-block">
                     <div class="labelor"><b>Or</b></div>
-
-
-
+                    <button type="submit" class="btn btn-success btn-block" formaction="create_account.php">Create Account</button>
             </div>
                 </form>
-            <button type="submit" class="btn btn-success btn-block" formaction="create_account.php">Create Account</button>
             </div>
 
 
