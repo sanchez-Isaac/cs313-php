@@ -153,7 +153,7 @@ function pre_r($array)
 
 
 
-                <div class="mb-3">
+
                     <label for="city">City</label>
                     <input type="text" class="form-control" id="city" name="city" placeholder="Los Angeles" required>
                     <div class="invalid-feedback">
@@ -166,7 +166,7 @@ function pre_r($array)
                         </div>
                     </div>
 
-                </div>
+
 
 
                 <div class="col-md-3 mb-3">
