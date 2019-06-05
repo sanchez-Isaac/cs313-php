@@ -73,6 +73,7 @@ function pre_r($array)
                     <input type="text" class="form-control" name="first_name" id="first_name" placeholder="" value="" required>
                     <div class="invalid-feedback">
                     </div>
+                    <br>
                 </div>
                  <div class="col-md-6 mb-3">
                     <label for="firstName">Middle Name</label>
@@ -170,10 +171,10 @@ function pre_r($array)
             <br>
             <br>
             <div>
-                <input type="button" class="btn btn-warning btn-block" value="Back to Shopping cart">
+                <button type="button" class="btn btn-warning btn-block" value="Back to Shopping cart">
                 <a href="viewcart.php">
                 </a>
-                </input>
+                </button>
             </div>
         </form>
 
