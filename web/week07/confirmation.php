@@ -65,7 +65,7 @@ function pre_r($array)
     <div style="clear:both"></div>
     <br/>
     <div>
-        <h1 class="mb-3">Billing address</h1><br>
+        <h1 class="mb-3">Shipping Address</h1><br>
         <form  method="post" action="">
             <div class="row">
                 <div class="col-md-6 mb-3">
