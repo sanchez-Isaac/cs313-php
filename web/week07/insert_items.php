@@ -31,11 +31,10 @@ if(!isset($_SESSION['username']))
 }
 ?>
 
-
 <div class="topnav">
-    <a class="active" href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
+    <a class="active" href="home.php">Home</a>
+    <a href="store.php">Store</a>
+    <a href="itemsSearch.php">Search inventory</a>
     <div class="login-container">
         <form action="logout.php">
 
