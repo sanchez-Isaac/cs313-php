@@ -92,13 +92,15 @@ function pre_r($array)
 
 
 
-<h1>Available Items</h1><br><br>
+<div class="header">
+    <h1 class="headtitle"> Items Available</h1>
+    <br>
+    <br>
+</div>
+
+
+
 <div class="container">
-
-
-
-
-
     <?php
 
     require ('DbConnect.php');
