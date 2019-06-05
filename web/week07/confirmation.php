@@ -170,12 +170,12 @@ function pre_r($array)
 
             <br>
             <br>
-            <div>
-                <button type="button" class="btn btn-warning btn-block" value="Back to Shopping cart">
+
+                <input type="button" class="btn btn-warning btn-block" value="Back to Shopping cart">
                 <a href="viewcart.php">
                 </a>
-                </button>
-            </div>
+                </input>
+
         </form>
 
 
