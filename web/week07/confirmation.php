@@ -74,8 +74,7 @@ function pre_r($array)
                     <div class="invalid-feedback">
                     </div>
                 </div>
-                <br>
-                <div class="col-md-6 mb-3">
+                 <div class="col-md-6 mb-3">
                     <label for="firstName">Middle Name</label>
                     <input type="text" class="form-control" name="middle_name" id="middle_name" placeholder="" value="" >
                     <div class="invalid-feedback">
@@ -113,7 +112,7 @@ function pre_r($array)
 
             <div class="mb-3">
                 <label for="street">Street</label>
-                <input type="text" class="form-control" id="street" name="street" placeholder="1234 Main St" required>
+                <input type="text" class="form-control" id="street" name="street" placeholder="Main St" required>
                 <div class="invalid-feedback">
 
                 </div>
@@ -121,7 +120,7 @@ function pre_r($array)
             <br>
 
             <div class="mb-3">
-                <label for="address2">Ext.#</label>
+                <label for="ext_home_number">Street #</label>
                 <input type="text" class="form-control" id="ext_home_number" name="ext_home_number" placeholder="567">
             </div>
             <br>
@@ -153,7 +152,7 @@ function pre_r($array)
                         </div>
                     </div>
 
-                <div class="col-md-5 mb-3">
+                <div class="col-md-4 mb-3">
                     <label for="zip">Zip</label>
                     <input type="text" class="form-control" id="zip" placeholder=""  name="zip" required>
                     <div class="invalid-feedback">
