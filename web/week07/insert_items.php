@@ -57,16 +57,16 @@ if(!isset($_SESSION['username']))
 <form method="post" action="insert_query.php">
     Item name:<br>
     <input type="text" name="item_name" required>
-    <br>
+    <br><br>
     Item type: (Ask a manager)<br>
     <input type="text" name="item_type" required>
-    <br>
+    <br><br>
     Item price:<br>
     <input type="text" name="item_price" required>
-    <br>
+    <br><br>
     Item quantity:<br>
     <input type="number" name="item_quantity" required>
-    <br>
+    <br><br>
     Item picture: (URL)<br>
     <input type="text" name="photo_desc" required>
     <br><br>
