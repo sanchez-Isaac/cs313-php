@@ -53,7 +53,7 @@ WHERE cu.customer_id = ad.address_id and cu.customer_id = id.login_id and '$user
         $_SESSION['username'] = $username;
         header("location: home.php");
     }
-    else if (pg_num_rows($resultUserData) == 1) {
+    else if (pg_num_rows($resultUserData) != 1) {
         $_SESSION['message'] = "You are logged in";
         $_SESSION['username'] = $username;
         while ($row = pg_fetch_array($resultUserData)) {
