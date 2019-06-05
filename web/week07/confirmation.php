@@ -95,7 +95,7 @@ function pre_r($array)
 
             <div class="mb-3">
                 <label for="email">Email </label>
-                <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="you@example.com">
+                <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="you@example.com" required>
                 <div class="invalid-feedback">
 
                 </div>
@@ -103,7 +103,7 @@ function pre_r($array)
             <br>
             <div class="mb-3">
                 <label for="telephone">Telephone </label>
-                <input type="tel" class="form-control" id="telephone" name="telephone"  placeholder="9784274489">
+                <input type="tel" class="form-control" id="telephone" name="telephone"  placeholder="9784274489" required>
                 <div class="invalid-feedback">
 
                 </div>
@@ -121,7 +121,7 @@ function pre_r($array)
 
             <div class="mb-3">
                 <label for="ext_home_number">Street #</label>
-                <input type="text" class="form-control" id="ext_home_number" name="ext_home_number" placeholder="567">
+                <input type="text" class="form-control" id="ext_home_number" name="ext_home_number" placeholder="567" required>
             </div>
             <br>
             <div class="row">
@@ -169,15 +169,14 @@ function pre_r($array)
 
             <br>
             <br>
-
-            <div>
-                <button class="btn-warning btn btn-lg">
-                    <a href="viewcart.php">
-                        Back to Shopping cart
-                    </a>
-                </button>
-            </div>
         </form>
+        <div>
+            <button class="btn-warning btn btn-lg">
+                <a href="viewcart.php">
+                    Back to Shopping cart
+                </a>
+            </button>
+        </div>
 
     </div>
 
