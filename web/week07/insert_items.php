@@ -52,7 +52,9 @@ if(!isset($_SESSION['username']))
     <?php
     if(isset($_SESSION['username']))
     {
+        echo '<div class="container">';
         echo '<input type="submit" class="btn btn-primary" name="insert" value="Insert">';
+        echo '</div>';
     }
     ?>
 
