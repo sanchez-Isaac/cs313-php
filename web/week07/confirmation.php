@@ -38,6 +38,10 @@ function pre_r($array)
 }
 
 */
+
+if(empty($_SESSION['shopping_cart'])){
+    header('location: store.php?empty=True');
+}
 ?>
 
 
