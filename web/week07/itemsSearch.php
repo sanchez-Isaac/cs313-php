@@ -117,6 +117,11 @@ if($_SERVER["REQUEST_METHOD"]=="POST") {
 </div>
 
 <br>
+<br>
+<br>
+<div class="footer">
+    <p>CS 313 - Web Engineering II    &copy; 2016 - <?php echo date("Y");?> </p>
 
+</div>
 </body>
 </html>
