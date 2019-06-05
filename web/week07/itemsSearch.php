@@ -111,7 +111,8 @@ if($_SERVER["REQUEST_METHOD"]=="POST") {
 
 <div>
     <a class="btn btn-primary" href="insert_items.php" role="button">Insert Item</a>
-<br>
+    <br>
+    <br>
     <a class="btn btn-success" href="home.php" role="button">Back Home</a>
 </div>
 
