@@ -35,7 +35,7 @@ if(filter_input(INPUT_POST, 'add_to_cart')){
         );
     }
 }
-pre_r($_SESSION);
+//pre_r($_SESSION);
 
 function pre_r($array)
 {

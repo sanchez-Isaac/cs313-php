@@ -123,14 +123,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="167" />
-          <entry key="php" value="2884" />
+          <entry key="php" value="2979" />
           <entry key="sql" value="432" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="167" />
-          <entry key="PHP" value="2884" />
+          <entry key="PHP" value="2979" />
           <entry key="Scratch" value="432" />
         </counts>
       </usages-collector>
@@ -141,8 +141,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/insert_items.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+            <state relative-caret-position="464">
+              <caret line="79" column="6" lean-forward="true" selection-start-line="73" selection-start-column="2" selection-end-line="79" selection-end-column="6" />
               <folding>
                 <element signature="e#1676#1682#0#HTML" expanded="true" />
               </folding>
@@ -186,10 +186,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/store.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="74" column="6" selection-start-line="74" selection-start-column="6" selection-end-line="74" selection-end-column="6" />
+            <state relative-caret-position="367">
+              <caret line="79" column="17" selection-start-line="79" selection-start-column="17" selection-end-line="79" selection-end-column="17" />
               <folding>
-                <element signature="e#4053#4059#0#HTML" expanded="true" />
+                <element signature="e#4939#4945#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -381,11 +381,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71342000" />
+    <option name="totallyTimeSpent" value="71712000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="155" y="2" width="1762" height="1057" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.08460634" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -569,16 +568,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/insert_items.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="e#1676#1682#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/homestyle.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-527">
@@ -596,12 +585,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/insert_items.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="79" column="6" lean-forward="true" selection-start-line="73" selection-start-column="2" selection-end-line="79" selection-end-column="6" />
+          <folding>
+            <element signature="e#1676#1682#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/store.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="74" column="6" selection-start-line="74" selection-start-column="6" selection-end-line="74" selection-end-column="6" />
+        <state relative-caret-position="367">
+          <caret line="79" column="17" selection-start-line="79" selection-start-column="17" selection-end-line="79" selection-end-column="17" />
           <folding>
-            <element signature="e#4053#4059#0#HTML" expanded="true" />
+            <element signature="e#4939#4945#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
