@@ -59,16 +59,6 @@ if(!isset($_SESSION['username']))
 </div>
 
 
-
-
-<?php
-$item_typ_name = $_POST['item_type_name'];
-
-if($_SERVER["REQUEST_METHOD"]=="POST"){
-    echo 'Searching items in the: '.'<b>' . $item_typ_name .'</b>' . ' section';
-}
-
-?>
 <br>
 <br>
 <form action="itemsSearch.php" class="search" method="post"
@@ -94,6 +84,15 @@ if(isset($_SESSION['username']))
 
 
 </form>
+
+<?php
+$item_typ_name = $_POST['item_type_name'];
+
+if($_SERVER["REQUEST_METHOD"]=="POST"){
+    echo 'Searching items in the: '.'<b>' . $item_typ_name .'</b>' . ' section';
+}
+
+?>
 <br>
 <br>
 
