@@ -56,21 +56,24 @@ WHERE cu.customer_id = ad.address_id and cu.customer_id = id.login_id and '$user
     else if (pg_num_rows($resultUserData) != 1) {
         $_SESSION['message'] = "You are logged in";
         $_SESSION['username'] = $username;
-        while ($row = pg_fetch_array($resultUserData)) {
 
-            $_SESSION['customer_id'] = $row[0];
-            $_SESSION['ext_home_number'] = $row[1];
-            $_SESSION['street'] = $row[2];
-            $_SESSION['city'] = $row[3];
-            $_SESSION['state'] = $row[4];
-            $_SESSION['zip'] = $row[5];
-            $_SESSION['telephone'] = $row[6];
-            $_SESSION['email'] = $row[7];
-            $_SESSION['first_name'] = $row[8];
-            $_SESSION['middle_name'] = $row[9];
-            $_SESSION['last_name'] = $row[10];
+        if (pg_num_rows($resultUserData) > 0) {
+            while ($row = pg_fetch_array($resultUserData)) {
+
+                $_SESSION['customer_id'] = $row[0];
+                $_SESSION['ext_home_number'] = $row[1];
+                $_SESSION['street'] = $row[2];
+                $_SESSION['city'] = $row[3];
+                $_SESSION['state'] = $row[4];
+                $_SESSION['zip'] = $row[5];
+                $_SESSION['telephone'] = $row[6];
+                $_SESSION['email'] = $row[7];
+                $_SESSION['first_name'] = $row[8];
+                $_SESSION['middle_name'] = $row[9];
+                $_SESSION['last_name'] = $row[10];
+            }
+            header("location: Customer_home.php");
         }
-        header("location: Customer_home.php");
     }
     else{
         $_SESSION['message'] = "ERROR, User or password incorrect";
