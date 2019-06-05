@@ -92,6 +92,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
 <br>
 <br>
 <br>
+<div class="container">
 <div class="card-columns">
     <?php
     if($_SERVER["REQUEST_METHOD"]=="POST") {
@@ -111,8 +112,10 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     }
     ?>
 </div>
+</div>
 <br><br>
-<div>
+
+<div class="container">
     <a class="btn btn-primary" href="insert_items.php" role="button">Insert Item</a>
     <br>
     <br>
