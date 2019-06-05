@@ -23,10 +23,11 @@ $con = get_db();
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 </head>
 <body>
+
 <?php
-if(!isset($_SESSION['username']))
+//if(!isset($_SESSION['username']))
 {
-    header('location: 07Prove.php?Login=False');
+   // header('location: 07Prove.php?Login=False');
 }
 ?>
 
@@ -52,7 +53,7 @@ if(!isset($_SESSION['username']))
 </div>
 
 
-div class="container">';
+<div class="container">
 <form method="post" action="insert_query.php">
     Item name:<br>
     <input type="text" name="item_name" required>
