@@ -19,7 +19,7 @@ if(isset($_POST['login_btn'])){
     $u_D_Query = "SELECT  cu.customer_id, ad.ext_home_number, ad.street, ad.city, ad.state, ad.zip, ad.telephone, id.email, cu.first_name, cu.middle_name, cu.last_name
 FROM address ad, identification id, customers cu
 WHERE cu.customer_id = ad.address_id and cu.customer_id = id.login_id and '$username' = id.email and '$password' = id.password;";
-    $resultUserData = pg_query( $con, $query);
+    $resultUserData = pg_query( $con, $u_D_Query);
 
 
 /*
