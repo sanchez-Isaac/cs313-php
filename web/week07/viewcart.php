@@ -117,12 +117,12 @@ if(filter_input(INPUT_GET, 'action')== 'delete') {
                             if (count($_SESSION['shopping_cart'])> 0):
                                 ?>
 
-                                <a href="confirmation.php" class="button">Ship to other Address</a>
+                                <a href="confirmation.php" class="button">Ship to</a>
                             <br>
                                 <?php
                                 if (isset($_SESSION['username']) || isset($_SESSION['email']) || isset($_SESSION['street']))
                                 {
-                                    echo '<a href="thankyou.php" class="button">1-Click Buy</a>';
+                                    echo '<a href="thankyou.php" class="btn btn-success btn-block">1-Click Buy</a>';
                                 }
                                 ?>
                             <?php endif; endif; ?>
