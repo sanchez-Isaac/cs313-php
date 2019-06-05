@@ -102,7 +102,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
 <br>
 <br>
 <div class="container" >
-    <div class="col-sm-6 col-sm-offset-4 ">
+
 
 <?php
 if($_SERVER["REQUEST_METHOD"]=="POST") {
@@ -123,7 +123,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST") {
 
 }
 ?>
-    </div>
+
 </div>
 <br><br>
 
