@@ -86,11 +86,6 @@ function pre_r($array)
         </form>
     </div>
 </div>
-
-
-
-
-
 <br>
 <div class="header">
     <h1 class="headtitle"> Items Available</h1>

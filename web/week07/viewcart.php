@@ -30,9 +30,35 @@ if(filter_input(INPUT_GET, 'action')== 'delete') {
 
 
 </head>
-<body>
+<body><div class="topnav">
+    <a class="active" href="Customer_home.php">Home</a>
+    <a href="store.php">Store</a>
+    <a href="viewcart.php">View Cart</a>
+    <div class="login-container">
+        <form action="logout.php">
 
-<h1>View Cart</h1><br><br>
+            <?php
+            if(isset($_SESSION['username'])) {
+
+                echo '<button type="submit">Log Out</button>';
+            }
+            else
+            {
+                echo '<button type="submit">Login</button>';
+            }
+
+            ?>
+
+
+        </form>
+    </div>
+</div>
+<br>
+<div class="header">
+    <h1 class="headtitle"> Items Available</h1>
+    <br>
+    <br>
+</div>
 <div class="container">
 
     <?php
