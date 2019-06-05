@@ -64,12 +64,21 @@ if(!isset($_SESSION['username']))
     <?php
     if(isset($_SESSION['username']))
     {
-        echo '<input type="submit" name="insert" value="Insert">';
+        echo '<input type="submit" class="btn btn-primary" name="insert" value="Insert">';
     }
     ?>
 
-
 </form>
-</body>
 
+    <div class="container">
+        <a class="btn btn-success" href="home.php" role="button">Back Home</a>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="footer"><p>CS 313 - Web Engineering II   &copy; 2016 - <?php echo date("Y");?> </p></div>
+</body>
 </html>
