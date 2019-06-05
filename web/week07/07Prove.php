@@ -16,7 +16,7 @@ if(isset($_POST['login_btn'])){
 
 
     //GET USER INFO
-    $u_D_Query = "SELECT  cu.customer_id, ad.ext_home_number, ad.street, ad.city, ad.state, ad.zip, ad.telephone, id.email, cu.first_name, cu.middle_name, cu.last_name
+    $u_D_Query = "SELECT  cu.customer_id, ad.ext_home_number, ad.street, ad.city, ad.state, ad.zip, ad.telephone, id.email, cu.first_name, cu.middle_name, cu.last_name, ad.country
 FROM address ad, identification id, customers cu
 WHERE cu.customer_id = ad.address_id and cu.customer_id = id.login_id and id.email = '$username' and id.password = '$password';";
     $resultUserData = pg_query( $con, $u_D_Query);
@@ -72,6 +72,8 @@ WHERE cu.customer_id = ad.address_id and cu.customer_id = id.login_id and id.ema
                     $_SESSION['first_name'] = $row[8];
                     $_SESSION['middle_name'] = $row[9];
                     $_SESSION['last_name'] = $row[10];
+                    $_SESSION['country'] = $row[11];
+
                 }
 
             }

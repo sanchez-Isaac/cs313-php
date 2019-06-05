@@ -41,12 +41,14 @@ function pre_r($array)
         <table class="table">
             <tr><th colspan="5"><h3>Your items will be shipped to:</h3></th> </tr>
             <br>
-            <tr><th><?php echo$_SESSION['firstName'] ?>  <?php echo$_SESSION['lastName']?> <br>
-                    <?php echo$_SESSION['address'] ?> <br>
-                    <?php echo$_SESSION['address2'] ?> <br>
-                    <?php echo$_SESSION['country'] ?> <br>
-                    <?php echo$_SESSION['state']?> <br>
-                    <?php echo$_SESSION['zip'] ?>  </th></tr>
+            <tr><th><?php echo $_SESSION['first_name'] ?>  <?php echo $_SESSION['middle_name']?> <?php echo $_SESSION['last_name']?> <br>
+                    <?php echo $_SESSION['street'] ?> <br>
+                    <?php echo $_SESSION['ext_home_number'] ?> <br>
+                    <?php echo $_SESSION['city'] ?> <br>
+                    <?php echo $_SESSION['country'] ?> <br>
+                    <?php echo $_SESSION['state']?> <br>
+                    <?php echo $_SESSION['zip'] ?>
+                </th></tr>
         </table>
         <div>
             <div style="clear:both"></div>
