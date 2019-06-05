@@ -171,7 +171,7 @@ function pre_r($array)
         </form>
         <div>
 
-            <input type="button" class="btn btn-warning btn-lg" value="Back to Shopping cart"><a href="viewcart.php"></a></input>
+            <a class="btn btn-warning btn-lg" href="viewcart.php" role="button">Back to Shopping cart</a>
         </div>
 
     </div>
