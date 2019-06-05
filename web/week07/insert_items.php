@@ -52,28 +52,28 @@ if(!isset($_SESSION['username']))
 </div>
 
 
-
+div class="container">';
 <form method="post" action="insert_query.php">
     Item name:<br>
-    <input type="text" name="item_name" >
+    <input type="text" name="item_name" required>
     <br>
     Item type: (Ask a manager)<br>
-    <input type="text" name="item_type" >
+    <input type="text" name="item_type" required>
     <br>
     Item price:<br>
-    <input type="text" name="item_price" >
+    <input type="text" name="item_price" required>
     <br>
     Item quantity:<br>
-    <input type="number" name="item_quantity" >
+    <input type="number" name="item_quantity" required>
     <br>
     Item picture: (URL)<br>
-    <input type="text" name="photo_desc" >
+    <input type="text" name="photo_desc" required>
     <br><br>
 
     <?php
     if(isset($_SESSION['username']))
     {
-        echo '<div class="container">';
+
         echo '<input type="submit" class="btn btn-primary" name="insert" value="Insert">';
         echo '</div>';
     }
