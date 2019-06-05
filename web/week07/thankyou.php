@@ -45,9 +45,9 @@ function pre_r($array)
                     <?php echo $_SESSION['street'].", " ?>  <?php echo $_SESSION['ext_home_number'] ?> <?php echo $_SESSION['city'] ?> <br>
                     <?php echo $_SESSION['country'].", "?> <?php echo $_SESSION['state']?> <br>
                     <?php echo $_SESSION['zip'] ?><br><br>
-                    <i>We will call you and email you to:</i><br>
-                    <?php echo $_SESSION['telephone'] ?><br>
-                    <?php echo $_SESSION['email'] ?><br>
+                    <i>We'll contact you with:</i><br>
+                    <i>Phone: </i><?php echo $_SESSION['telephone'] ?><br>
+                    <i>Email: </i><?php echo $_SESSION['email'] ?><br>
 
                 </th></tr>
         </table>
