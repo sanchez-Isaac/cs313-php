@@ -122,7 +122,7 @@ if(filter_input(INPUT_GET, 'action')== 'delete') {
                                 <?php
                                 if (isset($_SESSION['username']) || isset($_SESSION['email']) || isset($_SESSION['street']))
                                 {
-                                    echo '<a href="thankyou.php.php" class="button">1-Click Buy</a>';
+                                    echo '<a href="thankyou.php" class="button">1-Click Buy</a>';
                                 }
                                 ?>
                             <?php endif; endif; ?>
