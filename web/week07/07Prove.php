@@ -134,7 +134,7 @@ WHERE cu.customer_id = ad.address_id and cu.customer_id = id.login_id and id.ema
             </div>
                 </form>
 
-            <a class="btn btn-success btn-lg" href="create_account.php" role="button">Create Account</a>
+            <a class="btn btn-success btn-xs" href="create_account.php" role="button">Create Account</a>
             </div>
 
 
