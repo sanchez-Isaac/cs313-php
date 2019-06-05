@@ -163,14 +163,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="167" />
-          <entry key="php" value="3716" />
+          <entry key="php" value="3734" />
           <entry key="sql" value="471" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="167" />
-          <entry key="PHP" value="3716" />
+          <entry key="PHP" value="3734" />
           <entry key="Scratch" value="471" />
         </counts>
       </usages-collector>
@@ -247,8 +247,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/confirmation.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="168" selection-start-line="168" selection-end-line="168" />
+            <state relative-caret-position="546">
+              <caret line="174" column="18" selection-start-line="174" selection-start-column="18" selection-end-line="174" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -356,9 +356,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="71" />
+    <option name="x" value="876" />
     <option name="y" value="17" />
-    <option name="width" value="1762" />
+    <option name="width" value="957" />
     <option name="height" value="1009" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -422,12 +422,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76790000" />
+    <option name="totallyTimeSpent" value="77052000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="71" y="17" width="1762" height="1009" extended-state="0" />
+    <frame x="876" y="17" width="957" height="1009" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.08460634" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.0" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -447,7 +448,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.012338425" />
+      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.02341137" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -644,8 +645,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/confirmation.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="168" selection-start-line="168" selection-end-line="168" />
+        <state relative-caret-position="546">
+          <caret line="174" column="18" selection-start-line="174" selection-start-column="18" selection-end-line="174" selection-end-column="18" />
         </state>
       </provider>
     </entry>
