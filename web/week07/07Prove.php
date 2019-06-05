@@ -72,8 +72,9 @@ WHERE cu.customer_id = ad.address_id and cu.customer_id = id.login_id and '$user
                 $_SESSION['middle_name'] = $row[9];
                 $_SESSION['last_name'] = $row[10];
             }
-            header("location: Customer_home.php");
+
         }
+        header("location: Customer_home.php");
     }
     else{
         $_SESSION['message'] = "ERROR, User or password incorrect";
