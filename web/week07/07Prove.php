@@ -14,6 +14,15 @@ if(isset($_POST['login_btn'])){
     $query2 = "SELECT * FROM identification WHERE email = '$username' and password = '$password';";
     $resultLogin2 = pg_query( $con, $query2);
 
+
+    //GET USER INFO
+    $u_D_Query = "SELECT  cu.customer_id, ad.ext_home_number, ad.street, ad.city, ad.state, ad.zip, ad.telephone, id.email, cu.first_name, cu.middle_name, cu.last_name
+FROM address ad, identification id, customers cu
+WHERE cu.customer_id = ad.address_id and cu.customer_id = id.login_id and '$username' = id.email and '$password' = id.password;";
+    $resultUserData = pg_query( $con, $query);
+
+
+
     if(pg_num_rows($resultLogin) == 1) {
         $_SESSION['message'] = "You are logged in";
         $_SESSION['username'] = $username;
@@ -36,6 +45,30 @@ if(isset($_POST['login_btn'])){
         $error = $_SESSION['message'];
         echo "<script type='text/javascript'>alert(\"$error\");</script>";
     }
+
+
+
+
+    if (pg_num_rows($resultUserData) > 0) {
+        while ($row = pg_fetch_array($resultUserData)) {
+
+            $_SESSION['customer_id'] = $row[0];
+            $_SESSION['ext_home_number'] = $row[1];
+            $_SESSION['street'] = $row[2];
+            $_SESSION['city'] = $row[3];
+            $_SESSION['state'] = $row[4];
+            $_SESSION['zip'] = $row[5];
+            $_SESSION['telephone'] = $row[6];
+            $_SESSION['email'] = $row[7];
+            $_SESSION['first_name'] = $row[8];
+            $_SESSION['middle_name'] = $row[9];
+            $_SESSION['last_name'] = $row[10];
+
+
+        }
+    }
+
+
 }
 ?>
 
