@@ -5,25 +5,6 @@ require ('DbConnect.php');
 $con = get_db();
 
 
-/*
-   $item_name = pg_escape_string($_POST['item_name']);
-   $item_type = pg_escape_string($_POST['item_type']);
-   $item_price = pg_escape_string($_POST['item_price']);
-   $item_quantity = pg_escape_string($_POST['item_quantity']);
-   $photo_desc = pg_escape_string($_POST['photo_desc']);
-
-       $query = $con->prepare ('INSERT INTO items(item_id, item_barcode, item_name, item_type, item_price, item_quantity)
-   VALUES(DEFAULT, DEFAULT, :$item_name, :$item_type, :$item_price,:$item_quantity, :$photo_desc);') ;
-       $query->bindValue(':$item_name', $item_name, PDO::PARAM_STR);
-       $query->bindValue(':$item_type', $item_type, PDO::PARAM_STR);
-       $query->bindValue(':$item_price', $item_price, PDO::PARAM_INT);
-       $query->bindValue(':$item_quantity', $item_quantity, PDO::PARAM_INT);
-       $query->bindValue(':$photo_desc', $photo_desc, PDO::PARAM_STR);
-       $query->execute();
-
-   */
-
-
 
 
 
@@ -33,6 +14,13 @@ $con = get_db();
 <head>
     <meta charset="utf-8">
     <title>Insert into the DB</title>
+
+
+    <link rel="stylesheet" href="homestyle.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 </head>
 <body>
 <?php
