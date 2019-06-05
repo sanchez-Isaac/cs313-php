@@ -1,8 +1,6 @@
 <?PHP
 session_start();
 
-
-if (isset($_POST['Submit'])) {
     $_SESSION['first_name'] = test_input($_POST['first_name']);
     $_SESSION['middle_name'] = test_input($_POST['middle_name']);
     $_SESSION['last_name'] = test_input($_POST['last_name']);
@@ -14,11 +12,12 @@ if (isset($_POST['Submit'])) {
     $_SESSION['state'] = test_input($_POST['state']);
     $_SESSION['zip'] = test_input($_POST['zip']);
     $_SESSION['telephone'] = test_input($_POST['telephone']);
+    $_SESSION['password'] = md5(test_input($_POST['telephone']));
 
-    header("Location:thankyou.php");
 
 
-}
+
+
 function test_input($data)
 {
     $data = trim($data);
@@ -39,14 +38,7 @@ function pre_r($array)
 
 */
 
-if(empty($_SESSION['shopping_cart'])){
-    header('location: store.php?empty=True');
-}
 ?>
-
-
-
-
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/html">
@@ -69,7 +61,7 @@ if(empty($_SESSION['shopping_cart'])){
     <div style="clear:both"></div>
     <br/>
     <div>
-        <h1 class="mb-3">Shipping Address</h1><br>
+        <h1 class="mb-3">Register a New User Account</h1><br>
         <form  method="post" action="">
             <div class="row">
                 <div class="col-md-6 mb-3">
@@ -78,7 +70,7 @@ if(empty($_SESSION['shopping_cart'])){
                     <div class="invalid-feedback">
                     </div>
                 </div>
-                 <div class="col-md-6 mb-3">
+                <div class="col-md-6 mb-3">
                     <label for="firstName">Middle Name</label>
                     <input type="text" class="form-control" name="middle_name" id="middle_name" placeholder="" value="" >
                     <div class="invalid-feedback">
@@ -151,11 +143,11 @@ if(empty($_SESSION['shopping_cart'])){
                 </div>
                 <br>
                 <div class="col-md-4 mb-3">
-                        <label for="state">State</label>
-                        <input type="text" class="form-control" id="city" name="state" placeholder="California" required>
-                        <div class="invalid-feedback">
-                        </div>
+                    <label for="state">State</label>
+                    <input type="text" class="form-control" id="city" name="state" placeholder="California" required>
+                    <div class="invalid-feedback">
                     </div>
+                </div>
                 <br><br>
                 <div class="col-md-4 mb-3">
                     <label for="zip">Zip</label>
@@ -164,20 +156,16 @@ if(empty($_SESSION['shopping_cart'])){
                     </div>
                 </div>
             </div>
-
             <br>
             <br>
             <br>
             <br>
             <div>
-                <button class="btn btn-primary btn-lg" value="submit" name="Submit" type="submit"> Confirm </button><br><br>
+                <button class="btn btn-success btn-lg" value="submit" name="Submit" type="submit"> Confirm </button><br><br>
 
             </div>
         </form>
-        <div>
 
-            <a class="btn btn-warning btn-lg" href="viewcart.php" role="button">Back to Shopping cart</a>
-        </div>
 
     </div>
 
