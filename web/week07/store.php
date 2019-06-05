@@ -117,7 +117,7 @@ function pre_r($array)
                 <div class="col-sm-4 col-md-3" >
                     <form method="post" action="store.php?action=add&item_id=<?php echo $product['item_id']; ?>">
                         <div class="products">
-                            <img src="<?php echo $product['photo_desc']; ?>" class="img-responsive" />
+                            <img src="<?php echo $product['photo_desc']; ?>" width="50px;" class="img-responsive" />
                             <h4 class="text-info"><?php echo $product['item_name']; ?></h4>
                             <h4>$ <?php echo $product['item_price']; ?></h4>
                             <input type="text" name="item_quantity" class="form-control" value="1" />
