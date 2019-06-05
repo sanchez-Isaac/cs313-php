@@ -62,6 +62,35 @@ function pre_r($array)
 
 </head>
 <body>
+<div class="topnav">
+    <a class="active" href="home.php">Home</a>
+    <a href="store.php">Store</a>
+    <a href="itemsSearch.php">Search inventory</a>
+    <div class="login-container">
+        <form action="logout.php">
+
+            <?php
+            if(isset($_SESSION['username'])) {
+
+                echo '<button type="submit">Log Out</button>';
+               }
+                else
+                {
+                    echo '<button type="submit">Login</button>';
+                }
+
+            ?>
+
+
+        </form>
+    </div>
+</div>
+
+
+
+
+            <button type="submit">Login</button>
+
 
 <h1>Available Items</h1><br><br>
 <div class="container">
@@ -120,7 +149,21 @@ function pre_r($array)
 
 </div>
 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="footer">
+    <p>CS 313 - Web Engineering II    &copy; 2016 - <?php echo date("Y");?> </p>
 
+</div>
 
 </body>
 </html>
