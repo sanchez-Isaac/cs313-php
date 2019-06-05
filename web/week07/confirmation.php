@@ -65,7 +65,7 @@ function pre_r($array)
             <div class="row">
                 <div class="col-md-6 mb-3">
                     <label for="firstName">First name</label>
-                    <input type="text" class="form-control" name="firstName" id="firstName" placeholder="" value="" required="">
+                    <input type="text" class="form-control" name="firstName" id="firstName" placeholder="" value="" required>
                     <div class="invalid-feedback">
                         Valid first name is required.
                     </div>
@@ -74,7 +74,7 @@ function pre_r($array)
 
                 <div class="col-md-6 mb-3">
                     <label for="lastName">Last name</label>
-                    <input type="text" class="form-control" id="lastName" name="lastName" placeholder="" value="" required="">
+                    <input type="text" class="form-control" id="lastName" name="lastName" placeholder="" value="" required>
                     <div class="invalid-feedback">
                         Valid last name is required.
                     </div>
@@ -94,7 +94,7 @@ function pre_r($array)
 
             <div class="mb-3">
                 <label for="address">Address</label>
-                <input type="text" class="form-control" id="address" name="address" placeholder="1234 Main St" required="">
+                <input type="text" class="form-control" id="address" name="address" placeholder="1234 Main St" required>
                 <div class="invalid-feedback">
                     Please enter your shipping address.
                 </div>
@@ -110,7 +110,7 @@ function pre_r($array)
             <div class="row">
                 <div class="col-md-5 mb-3">
                     <label for="country">Country</label>
-                    <select class="custom-select d-block w-100" id="country" name="country" required="">
+                    <select class="custom-select d-block w-100" id="country" name="country" required>
                         <option value="">Choose...</option>
                         <option>United States</option>
 
@@ -124,7 +124,7 @@ function pre_r($array)
 
                 <div class="col-md-4 mb-3">
                     <label for="state">State</label>
-                    <select class="custom-select d-block w-100" id="state" name="state" required="">
+                    <select class="custom-select d-block w-100" id="state" name="state" required>
                         <option value="">Choose...</option>
                         <option>CA</option>
                         <option>MA</option>
@@ -142,7 +142,7 @@ function pre_r($array)
 
                 <div class="col-md-3 mb-3">
                     <label for="zip">Zip</label>
-                    <input type="text" class="form-control" id="zip" placeholder=""  name="zip"required="">
+                    <input type="text" class="form-control" id="zip" placeholder=""  name="zip"required>
                     <div class="invalid-feedback">
                         Zip code required.
                     </div>
