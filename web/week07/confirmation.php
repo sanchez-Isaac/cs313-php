@@ -172,10 +172,13 @@ function pre_r($array)
             <br>
             <div>
                 <button class="btn btn-primary btn-lg" value="submit" name="Submit" type="submit"> Confirm </button><br><br>
-                <input type="button" class="btn btn-warning btn-lg" value="Back to Shopping cart"><a href="viewcart.php"></a></input>
+
             </div>
         </form>
+        <div>
 
+            <input type="button" class="btn btn-warning btn-lg" value="Back to Shopping cart"><a href="viewcart.php"></a></input>
+        </div>
 
     </div>
 
