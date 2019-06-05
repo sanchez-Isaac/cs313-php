@@ -151,7 +151,7 @@ function pre_r($array)
                         <div class="invalid-feedback">
                         </div>
                     </div>
-
+                <br>
                 <div class="col-md-4 mb-3">
                     <label for="zip">Zip</label>
                     <input type="text" class="form-control" id="zip" placeholder=""  name="zip" required>
