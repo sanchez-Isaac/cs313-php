@@ -136,6 +136,7 @@ function pre_r($array)
             </div>
             <br>
 
+
             <div class="row">
                 <div class="col-md-5 mb-3">
                     <label for="country">Country</label>
@@ -151,23 +152,18 @@ function pre_r($array)
                     </select>
                 </div>
 
-
-
-
+                <div class="mb-3">
                     <label for="city">City</label>
                     <input type="text" class="form-control" id="city" name="city" placeholder="Los Angeles" required>
                     <div class="invalid-feedback">
                     </div>
-
+                </div>
                     <div class="mb-3">
                         <label for="state">State</label>
                         <input type="text" class="form-control" id="city" name="state" placeholder="California" required>
                         <div class="invalid-feedback">
                         </div>
                     </div>
-
-
-
 
                 <div class="col-md-3 mb-3">
                     <label for="zip">Zip</label>
@@ -178,6 +174,8 @@ function pre_r($array)
                 </div>
             </div>
 
+            <br>
+            <br>
 
             <button class="btn btn-primary btn-lg" value="submit" name="Submit" type="submit"> Confirm </button>
 
