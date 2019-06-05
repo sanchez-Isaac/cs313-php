@@ -92,27 +92,24 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
 <br>
 <br>
 <br>
-<div class="container">
-<?php
-if($_SERVER["REQUEST_METHOD"]=="POST") {
+<div class="card-columns">
+    <?php
+    if($_SERVER["REQUEST_METHOD"]=="POST") {
 
-    $sqlQuery = "SELECT item_name, item_type, item_price, item_quantity FROM items WHERE item_type = '" . $item_typ_name . "'";
-    $result2 = pg_query($con, $sqlQuery);
+        $sqlQuery = "SELECT item_name, item_type, item_price, item_quantity FROM items WHERE item_type = '" . $item_typ_name . "'";
+        $result2 = pg_query($con, $sqlQuery);
 
-    if (pg_num_rows($result2) > 0) {
-        while ($row = pg_fetch_array($result2)) {
-            echo "<div class='card-columns'>";
-            echo  "<div class='card bg-light'>";
-            echo "<div class='card-body text-center'>";
-            echo "<p class='card-text'><b>Name: </b>" .$row[0] . "<br>" ."<b>Type of Item: </b>". $row[1] . "<br>" ."<b>Price: </b>$". $row[2] . "<br>" ."<b>Quantity available: </b>". $row[3] . "</p>";
-            echo "</div></div></div>";
+        if (pg_num_rows($result2) > 0) {
+            while ($row = pg_fetch_array($result2)) {
+                echo  "<div class='card bg-light'>";
+                echo "<div class='card-body text-center'>";
+                echo "<p class='card-text'><b>Name: </b>" .$row[0] . "<br>" ."<b>Type of Item: </b>". $row[1] . "<br>" ."<b>Price: </b>$". $row[2] . "<br>" ."<b>Quantity available: </b>". $row[3] . "</p>";
+                echo "</div></div>";
 
+            }
         }
     }
-
-}
-?>
-
+    ?>
 </div>
 <br><br>
 <div>
@@ -126,33 +123,6 @@ if($_SERVER["REQUEST_METHOD"]=="POST") {
 <br>
 <br>
 <br>
-
-
-
-
-
-
-<div class="card-columns">
-<?php
-if($_SERVER["REQUEST_METHOD"]=="POST") {
-
-    $sqlQuery = "SELECT item_name, item_type, item_price, item_quantity FROM items WHERE item_type = '" . $item_typ_name . "'";
-    $result2 = pg_query($con, $sqlQuery);
-
-    if (pg_num_rows($result2) > 0) {
-        while ($row = pg_fetch_array($result2)) {
-            echo  "<div class='card bg-light'>";
-            echo "<div class='card-body text-center'>";
-            echo "<p class='card-text'><b>Name: </b>" .$row[0] . "<br>" ."<b>Type of Item: </b>". $row[1] . "<br>" ."<b>Price: </b>$". $row[2] . "<br>" ."<b>Quantity available: </b>". $row[3] . "</p>";
-            echo "</div></div>";
-
-        }
-    }
-}
-?>
-    </div>
-
-
 <br>
 <br>
 <br>
