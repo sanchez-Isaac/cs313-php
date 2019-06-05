@@ -123,14 +123,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="167" />
-          <entry key="php" value="2979" />
+          <entry key="php" value="2991" />
           <entry key="sql" value="432" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="167" />
-          <entry key="PHP" value="2979" />
+          <entry key="PHP" value="2991" />
           <entry key="Scratch" value="432" />
         </counts>
       </usages-collector>
@@ -177,8 +177,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/07Prove.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="616">
-              <caret line="74" column="17" lean-forward="true" selection-start-line="74" selection-start-column="17" selection-end-line="74" selection-end-column="17" />
+            <state relative-caret-position="392">
+              <caret line="114" column="115" selection-start-line="114" selection-start-column="101" selection-end-line="114" selection-end-column="115" />
             </state>
           </provider>
         </entry>
@@ -186,8 +186,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/store.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="79" column="17" selection-start-line="79" selection-start-column="17" selection-end-line="79" selection-end-column="17" />
+            <state relative-caret-position="374">
+              <caret line="112" column="35" lean-forward="true" selection-start-line="112" selection-start-column="35" selection-end-line="112" selection-end-column="35" />
               <folding>
                 <element signature="e#4939#4945#0#HTML" expanded="true" />
               </folding>
@@ -265,9 +265,9 @@
       <find>logo</find>
       <find>06Prove</find>
       <find>sear</find>
-      <find>password</find>
       <find>topnav a</find>
       <find>card-columns</find>
+      <find>password</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -381,7 +381,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71712000" />
+    <option name="totallyTimeSpent" value="71955000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="155" y="2" width="1762" height="1057" extended-state="0" />
@@ -561,13 +561,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/07Prove.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="74" column="17" lean-forward="true" selection-start-line="74" selection-start-column="17" selection-end-line="74" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/homestyle.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-527">
@@ -595,10 +588,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/07Prove.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="114" column="115" selection-start-line="114" selection-start-column="101" selection-end-line="114" selection-end-column="115" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/store.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="79" column="17" selection-start-line="79" selection-start-column="17" selection-end-line="79" selection-end-column="17" />
+        <state relative-caret-position="374">
+          <caret line="112" column="35" lean-forward="true" selection-start-line="112" selection-start-column="35" selection-end-line="112" selection-end-column="35" />
           <folding>
             <element signature="e#4939#4945#0#HTML" expanded="true" />
           </folding>
