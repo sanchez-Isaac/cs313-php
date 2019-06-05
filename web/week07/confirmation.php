@@ -145,6 +145,7 @@ function pre_r($array)
                     <div class="invalid-feedback">
                     </div>
                 </div>
+                <br>
                 <div class="col-md-4 mb-3">
                         <label for="state">State</label>
                         <input type="text" class="form-control" id="city" name="state" placeholder="California" required>
