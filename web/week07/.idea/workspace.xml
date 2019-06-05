@@ -4,7 +4,6 @@
     <list default="true" id="9aa14cf5-8668-4cb8-a1e4-a96931fa91c6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../../db/myDb.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../db/myDb.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../week06/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../week06/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store.php" beforeDir="false" afterPath="$PROJECT_DIR$/store.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -123,14 +122,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="167" />
-          <entry key="php" value="2991" />
+          <entry key="php" value="3002" />
           <entry key="sql" value="432" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="167" />
-          <entry key="PHP" value="2991" />
+          <entry key="PHP" value="3002" />
           <entry key="Scratch" value="432" />
         </counts>
       </usages-collector>
@@ -186,8 +185,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/store.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="112" column="35" lean-forward="true" selection-start-line="112" selection-start-column="35" selection-end-line="112" selection-end-column="35" />
+            <state relative-caret-position="119">
+              <caret line="118" column="46" lean-forward="true" selection-start-line="118" selection-start-column="46" selection-end-line="118" selection-end-column="46" />
               <folding>
                 <element signature="e#4939#4945#0#HTML" expanded="true" />
               </folding>
@@ -381,10 +380,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71955000" />
+    <option name="totallyTimeSpent" value="72214000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="155" y="2" width="1762" height="1057" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.08460634" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -597,8 +597,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/store.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="112" column="35" lean-forward="true" selection-start-line="112" selection-start-column="35" selection-end-line="112" selection-end-column="35" />
+        <state relative-caret-position="119">
+          <caret line="118" column="46" lean-forward="true" selection-start-line="118" selection-start-column="46" selection-end-line="118" selection-end-column="46" />
           <folding>
             <element signature="e#4939#4945#0#HTML" expanded="true" />
           </folding>

@@ -64,9 +64,9 @@ function pre_r($array)
 </head>
 <body>
 <div class="topnav">
-    <a class="active" href="home.php">Home</a>
+    <a class="active" href="Customer_home.php">Home</a>
     <a href="store.php">Store</a>
-    <a href="itemsSearch.php">Search inventory</a>
+    <a href="viewcart.php">View Cart</a>
     <div class="login-container">
         <form action="logout.php">
 
