@@ -44,7 +44,11 @@ function pre_r($array)
             <tr><th><?php echo $_SESSION['first_name'] ?>  <?php echo $_SESSION['middle_name']?> <?php echo $_SESSION['last_name']?> <br>
                     <?php echo $_SESSION['street'].", " ?>  <?php echo $_SESSION['ext_home_number'] ?> <?php echo $_SESSION['city'] ?> <br>
                     <?php echo $_SESSION['country'].", "?> <?php echo $_SESSION['state']?> <br>
-                    <?php echo $_SESSION['zip'] ?>
+                    <?php echo $_SESSION['zip'] ?><br><br>
+                    <i>We will call you and email you to:</i><br>
+                    <?php echo $_SESSION['telephone'] ?><br>
+                    <?php echo $_SESSION['email'] ?><br>
+
                 </th></tr>
         </table>
         <div>
