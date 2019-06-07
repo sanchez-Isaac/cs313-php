@@ -31,7 +31,7 @@ if(pg_num_rows($result) > 0){
     $_SESSION['passwordCRTCRT'] = NULL;
     echo "<script type='text/javascript'>alert(\"$name_error\");</script>";
 
-    header("Location: create_user_pass.php?Error=NotUnique");
+   // header("Location: create_user_pass.php?Error=NotUnique");
 
 
 }
