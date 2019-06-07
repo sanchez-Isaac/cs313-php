@@ -56,10 +56,16 @@ function pre_r($array)
                         <div class="form-group">
                             <label for="passwordCRT">Email address</label>
                             <input type="email" name="userCRT" class="form-control" id="userCRT" aria-describedby="emailHelp" placeholder="Enter email" required>
-                            <?php if (isset($name_error)): ?>
-                                <span><?php echo $name_error; ?></span>
-                            <?php endif ?>
+
                         </div>
+
+
+
+
+
+
+
+
                         <div class="form-group">
                             <label for="passwordCRT">Password</label>
                             <input type="password" name="passwordCRT" class="form-control" id="passwordCRT" placeholder="Password" required>
@@ -70,6 +76,24 @@ function pre_r($array)
             </div>
         </div>
     </div>
+
+
+
+    <form method="post" action="verify_unique_user.php" id="register_form">
+        <h1>Register</h1>
+        <div <?php if (isset($name_error)): ?> class="form_error" <?php endif ?> >
+            <input type="text" name="userCRT" id="userCRT" aria-describedby="emailHelp" placeholder="Username" value="<?php echo $user; ?>" required>
+            <?php if (isset($name_error)): ?>
+                <span><?php echo $name_error; ?></span>
+            <?php endif ?>
+
+            <div>
+                <input type="password"  placeholder="Password" name="password">
+            </div>
+            <div>
+                <button type="submit" name="register" id="reg_btn">Register</button>
+            </div>
+    </form>
 
 
 
