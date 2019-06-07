@@ -36,9 +36,9 @@ if(pg_num_rows($result) > 0){
 
 }
 else{
-    $name_error ="Sorry username is available ";
-    echo "<script type='text/javascript'>alert(\"$name_error\");</script>";
-     header("Location: create_account.php?Approved=");
+    $_SESSION['userCRT'] = $user;
+    $_SESSION['passwordCRTCRT'] = $pass;
+     header("Location: create_account_user.php?Approved=");
 }
 
 
