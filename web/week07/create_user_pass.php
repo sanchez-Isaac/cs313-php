@@ -98,7 +98,7 @@ else{
 
                         <div class="form-group">
                             <label for="passwordCRT">Password</label>
-                            <input type="password" name="passwordCRT" class="form-control" id="passwordCRT" placeholder="Password" required>
+                            <input type="password" name="passwordCRT" class="form-control" id="passwordCRT" placeholder="Password" pattern=".{5,10}" required title="5 to 10 characters" >
                         </div>
                         <button type="submit" name="submit_btn" class="btn btn-primary">Submit</button>
                     </form>
