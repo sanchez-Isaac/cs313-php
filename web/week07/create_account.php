@@ -62,7 +62,7 @@ function pre_r($array)
     <br/>
     <div>
         <h1 class="mb-3">Register a New User Account</h1><br>
-        <form  method="post" action="">
+        <form  method="post" action="insert_user_query.php">
             <div class="row">
                 <div class="col-md-6 mb-3">
                     <label for="firstName">First name</label>
