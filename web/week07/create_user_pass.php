@@ -17,16 +17,11 @@ function pre_r($array)
 
 if(isset($_POST['submit_btn'])) {
 
-$user = test_input($_POST['userCRT']);
-$pass = test_input($_POST['passwordCRT']);
+$user = pg_escape_string($_POST['userCRT']);
+$pass = pg_escape_string($_POST['passwordCRT']);
 
-function test_input($data)
-{
-    $data = trim($data);
-    $data = stripslashes($data);
-    $data = htmlspecialchars($data);
-    return $data;
-}
+
+
 $query = "SELECT email FROM identification WHERE email = '$user'";
 $result = pg_query( $con, $query);
 
