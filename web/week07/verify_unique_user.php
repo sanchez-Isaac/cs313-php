@@ -36,6 +36,6 @@ if(pg_num_rows($result) > 0){
 else{
     $name_error = "Username Available";
     echo "<script type='text/javascript'>alert(\"$name_error\");</script>";
-    header("Location: create_account.php?Aproved=");
+    header("Location: create_account.php?Approved=");
 }
 
