@@ -35,7 +35,7 @@ function pre_r($array)
 <head>
     <meta charset="utf-8" />
     <title>Confirmation Page</title>
-    <link rel="stylesheet" href="stylelogin.css">
+    <link rel="stylesheet" href="homestyle.css">
 
 
     <!-- Latest compiled and minified CSS -->
