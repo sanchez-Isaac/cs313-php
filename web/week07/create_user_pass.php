@@ -1,6 +1,7 @@
 <?PHP
 session_start();
 require 'DbConnect.php';
+$con = get_db();
 
 /*
 pre_r($_SESSION);
@@ -15,7 +16,6 @@ function pre_r($array)
 */
 
 if(isset($_POST['submit_btn'])) {
-$con = get_db();
 
 $user = test_input($_POST['userCRT']);
 $pass = test_input($_POST['passwordCRT']);
