@@ -3,8 +3,8 @@ include_once 'DbConnect.php';
 
 $con = get_db();
 
-$_SESSION['userCRT'] = test_input($_POST['userCRT']);
-$_SESSION['passwordCRT'] = test_input($_POST['passwordCRT']);
+$user = test_input($_POST['userCRT']);
+$pass = test_input($_POST['passwordCRT']);
 
 
 
@@ -19,7 +19,7 @@ function test_input($data)
 }
 
 
-$query = 'SELECT email FROM identification';
+$query = "SELECT email FROM identification WHERE email = '$user'";
 $result = pg_query( $con, $query);
 
 
