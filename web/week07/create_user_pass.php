@@ -92,17 +92,12 @@ else{
                     </div>
                     <br>
 
-                    <form method="post" action="verify_unique_user.php">
+                    <form method="post" action="create_user_pass.php">
                         <div class="form-group">
                             <label for="passwordCRT">Email address</label>
                             <input type="email" name="userCRT" class="form-control" id="userCRT" aria-describedby="emailHelp" placeholder="Enter email" required>
 
                         </div>
-
-
-
-
-
 
 
 
