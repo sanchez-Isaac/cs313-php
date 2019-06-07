@@ -1,6 +1,6 @@
 <?PHP
 session_start();
- include('verify_unique_user.php')
+ Require('verify_unique_user.php')
 
 /*
 pre_r($_SESSION);
@@ -77,23 +77,6 @@ function pre_r($array)
         </div>
     </div>
 
-
-
-    <form method="post" action="verify_unique_user.php" id="register_form">
-        <h1>Register</h1>
-        <div <?php if (isset($name_error)): ?> class="form_error" <?php endif ?> >
-            <input type="text" name="userCRT" id="userCRT" aria-describedby="emailHelp" placeholder="Username" value="<?php echo $user; ?>" required>
-            <?php if (isset($name_error)): ?>
-                <span><?php echo $name_error; ?></span>
-            <?php endif ?>
-
-            <div>
-                <input type="password"  placeholder="Password" name="password">
-            </div>
-            <div>
-                <button type="submit" name="register" id="reg_btn">Register</button>
-            </div>
-    </form>
 
 
 
