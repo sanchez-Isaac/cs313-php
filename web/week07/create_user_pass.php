@@ -3,7 +3,7 @@ session_start();
 require 'DbConnect.php';
 $con = get_db();
 
-/*
+
 pre_r($_SESSION);
 
 function pre_r($array)
@@ -13,7 +13,7 @@ function pre_r($array)
     echo '</pre>';
 }
 
-*/
+
 
 if(isset($_POST['submit_btn'])) {
 
@@ -31,13 +31,13 @@ if(pg_num_rows($result) > 0){
     $_SESSION['passwordCRTCRT'] = NULL;
     echo "<script type='text/javascript'>alert(\"$name_error\");</script>";
 
-   // header("Location: create_user_pass.php?Error=NotUnique");
+
 
 
 }
 else{
     $_SESSION['userCRT'] = $user;
-    $_SESSION['passwordCRTCRT'] = $pass;
+    $_SESSION['passwordCRT'] = $pass;
      header("Location: create_account_user.php?Approved=");
 }
 
