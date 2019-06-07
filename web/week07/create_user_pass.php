@@ -1,20 +1,6 @@
 <?PHP
 session_start();
 
-$_SESSION['userCRT'] = test_input($_POST['userCRT']);
-$_SESSION['passwordCRT'] = md5(test_input($_POST['passwordCRT']));
-
-
-
-
-
-function test_input($data)
-{
-    $data = trim($data);
-    $data = stripslashes($data);
-    $data = htmlspecialchars($data);
-    return $data;
-}
 
 /*
 pre_r($_SESSION);
@@ -35,7 +21,8 @@ function pre_r($array)
 <head>
     <meta charset="utf-8" />
     <title>Confirmation Page</title>
-    <link rel="stylesheet" href="homestyle.css">
+    <link rel="stylesheet" href="stylelogin.css">
+
 
 
     <!-- Latest compiled and minified CSS -->
@@ -50,14 +37,11 @@ function pre_r($array)
 
 <body>
 
-<div class="header">
-    <h1 class="headtitle"> Register an Account</h1>
-    <br>
-    <br>
-</div>
 
 
-<br>
+
+
+
     <div class="container">
         <div class="col-sm-6 col-sm-offset-4 ">
             <div class="jumbotron">
@@ -68,7 +52,7 @@ function pre_r($array)
                     </div>
                     <br>
 
-                    <form method="post" action="">
+                    <form method="post" action="verify_unique_user.php">
                         <div class="form-group">
                             <label for="passwordCRT">Email address</label>
                             <input type="email" class="form-control" id="passwordCRT" aria-describedby="emailHelp" placeholder="Enter email" required>
