@@ -27,8 +27,6 @@ $result = pg_query( $con, $query);
 
 if(pg_num_rows($result) > 0){
     $name_error ="Sorry username is already taken";
-    $_SESSION['userCRT'] = NULL;
-    $_SESSION['passwordCRTCRT'] = NULL;
     echo "<script type='text/javascript'>alert(\"$name_error\");</script>";
 
 
