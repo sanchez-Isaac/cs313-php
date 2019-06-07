@@ -39,14 +39,3 @@ else{
     header("Location: create_account.php?Aproved=");
 }
 
-
-
-
-$sql = "INSERT INTO items(item_id, item_barcode, item_name, item_type, item_price, item_quantity, photo_desc)
-VALUES($item_id, $item_id, '$item_name', '$item_type', $item_price, $item_quantity, '$photo_desc');";
-
-pg_query($con ,$sql);
-
-pg_close($con);
-
-header("Location: insert_items.php?insert=");
