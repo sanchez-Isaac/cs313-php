@@ -1,6 +1,6 @@
 <?PHP
 session_start();
- Require('verify_unique_user.php')
+require 'DbConnect.php';
 
 /*
 pre_r($_SESSION);
@@ -13,6 +13,46 @@ function pre_r($array)
 }
 
 */
+
+if(isset($_POST['submit_btn'])) {
+$con = get_db();
+
+$user = test_input($_POST['userCRT']);
+$pass = test_input($_POST['passwordCRT']);
+
+function test_input($data)
+{
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
+}
+$query = "SELECT email FROM identification WHERE email = '$user'";
+$result = pg_query( $con, $query);
+
+if(pg_num_rows($result) > 0){
+    $name_error ="Sorry username is already taken";
+    $_SESSION['userCRT'] = NULL;
+    $_SESSION['passwordCRTCRT'] = NULL;
+    echo "<script type='text/javascript'>alert(\"$name_error\");</script>";
+
+    header("Location: create_user_pass.php?Error=NotUnique");
+
+
+}
+else{
+    $name_error ="Sorry username is available ";
+    echo "<script type='text/javascript'>alert(\"$name_error\");</script>";
+     header("Location: create_account.php?Approved=");
+}
+
+
+
+}
+
+
+
+
 
 ?>
 
@@ -70,7 +110,7 @@ function pre_r($array)
                             <label for="passwordCRT">Password</label>
                             <input type="password" name="passwordCRT" class="form-control" id="passwordCRT" placeholder="Password" required>
                         </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="submit" name="submit_btn" class="btn btn-primary">Submit</button>
                     </form>
                 </div>
             </div>
