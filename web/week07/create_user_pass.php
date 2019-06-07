@@ -55,12 +55,14 @@ function pre_r($array)
                     <form method="post" action="verify_unique_user.php">
                         <div class="form-group">
                             <label for="passwordCRT">Email address</label>
-                            <input type="email" name="passwordCRT" class="form-control" id="passwordCRT" aria-describedby="emailHelp" placeholder="Enter email" required>
-                            <small id="emailHelp"  class="form-text text-muted">We'll never share your email with anyone else.</small>
+                            <input type="email" name="userCRT" class="form-control" id="userCRT" aria-describedby="emailHelp" placeholder="Enter email" required>
+                            <?php if (isset($name_error)): ?>
+                                <span><?php echo $name_error; ?></span>
+                            <?php endif ?>
                         </div>
                         <div class="form-group">
                             <label for="passwordCRT">Password</label>
-                            <input type="password" name="userCRT" class="form-control" id="passwordCRT" placeholder="Password" required>
+                            <input type="password" name="passwordCRT" class="form-control" id="passwordCRT" placeholder="Password" required>
                         </div>
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
