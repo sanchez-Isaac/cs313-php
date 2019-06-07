@@ -27,15 +27,15 @@ if(pg_num_rows($result) > 0){
     $name_error ="Sorry username is already taken";
     $_SESSION['userCRT'] = NULL;
     $_SESSION['passwordCRTCRT'] = NULL;
-    echo "<script type='text/javascript'>alert(\"$name_error\");</script>";
+   // echo "<script type='text/javascript'>alert(\"$name_error\");</script>";
 
-    header("Location: create_user_pass.php?Error=NotUnique");
+   // header("Location: create_user_pass.php?Error=NotUnique");
 
 
 }
 else{
     $name_error = "Username Available";
-    echo "<script type='text/javascript'>alert(\"$name_error\");</script>";
-    header("Location: create_account.php?Approved=");
+   // echo "<script type='text/javascript'>alert(\"$name_error\");</script>";
+   // header("Location: create_account.php?Approved=");
 }
 
