@@ -81,7 +81,7 @@ if(!isset($_SESSION['username']))
         <ul class="w3-ul w3-border w3-center w3-hover-shadow">
             <li class="w3-green w3-xlarge w3-padding-32">Add Items</li>
             <li class="w3-padding-16">
-                <h2 class="w3-wide">Query and Search</h2>
+                <h2 class="w3-wide">Search and Add</h2>
                 <span class="w3-opacity">Items in/to the store</span>
             </li>
             <li class="w3-light-grey w3-padding-24">
