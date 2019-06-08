@@ -29,7 +29,7 @@ while($rows = pg_fetch_assoc($result))
 
 
 $sql_identification = "INSERT INTO identification(login_id, email, password)
-VALUES($login_id, ''$email, '$user';";
+VALUES($login_id, '$email', '$user';";
 
 $sql_address = "INSERT INTO address(address_id, street, city, state, zip, telephone, ext_home_number, country)
 VALUES($login_id, '$street', '$city', '$state', $zip, $telephone, $ext_home_number, '$country';";
