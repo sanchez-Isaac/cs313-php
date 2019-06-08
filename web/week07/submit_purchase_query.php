@@ -46,13 +46,15 @@ function console_log( $data ){
 }
 
 
-while ($i_counter < $_SESSION['shopping_cart'][$i_counter]['$item_id']) {
+
+foreach ($_SESSION['shopping_cart'] as $key => $product):
+    $item_i = $product['item_name'];
     $sql_order = "INSERT INTO order(order_id, num_of_order_id, customer_id, to_street, ext_home_number, to_city, To_zip, ship_date, item_id, item_quantity, item_name)
     VALUES($order_id, $num_of_order_id, $customer_id, '$street', $ext_home_number, '$city', '$zip', $date, $item_id, '$quantity', '$item_name' );";
     pg_query($con ,$sql_order);
     $i_counter ++;
-}
 
+endforeach;
 
 
 pg_close($con);
