@@ -4,7 +4,7 @@ $product_ids = array();
 //session_destroy();
 
 if(!isset ($_SESSION['customer_id'])){
-    $_SESSION['customer_id'] = rand(1,99999999999999);
+    $_SESSION['customer_id'] = rand(1,9999999);
 
     }
 
