@@ -68,7 +68,7 @@ function pre_r($array)
     <div style="clear:both"></div>
     <br/>
 
-        <form  method="post" action="insert_admin_query.php">
+        <form  method="post" action="addAdmin.php?">
             <div class="row">
 
                 <label for="firstName">First name</label>
