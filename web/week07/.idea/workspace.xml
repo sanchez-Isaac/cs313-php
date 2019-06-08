@@ -163,14 +163,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="190" />
-          <entry key="php" value="9151" />
+          <entry key="php" value="9154" />
           <entry key="sql" value="1419" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="190" />
-          <entry key="PHP" value="9150" />
+          <entry key="PHP" value="9153" />
           <entry key="SQL" value="1" />
           <entry key="Scratch" value="1419" />
         </counts>
@@ -243,8 +243,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/submit_purchase_query.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="22" lean-forward="true" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+            <state relative-caret-position="2">
+              <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -434,12 +434,12 @@
       <workItem from="1559097352018" duration="13619000" />
       <workItem from="1559177851459" duration="4611000" />
       <workItem from="1559424686994" duration="5928000" />
-      <workItem from="1559941230192" duration="49470000" />
+      <workItem from="1559941230192" duration="49793000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="131205000" />
+    <option name="totallyTimeSpent" value="131528000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="182" y="0" width="1728" height="1057" extended-state="0" />
@@ -459,9 +459,9 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" weight="0.32850242" />
       <window_info anchor="bottom" id="PHP-CGI Server" order="10" weight="0.32936078" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.89382446" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.89382446" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Database Console" order="13" visible="true" weight="0.23293608" />
+      <window_info anchor="bottom" id="Database Console" order="13" weight="0.23293608" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -733,8 +733,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/submit_purchase_query.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="22" lean-forward="true" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+        <state relative-caret-position="2">
+          <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
         </state>
       </provider>
     </entry>
