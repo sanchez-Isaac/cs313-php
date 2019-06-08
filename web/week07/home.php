@@ -99,7 +99,7 @@ if(!isset($_SESSION['username']))
             </li>
             <li class="w3-light-grey w3-padding-24">
                 <button formaction="create_user_pass.php" data-target="#createUserModal" data-Toggle="modal" class="w3-button w3-green w3-padding-large">Add Users form</button>
-                <button formaction="create_user_pass.php" data-target="#createUserModal" data-Toggle="modal" class="w3-button w3-green w3-padding-large">Add Users modal</button>
+                <button data-target="#createUserModal" data-Toggle="modal" class="w3-button w3-green w3-padding-large">Add Users modal</button>
 
                 <div class="modal" id="createUserModal" tabindex="-1">
                     <div class="modal-dialog">
