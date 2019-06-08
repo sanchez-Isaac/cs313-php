@@ -36,6 +36,8 @@ function console_log( $data ){
 
 }
 
+////nextval('admin_admin_id_seq')
+
 $sql_admin = "INSERT INTO admin(admin_id, name, last_name, user_name, email, password)
 VALUES($admin_id, '$first_name', '$last_name', '$user', '$email', '$pass');";
 

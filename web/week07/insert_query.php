@@ -34,6 +34,9 @@ function console_log( $data ){
 
 }
 
+//nextval('items_item_id_seq')
+
+
 $sql = "INSERT INTO items(item_id, item_barcode, item_name, item_type, item_price, item_quantity, photo_desc)
 VALUES($item_id, $item_id, '$item_name', '$item_type', $item_price, $item_quantity, '$photo_desc');";
 
