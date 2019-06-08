@@ -138,7 +138,7 @@ if(!isset($_SESSION['username']))
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                                <button type="button" formaction="create_user_pass.php" class="btn btn-primary">Continue</button>
+                                <button formaction="create_user_pass.php"  data-Toggle="modal" class="btn btn-primary">Continue</button>
                             </div>
                         </div>
                     </div>
