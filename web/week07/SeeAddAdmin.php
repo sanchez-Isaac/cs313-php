@@ -65,52 +65,36 @@ if(!isset($_SESSION['username']))
 <br>
 <br>
 <div class="container">
-    <div class="card-columns">
-        <?php
-
-
-
-        $result = pg_query( $con, $query);
-
-
-        if (pg_num_rows($result) > 0) {
+    <div style="overflow-x:auto;">
+        <table>
+            <?php
+            $result = pg_query( $con, $query);
+            if (pg_num_rows($result) > 0) {
                 while ($row = pg_fetch_array($result)) {
-                    echo  "<div class='card bg-light'>";
-                    echo "<div class='card-body text-center'>";
-                    echo "<p class='card-text'><b>Employee #id: </b>" .$row[0] . "<br>" ."<b>Name: </b>". $row[1] . "<br>" ."<b>last name: </b>". $row[2] . "<br>" ."<b>Username: </b>". $row[3] . "</p>" . "<b>Email: </b>" . $row[4];
-                    echo "</div></div>";
+                    echo "<tr>";
+                    echo "<th>Employe #id</th>";
+                    echo "<th>Name</th>";
+                    echo "<th>Last Name</th>";
+                    echo "<th>Username</th>";
+                    echo "<th>Email</th>";
+                    echo "</tr>";
+
+                    echo "<tr>";
+                    echo "<th>". $row[0]."</th>";
+                    echo "<th>". $row[1]."</th>";
+                    echo "<th>". $row[2]."</th>";
+                    echo "<th>". $row[3]."</th>";
+                    echo "<th>". $row[4]."</th>";
+                    echo "</tr>";
 
                 }
-        }
-        ?>
+            }
+            ?>
+        </table>
     </div>
 </div>
 
-<table>
-    <?php
-    $result = pg_query( $con, $query);
-    if (pg_num_rows($result) > 0) {
-        while ($row = pg_fetch_array($result)) {
-           echo "<tr>";
-           echo "<th>Employe #id</th>";
-            echo "<th>Name</th>";
-            echo "<th>Last Name</th>";
-            echo "<th>Username</th>";
-            echo "<th>Email</th>";
-            echo "</tr>";
 
-            echo "<tr>";
-            echo "<th>". $row[0]."</th>";
-            echo "<th>". $row[1]."</th>";
-            echo "<th>". $row[2]."</th>";
-            echo "<th>". $row[3]."</th>";
-            echo "<th>". $row[4]."</th>";
-            echo "</tr>";
-
-        }
-    }
-    ?>
-</table>
 <br><br>
 
 <div class="container">
