@@ -38,4 +38,4 @@ pg_close($con);
 
 
 
-header("Location: 07Prove.php?Registration=Success");
+//header("Location: 07Prove.php?Registration=Success");
