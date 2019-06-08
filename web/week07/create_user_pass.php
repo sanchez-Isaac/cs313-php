@@ -22,8 +22,6 @@ if(isset($_POST['submit_btn'])) {
 $user = pg_escape_string($_POST['userCRT']);
 $pass = pg_escape_string($_POST['passwordCRT']);
 
-
-
 $query = "SELECT email FROM identification WHERE email = '$user'";
 $result = pg_query( $con, $query);
 
