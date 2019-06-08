@@ -58,4 +58,4 @@ while ($i_counter < $_SESSION['shopping_cart'][$i_counter]['$item_id']) {
 pg_close($con);
 session_destroy();
 
-header("Location: 07Prove.php?Registration=Success");
+
