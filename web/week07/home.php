@@ -131,13 +131,13 @@ if(!isset($_SESSION['username']))
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle">Create Users Action</h5>
+                <h3 class="modal-title" id="exampleModalLongTitle">Create Users Action</h3>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
-                This Action Will Log you out of your account
+                <h4>This Action Will Log you out of your account</h4><br>
                 Do you want to continue?
             </div>
             <div class="modal-footer">
