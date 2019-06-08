@@ -24,7 +24,7 @@ while ($row = pg_fetch_array($result)){
 
     console_log( $id );
 }
-$admin_id = ($id++);
+$admin_id = ($id+1);
 
 console_log( $admin_id );
 
