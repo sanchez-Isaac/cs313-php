@@ -2,6 +2,20 @@
 session_start();
 require ('DbConnect.php');
 $con = get_db();
+
+if(isset($_SESSION['username']) && $_SESSION['message'] == "You are logged in Admin" )
+{
+    header('location: home.php?Login=True');
+}
+else if(isset($_SESSION['username']) && $_SESSION['message'] == "You are logged in" )
+{
+    header('location: Customer_home.php?Login=True');
+}
+
+
+
+
+
 if(isset($_POST['login_btn'])){
 
     $username = pg_escape_string($_POST['username']);

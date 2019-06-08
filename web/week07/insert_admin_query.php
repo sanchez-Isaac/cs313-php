@@ -41,7 +41,12 @@ VALUES($admin_id, '$first_name', '$last_name', '$user', '$email', '$pass');";
 
 pg_query($con ,$sql_admin);
 pg_close($con);
-session_destroy();
+
+unset ($_SESSION['first_namead']);
+unset ( $_SESSION['last_namead']);
+unset ($_SESSION['emailad']);
+unset ($_SESSION['usernamead']);
+unset ( $_SESSION['passwordad']);
 
 
 
