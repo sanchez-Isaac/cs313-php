@@ -90,7 +90,6 @@ if(!isset($_SESSION['username']))
 <div class="container">
     <a class="btn btn-primary" href="addAdmin.php" role="button">Create New Admin</a>
     <br>
-    <br>
     <a class="btn btn-success" href="home.php" role="button">Back Home</a>
 </div>
 
