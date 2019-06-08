@@ -6,9 +6,9 @@ $con = get_db();
 
 $first_name = pg_escape_string($_POST['first_name']);
 $last_name = pg_escape_string($_POST['last_name']);
-$email = pg_escape_string($_POST['email']);
-$user = $_SESSION['usernamead'];
-$pass = $_SESSION['passwordad'];
+$email = pg_escape_string($_POST['emailad']);
+$user = pg_escape_string($_POST['usernamead']);
+$pass = pg_escape_string($_POST['passwordad']);
 $login_id = 1 ;
 
 

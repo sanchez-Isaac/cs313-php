@@ -3,9 +3,9 @@ session_start();
 
 $_SESSION['first_name'] = test_input($_POST['first_name']);
 $_SESSION['last_name'] = test_input($_POST['last_name']);
-$_SESSION['email'] = test_input($_POST['email']);
+$_SESSION['emailad'] = test_input($_POST['emailad']);
 $_SESSION['usernamead'] = test_input($_POST['usernamead']);
-$_SESSION['password'] = md5(test_input($_POST['password']));
+$_SESSION['passwordad'] = md5(test_input($_POST['password']));
 
 
 
