@@ -4,7 +4,7 @@ session_start();
 $_SESSION['first_name'] = test_input($_POST['first_name']);
 $_SESSION['last_name'] = test_input($_POST['last_name']);
 $_SESSION['email'] = test_input($_POST['email']);
-$_SESSION['username'] = test_input($_POST['username']);
+$_SESSION['usernamead'] = test_input($_POST['usernamead']);
 $_SESSION['password'] = md5(test_input($_POST['password']));
 
 
@@ -69,7 +69,7 @@ function pre_r($array)
     <div style="clear:both"></div>
     <br/>
 
-        <form  method="post" action="addAdmin.php?">
+        <form  method="post" action="insert_admin_query.php">
             <div class="row">
 
                 <label for="firstName">First name</label>
@@ -78,11 +78,11 @@ function pre_r($array)
                 <label for="lastName">Last name</label>
                 <input type="text" class="form-control" id="last_name" name="last_name" placeholder="" value="" required>
                 <br>
-                <label for="username">Username</label>
-                <input type="text" class="form-control" id="username" name="username" placeholder="" value="" required>
+                <label for="usernamead">Username</label>
+                <input type="text" class="form-control" id="usernamead" name="usernamead" placeholder="" value="" required>
                 <br>
-                <label for="email">Email </label>
-                <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="you@example.com" required>
+                <label for="emailad">Email </label>
+                <input type="email" class="form-control" id="emailad" name="emailad" aria-describedby="emailHelp" placeholder="you@example.com" required>
                 <br>
                 <label for="password">Password</label>
                 <input size="16" type="password" name="password" class="form-control" id="password" placeholder="Password" pattern=".{5,10}" required title="5 to 10 characters" >
