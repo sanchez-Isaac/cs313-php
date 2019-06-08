@@ -14,15 +14,8 @@ $admin_id = 0 ;
 
 
 $query = 'SELECT admin_id FROM admin';
-$result = pg_query( $con, $query);
-while($rows = pg_fetch_assoc($result))
-{
-    $login_id ++;
 
-
-}
-
-$result = pg_query($query);
+$result = pg_query($con, $query);
 while ($row = pg_fetch_array($result)){
     $id = $row['admin_id'];
     $admin_id = $id++;
