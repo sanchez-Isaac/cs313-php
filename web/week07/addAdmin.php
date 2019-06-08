@@ -10,7 +10,7 @@ if(isset($_POST['Submit'])) {
     $first_name = pg_escape_string($_POST['first_name']);
     $last_name = pg_escape_string($_POST['last_name']);
 
-    $query = "SELECT user_name FROM admin WHERE user_name = $user";
+    $query = "SELECT user_name FROM admin WHERE user_name = 'san16044@byui.edu'";
     $result = pg_query( $con, $query);
 
     if(pg_num_rows($result) > 0){
