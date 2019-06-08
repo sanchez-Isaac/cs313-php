@@ -15,7 +15,7 @@ if(isset($_POST['Submit'])) {
     $result = pg_query( $con, $query);
 
     $query2 = "SELECT email FROM admin WHERE email = '$email'";
-    $result = pg_query( $con, $query2);
+    $result2 = pg_query( $con, $query2);
 
 
 
