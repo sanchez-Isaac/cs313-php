@@ -16,17 +16,31 @@ $state = pg_escape_string($_POST['state']);
 $zip = pg_escape_string($_POST['zip']);
 $telephone = pg_escape_string($_POST['telephone']);
 $pass = md5($_SESSION['passwordCRT']);
-$login_id = 1 ;
+$login_id = 0 ;
+$id = 0;
 
+console_log( $login_id );
+console_log( $id );
 
 $query = 'SELECT login_id FROM identification';
-$result = pg_query( $con, $query);
-while($rows = pg_fetch_assoc($result))
-{
-    $login_id ++;
+
+$result = pg_query($con, $query);
+while ($row = pg_fetch_array($result)){
+    $id = $row['login_id'];
+
+    console_log( $id );
 }
+$login_id = ($id+1);
+
+console_log( $login_id );
 
 
+function console_log( $data ){
+    echo '<script>';
+    echo 'console.log('. json_encode( $data ) .')';
+    echo '</script>';
+
+}
 
 
 $sql_identification = "INSERT INTO identification(login_id, email, password)

@@ -2,6 +2,34 @@
 session_start();
 
 
+if(isset($_POST['Submit'])) {
+
+    $user = pg_escape_string($_POST['usernamead']);
+    $pass = pg_escape_string($_POST['passwordad']);
+    $email = pg_escape_string($_POST['email']);
+    $first_name = pg_escape_string($_POST['first_name']);
+    $last_name = pg_escape_string($_POST['last_name']);
+
+    $query = "SELECT email FROM admin WHERE email = '$user'";
+    $result = pg_query( $con, $query);
+
+    if(pg_num_rows($result) > 0){
+        $name_error ="Sorry username is already taken";
+        echo "<script type='text/javascript'>alert(\"$name_error\");</script>";
+
+    }
+    else{
+        $_SESSION['usernamead'] = $user;
+        $_SESSION['passwordad'] = $pass;
+        $_SESSION['emailad'] =  $email;
+        $_SESSION['first_namead'] = $first_name;
+        $_SESSION['last_namead'] = $last_name;
+
+         header("Location: insert_admin_query.php?Approved=");
+    }
+
+}
+
 
 
 
@@ -15,7 +43,7 @@ function test_input($data)
     return $data;
 }
 
-/*
+
 pre_r($_SESSION);
 
 function pre_r($array)
@@ -24,7 +52,7 @@ function pre_r($array)
     print_r($array);
     echo '</pre>';
 }
-*/
+
 
 
 ?>
@@ -65,7 +93,7 @@ function pre_r($array)
     <div style="clear:both"></div>
     <br/>
 
-        <form  method="post" action="insert_admin_query.php">
+        <form  method="post" action="addAdmin.php">
             <div class="row">
 
                 <label for="firstName">First name</label>

@@ -4,11 +4,11 @@ include_once 'DbConnect.php';
 
 $con = get_db();
 
-$first_name = pg_escape_string($_POST['first_name']);
-$last_name = pg_escape_string($_POST['last_name']);
-$email = pg_escape_string($_POST['emailad']);
-$user = pg_escape_string($_POST['usernamead']);
-$pass1 = pg_escape_string($_POST['passwordad']);
+$first_name = $_SESSION['first_namead'];
+$last_name = $_SESSION['last_namead'];
+$email =  $_SESSION['emailad'];
+$user = $_SESSION['usernamead'];
+$pass1 =  $_SESSION['passwordad'];
 $pass = md5($pass1);
 $admin_id = 0 ;
 $id = 0;
@@ -33,6 +33,7 @@ function console_log( $data ){
     echo '<script>';
     echo 'console.log('. json_encode( $data ) .')';
     echo '</script>';
+
 }
 
 $sql_admin = "INSERT INTO admin(admin_id, name, last_name, user_name, email, password)
@@ -43,4 +44,4 @@ pg_close($con);
 
 
 
-//header("Location: 07Prove.php?Registration=Success");
+header("Location: 07Prove.php?Registration=Success");
