@@ -13,7 +13,8 @@ $pass = md5($pass1);
 $admin_id = 0 ;
 $id = 0;
 
-
+console_log( $admin_id );
+console_log( $id );
 
 $query = 'SELECT admin_id FROM admin';
 
