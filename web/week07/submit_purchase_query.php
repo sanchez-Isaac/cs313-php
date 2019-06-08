@@ -4,16 +4,16 @@ include_once 'DbConnect.php';
 
 $con = get_db();
 
-$first_name = $_SESSION['userCRT'];
-$middle_name = $_SESSION['userCRT'];
-$last_name = $_SESSION['userCRT'];
-$street = $_SESSION['userCRT'];
-$ext_home_number = $_SESSION['userCRT'];
-$city = $_SESSION['userCRT'];
-$country = $_SESSION['userCRT'];
-$state = $_SESSION['userCRT'];
-$zip = $_SESSION['userCRT'];
-$telephone = $_SESSION['userCRT'];
+$first_name = $_SESSION['first_name'];
+$middle_name = $_SESSION['middle_name'];
+$last_name = $_SESSION['last_name'];
+$street = $_SESSION['street'];
+$ext_home_number = $_SESSION['ext_home_number'];
+$city = $_SESSION['city'];
+$country = $_SESSION['country'];
+$state = $_SESSION['state'];
+$zip = $_SESSION['zip'];
+$telephone = $_SESSION['telephone'];
 
 $i_counter = 0;
 $item_id =   $_SESSION['shopping_cart'][$i_counter]['$item_id'];
