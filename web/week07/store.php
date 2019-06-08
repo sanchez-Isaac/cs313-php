@@ -2,6 +2,13 @@
 session_start();
 $product_ids = array();
 //session_destroy();
+
+if(!isset ($_SESSION['customer_id'])){
+    $_SESSION['customer_id'] = rand(1,99999999999999);
+
+    }
+
+
 if(filter_input(INPUT_POST, 'add_to_cart')){
     if(isset ($_SESSION['shopping_cart'])){
         $count = count($_SESSION['shopping_cart']);
