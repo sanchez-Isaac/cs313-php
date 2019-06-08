@@ -18,7 +18,7 @@ $query = 'SELECT admin_id FROM admin';
 $result = pg_query($con, $query);
 while ($row = pg_fetch_array($result)){
     $id = $row['admin_id'];
-    $admin_id = $id++;
+    $admin_id = $id;
 }
 
 console_log( $admin_id );
