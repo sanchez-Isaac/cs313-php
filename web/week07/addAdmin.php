@@ -1,11 +1,7 @@
 <?PHP
 session_start();
 
-$_SESSION['first_name'] = test_input($_POST['first_name']);
-$_SESSION['last_name'] = test_input($_POST['last_name']);
-$_SESSION['emailad'] = test_input($_POST['emailad']);
-$_SESSION['usernamead'] = test_input($_POST['usernamead']);
-$_SESSION['passwordad'] = md5(test_input($_POST['password']));
+
 
 
 
@@ -84,8 +80,8 @@ function pre_r($array)
                 <label for="emailad">Email </label>
                 <input type="email" class="form-control" id="emailad" name="emailad" aria-describedby="emailHelp" placeholder="you@example.com" required>
                 <br>
-                <label for="password">Password</label>
-                <input size="16" type="password" name="password" class="form-control" id="password" placeholder="Password" pattern=".{5,10}" required title="5 to 10 characters" >
+                <label for="passwordad">Password</label>
+                <input size="16" type="password" name="passwordad" class="form-control" id="passwordad" placeholder="Password" pattern=".{5,10}" required title="5 to 10 characters" >
 
             <br>
             <br>
