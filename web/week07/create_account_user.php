@@ -14,7 +14,7 @@ echo '<pre>';
 */
 
 
-if(!isset($_SESSION['userCRT']) && !isset($_SESSION['paswordCRT']))
+if(!isset($_SESSION['userCRT']) && !isset($_SESSION['passwordCRT']))
 {
     header('location: create_user_pass.php?Login=False');
 }
