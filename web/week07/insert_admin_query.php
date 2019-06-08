@@ -14,6 +14,7 @@ $admin_id = 0 ;
 $id = 0;
 
 
+
 $query = 'SELECT admin_id FROM admin';
 
 $result = pg_query($con, $query);
@@ -23,13 +24,13 @@ while ($row = pg_fetch_array($result)){
 $admin_id = $id;
 
 console_log( $admin_id );
+console_log( $id );
+
 function console_log( $data ){
     echo '<script>';
     echo 'console.log('. json_encode( $data ) .')';
     echo '</script>';
 }
-
-
 
 $sql_admin = "INSERT INTO admin(admin_id, name, last_name, user_name, email, password)
 VALUES($admin_id, '$first_name', '$last_name', '$user', '$email', '$pass');";
