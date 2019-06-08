@@ -4,6 +4,11 @@ include_once 'DbConnect.php';
 $con = get_db();
 
 
+if(!isset($_SESSION['username']) && $_SESSION['username'] != "You are logged in Admin" )
+{
+    header('location: 07Prove.php?Login=False');
+}
+?>
 
 
 if(isset($_POST['Submit'])) {
@@ -58,7 +63,7 @@ function test_input($data)
     return $data;
 }
 
-
+/*
 pre_r($_SESSION);
 
 function pre_r($array)
@@ -68,7 +73,7 @@ function pre_r($array)
     echo '</pre>';
 }
 
-
+*/
 
 ?>
 
