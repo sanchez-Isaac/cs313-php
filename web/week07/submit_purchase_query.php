@@ -14,7 +14,7 @@ $country = $_SESSION['country'];
 $state = $_SESSION['state'];
 $zip = $_SESSION['zip'];
 $telephone = $_SESSION['telephone'];
-
+$customer_id = $_SESSION['customer_id'];
 $i_counter = 0;
 
 
