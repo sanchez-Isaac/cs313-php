@@ -8,7 +8,8 @@ $first_name = pg_escape_string($_POST['first_name']);
 $last_name = pg_escape_string($_POST['last_name']);
 $email = pg_escape_string($_POST['emailad']);
 $user = pg_escape_string($_POST['usernamead']);
-$pass = pg_escape_string($_POST['passwordad']);
+$pass1 = pg_escape_string($_POST['passwordad']);
+$pass = md5($pass1);
 $login_id = 1 ;
 
 
