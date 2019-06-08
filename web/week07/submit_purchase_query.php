@@ -16,10 +16,8 @@ $zip = $_SESSION['zip'];
 $telephone = $_SESSION['telephone'];
 
 $i_counter = 0;
-$item_id =   $_SESSION['$item_id'];
-$item_name = $_SESSION['shopping_cart'][$i_counter]['$item_name'];
-$item_price = $_SESSION['shopping_cart'][$i_counter]['$item_price'];
-$quantity = $_SESSION['shopping_cart'][$i_counter]['$quantity'];
+
+
 $date = date('Y/m/d');
 
 $num_of_order_id = mt_rand(1000, 9999999999);
@@ -48,7 +46,12 @@ function console_log( $data ){
 
 
 foreach ($_SESSION['shopping_cart'] as $key => $product):
-    $item_i = $product['item_name'];
+    $item_id = $product['item_id'];
+    $item_name = $product['item_name'];
+    $item_price = $product['item_price'];
+    $quantity = $product['quantity'];
+
+
     $sql_order = "INSERT INTO order(order_id, num_of_order_id, customer_id, to_street, ext_home_number, to_city, To_zip, ship_date, item_id, item_quantity, item_name)
     VALUES($order_id, $num_of_order_id, $customer_id, '$street', $ext_home_number, '$city', '$zip', $date, $item_id, '$quantity', '$item_name' );";
     pg_query($con ,$sql_order);
