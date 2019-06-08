@@ -43,5 +43,6 @@ pg_query($con ,$sql_identification);
 pg_query($con ,$sql_address);
 pg_query($con ,$sql_customers);
 pg_close($con);
+session_destroy();
 
 header("Location: 07Prove.php?Registration=Success");
