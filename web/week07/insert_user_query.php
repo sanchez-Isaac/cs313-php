@@ -14,7 +14,7 @@ $country = pg_escape_string($_POST['country']);
 $state = pg_escape_string($_POST['state']);
 $zip = pg_escape_string($_POST['zip']);
 $telephone = pg_escape_string($_POST['telephone']);
-$email = $_SESSION['passwordCRT'];
+$pass = $_SESSION['passwordCRT'];
 $login_id = 1 ;
 
 
@@ -29,10 +29,10 @@ while($rows = pg_fetch_assoc($result))
 
 
 $sql_identification = "INSERT INTO identification(login_id, email, password)
-VALUES($login_id, '$email', '$user';";
+VALUES($login_id, '$user', '$pass';";
 
 $sql_address = "INSERT INTO address(address_id, street, city, state, zip, telephone, ext_home_number, country)
-VALUES($login_id, '$street', '$city', '$state', $zip, $telephone, $ext_home_number, '$country';";
+VALUES($login_id, '$street', '$city', '$state', '$zip', '$telephone', $ext_home_number, '$country';";
 
 $sql_customers = "INSERT INTO customers(customer_id, first_name, middle_name, last_name, address_id, login_id)
 VALUES($login_id, '$first_name', '$middle_name', '$last_name', $login_id, $login_id;";
