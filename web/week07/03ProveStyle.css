@@ -50,10 +50,34 @@
 
 }
 
-#firstName, #lastName, #email, #address, #address2{
-    width: 70%;
+#first_Name, #lastName, #email, #address, #address2{
+    width: 20%;
 }
 #zip {
     width: 30%;
 }
 
+
+#first_name, #last_name, #email, #username, #password{
+    width: 100%;
+}
+
+
+.headtitle{
+
+    width: 100%;
+    text-align: center;
+    color: black;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
