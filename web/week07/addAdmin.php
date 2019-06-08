@@ -24,7 +24,7 @@ if(isset($_POST['Submit'])) {
         echo "<script type='text/javascript'>alert(\"$name_error\");</script>";
 
     }
-    elseif (pg_num_rows($result2) > 0){
+    else if (pg_num_rows($result2) > 0){
         $name_error ="Sorry email is already taken";
         echo "<script type='text/javascript'>alert(\"$name_error\");</script>";
 
