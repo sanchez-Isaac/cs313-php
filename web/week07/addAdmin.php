@@ -1,6 +1,7 @@
 <?PHP
 session_start();
 include_once 'DbConnect.php';
+$con = get_db();
 
 if(isset($_POST['Submit'])) {
 
