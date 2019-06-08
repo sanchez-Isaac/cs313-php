@@ -44,24 +44,14 @@ if(!isset($_SESSION['username']))
     </div>
 </div>
 
-
+<br>
+<br>
 <br>
 <div class="header">
-    <h1 class="headtitle"> Items Available</h1>
+    <h1 class="headtitle"> Administrators in the System </h1>
     <br>
     <br>
 </div>
-
-
-<br>
-<br>
-
-
-
-
-
-<br>
-<br>
 <br>
 <br>
 <div class="container">
