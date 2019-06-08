@@ -3,7 +3,7 @@
 session_start();
 pre_r($_SESSION);
 
-
+/*
 function pre_r($array)
 {
 echo '<pre>';
@@ -11,7 +11,7 @@ echo '<pre>';
     echo '</pre>';
 }
 
-
+*/
 
 
 

@@ -3,7 +3,7 @@ session_start();
 require 'DbConnect.php';
 $con = get_db();
 
-
+/*
 pre_r($_SESSION);
 
 function pre_r($array)
@@ -13,7 +13,7 @@ function pre_r($array)
     echo '</pre>';
 }
 
-
+*/
 
 if(isset($_POST['submit_btn'])) {
 
