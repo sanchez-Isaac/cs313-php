@@ -8,7 +8,7 @@ if(!isset($_SESSION['username']) && $_SESSION['message'] != "You are logged in A
 {
     header('location: 07Prove.php?Login=False');
 }
-?>
+
 
 
 if(isset($_POST['Submit'])) {
@@ -72,8 +72,8 @@ function pre_r($array)
     print_r($array);
     echo '</pre>';
 }
-
 */
+
 
 ?>
 
