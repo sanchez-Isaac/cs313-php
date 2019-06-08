@@ -5,7 +5,6 @@
       <change beforePath="$PROJECT_DIR$/../../db/myDb.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../db/myDb.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../TeamAsignments/Teach7/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TeamAsignments/Teach7/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../TeamAsignments/Teach7/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TeamAsignments/Teach7/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/insert_user_query.php" beforeDir="false" afterPath="$PROJECT_DIR$/insert_user_query.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -125,7 +124,7 @@
         <counts>
           <entry key="css" value="167" />
           <entry key="php" value="5762" />
-          <entry key="sql" value="991" />
+          <entry key="sql" value="1059" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -133,7 +132,7 @@
           <entry key="CSS" value="167" />
           <entry key="PHP" value="5761" />
           <entry key="SQL" value="1" />
-          <entry key="Scratch" value="991" />
+          <entry key="Scratch" value="1059" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
@@ -210,11 +209,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/9298879e-f6d5-4875-8d18-b8d88f2e580d/console.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
-              <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+            <state relative-caret-position="216">
+              <caret line="29" selection-start-line="29" selection-end-line="29" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -228,11 +227,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/insert_user_query.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+            <state relative-caret-position="440">
+              <caret line="22" column="34" lean-forward="true" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -308,8 +307,8 @@
         <option value="$PROJECT_DIR$/create_account.php" />
         <option value="$PROJECT_DIR$/create_user_pass.php" />
         <option value="$PROJECT_DIR$/create_account_user.php" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/9298879e-f6d5-4875-8d18-b8d88f2e580d/console.sql" />
         <option value="$PROJECT_DIR$/insert_user_query.php" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/9298879e-f6d5-4875-8d18-b8d88f2e580d/console.sql" />
       </list>
     </option>
   </component>
@@ -352,7 +351,7 @@
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="database.console.LAST_STATE" value="false" />
+    <property name="database.console.LAST_STATE" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -386,12 +385,12 @@
       <workItem from="1559097352018" duration="13619000" />
       <workItem from="1559177851459" duration="4611000" />
       <workItem from="1559424686994" duration="5928000" />
-      <workItem from="1559941230192" duration="15793000" />
+      <workItem from="1559941230192" duration="16046000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97528000" />
+    <option name="totallyTimeSpent" value="97781000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="2" y="68" width="1818" height="988" extended-state="0" />
@@ -411,7 +410,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" weight="0.32850242" />
       <window_info anchor="bottom" id="PHP-CGI Server" order="10" weight="0.32936078" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.8788889" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.2763466" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info active="true" anchor="bottom" id="Database Console" order="13" visible="true" weight="0.3758782" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -615,13 +614,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/9298879e-f6d5-4875-8d18-b8d88f2e580d/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/insert_items.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-85">
@@ -631,8 +623,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/insert_user_query.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+        <state relative-caret-position="440">
+          <caret line="22" column="34" lean-forward="true" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/9298879e-f6d5-4875-8d18-b8d88f2e580d/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="29" selection-start-line="29" selection-end-line="29" selection-end-column="43" />
         </state>
       </provider>
     </entry>

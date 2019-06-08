@@ -98,7 +98,7 @@ if(!isset($_SESSION['username']))
                 <span class="w3-opacity">To use the Store</span>
             </li>
             <li class="w3-light-grey w3-padding-24">
-                <button class="w3-button w3-green w3-padding-large">Add Users</button>
+                <button formaction="create_user_pass.php" class="w3-button w3-green w3-padding-large">Add Users</button>
             </li>
         </ul>
     </div>
