@@ -100,23 +100,6 @@ if(!isset($_SESSION['username']))
                 <span class="w3-opacity">To use the Store</span>
             </li>
             <li class="w3-light-grey w3-padding-24">
-                <button formaction="create_user_pass.php" data-target="#createUserModal" data-Toggle="modal" class="w3-button w3-green w3-padding-large">Add Users form</button>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                 <!-- Button trigger modal -->
                 <button type="button" class="w3-button w3-green w3-padding-large" data-toggle="modal" data-target="#exampleModalCenter">
                     Add Users form
@@ -143,18 +126,6 @@ if(!isset($_SESSION['username']))
                         </div>
                     </div>
                 </div>
-
-
-
-
-
-
-
-
-
-
-
-
             </li>
         </ul>
     </div>
