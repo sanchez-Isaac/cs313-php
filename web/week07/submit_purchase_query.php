@@ -15,7 +15,7 @@ $state = $_SESSION['state'];
 $zip = $_SESSION['zip'];
 $telephone = $_SESSION['telephone'];
 $customer_id = $_SESSION['customer_id'];
-$i_counter = 0;
+
 
 
 $date = date('Y/m/d');
@@ -52,10 +52,9 @@ foreach ($_SESSION['shopping_cart'] as $key => $product):
     $quantity = $product['item_quantity'];
 
 
-    $sql_order = "INSERT INTO order(order_id, num_of_order_id, customer_id, to_street, ext_home_number, to_city, To_zip, ship_date, item_id, item_quantity, item_name)
-    VALUES($order_id, $num_of_order_id, $customer_id, '$street', $ext_home_number, '$city', '$zip', $date, $item_id, '$quantity', '$item_name' );";
+    $sql_order = "INSERT INTO order(order_id, num_of_order_id, customer_id, to_street, ext_home_number, to_city, to_state, To_zip, ship_date, item_id, item_quantity, item_name)
+    VALUES($order_id, $num_of_order_id, $customer_id, '$street', $ext_home_number, '$city','$state' ,'$zip', $date, $item_id, '$quantity', '$item_name' );";
     pg_query($con ,$sql_order);
-    $i_counter ++;
 
 endforeach;
 
