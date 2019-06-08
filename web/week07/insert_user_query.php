@@ -15,7 +15,7 @@ $country = pg_escape_string($_POST['country']);
 $state = pg_escape_string($_POST['state']);
 $zip = pg_escape_string($_POST['zip']);
 $telephone = pg_escape_string($_POST['telephone']);
-$pass = $_SESSION['passwordCRT'];
+$pass = md5($_SESSION['passwordCRT']);
 $login_id = 1 ;
 
 
