@@ -1,4 +1,5 @@
 <?PHP
+session_destroy();
 session_start();
 require 'DbConnect.php';
 $con = get_db();
