@@ -21,6 +21,12 @@ while ($row = pg_fetch_array($result)){
     $admin_id = $id++;
 }
 
+console_log( $admin_id );
+function console_log( $data ){
+    echo '<script>';
+    echo 'console.log('. json_encode( $data ) .')';
+    echo '</script>';
+}
 
 
 
