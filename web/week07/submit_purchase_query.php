@@ -62,6 +62,7 @@ endforeach;
 
 
 pg_close($con);
-session_destroy();
+
+unset ($_SESSION['shopping_cart']);
 
 
