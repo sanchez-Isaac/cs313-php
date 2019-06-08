@@ -10,7 +10,7 @@ $email = pg_escape_string($_POST['emailad']);
 $user = pg_escape_string($_POST['usernamead']);
 $pass1 = pg_escape_string($_POST['passwordad']);
 $pass = md5($pass1);
-$login_id = 1 ;
+$admin_id = 0 ;
 
 
 $query = 'SELECT admin_id FROM admin';
@@ -18,16 +18,21 @@ $result = pg_query( $con, $query);
 while($rows = pg_fetch_assoc($result))
 {
     $login_id ++;
+
+
+}
+
+$result = pg_query($query);
+while ($row = pg_fetch_array($result)){
+    $id = $row['admin_id'];
+    $admin_id = $id;
 }
 
 
 
 
 $sql_admin = "INSERT INTO admin(admin_id, name, last_name, user_name, email, password)
-VALUES($login_id, '$first_name', '$last_name', '$user', '$email', '$pass');";
-
-
-
+VALUES($admin_id, '$first_name', '$last_name', '$user', '$email', '$pass');";
 
 pg_query($con ,$sql_admin);
 pg_close($con);
