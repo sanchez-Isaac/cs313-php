@@ -16,7 +16,7 @@ $zip = $_SESSION['zip'];
 $telephone = $_SESSION['telephone'];
 
 $i_counter = 0;
-$item_id =   $_SESSION['shopping_cart'][0]['$item_id'];
+$item_id =   $_SESSION['$item_id'];
 $item_name = $_SESSION['shopping_cart'][$i_counter]['$item_name'];
 $item_price = $_SESSION['shopping_cart'][$i_counter]['$item_price'];
 $quantity = $_SESSION['shopping_cart'][$i_counter]['$quantity'];
