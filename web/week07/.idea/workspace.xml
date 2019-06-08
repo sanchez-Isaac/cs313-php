@@ -326,9 +326,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="70" />
+    <option name="x" value="33" />
+    <option name="y" value="742" />
     <option name="width" value="1818" />
-    <option name="height" value="1057" />
+    <option name="height" value="688" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">

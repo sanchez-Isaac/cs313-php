@@ -99,24 +99,7 @@ if(!isset($_SESSION['username']))
             </li>
             <li class="w3-light-grey w3-padding-24">
                 <button formaction="create_user_pass.php" data-target="#createUserModal" data-Toggle="modal" class="w3-button w3-green w3-padding-large">Add Users form</button>
-                <button data-target="#createUserModal" data-Toggle="modal" class="w3-button w3-green w3-padding-large">Add Users modal</button>
 
-                <div class="modal" id="createUserModal" tabindex="-1">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h3> This action will log you out of your account</h3>
-                            </div>
-                            <div class="modal-body">
-                                <p>Click on Continue if you agree with this</p>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel;</button>
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Continue;</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </li>
         </ul>
     </div>
@@ -128,6 +111,24 @@ if(!isset($_SESSION['username']))
 <br>
 <br>
 <br>
+<button data-target="#createUserModal" data-Toggle="modal" class="w3-button w3-green w3-padding-large">Add Users modal</button>
+
+<div class="modal fade" id="createUserModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3> This action will log you out of your account</h3>
+            </div>
+            <div class="modal-body">
+                <p>Click on Continue if you agree with this</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel;</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Continue;</button>
+            </div>
+        </div>
+    </div>
+</div>
 <br>
 
 
