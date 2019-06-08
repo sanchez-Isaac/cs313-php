@@ -19,7 +19,7 @@ $customer_id = $_SESSION['customer_id'];
 
 $mail = new PHPMailer();
 $mail->isSMTP();
-$mail->SMTPAuth(true);
+$mail->SMTPAuth = true;
 $mail->SMTPSecure = 'ssl';
 $mail->Host = 'smtp.gmail.com';
 $mail->Port = '465';

@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9aa14cf5-8668-4cb8-a1e4-a96931fa91c6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../../db/myDb.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../db/myDb.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TeamAsignments/Teach7/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TeamAsignments/Teach7/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TeamAsignments/Teach7/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TeamAsignments/Teach7/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9298879e-f6d5-4875-8d18-b8d88f2e580d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9298879e-f6d5-4875-8d18-b8d88f2e580d.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/send_email_confirmation.php" beforeDir="false" afterPath="$PROJECT_DIR$/send_email_confirmation.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -165,14 +161,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="190" />
-          <entry key="php" value="9574" />
+          <entry key="php" value="9614" />
           <entry key="sql" value="1476" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="190" />
-          <entry key="PHP" value="9573" />
+          <entry key="PHP" value="9613" />
           <entry key="SQL" value="1" />
           <entry key="Scratch" value="1476" />
         </counts>
@@ -236,8 +232,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/send_email_confirmation.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
+            <state relative-caret-position="58">
+              <caret line="21" column="15" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -376,8 +372,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="953" />
-    <option name="width" value="974" />
+    <option name="x" value="495" />
+    <option name="width" value="1432" />
     <option name="height" value="1057" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -437,18 +433,17 @@
       <workItem from="1559097352018" duration="13619000" />
       <workItem from="1559177851459" duration="4611000" />
       <workItem from="1559424686994" duration="5928000" />
-      <workItem from="1559941230192" duration="55773000" />
+      <workItem from="1559941230192" duration="56303000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="137508000" />
+    <option name="totallyTimeSpent" value="138038000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="953" y="0" width="974" height="1057" extended-state="0" />
-    <editor active="true" />
+    <frame x="495" y="0" width="1432" height="1057" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.062363237" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.04154519" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -462,13 +457,13 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" weight="0.32850242" />
       <window_info anchor="bottom" id="PHP-CGI Server" order="10" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.2979415" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.7583965" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
-      <window_info anchor="bottom" id="Database Console" order="13" weight="0.32403433" />
+      <window_info anchor="bottom" id="Database Console" order="13" weight="0.32394367" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.055798687" />
+      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.037172012" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12962963" />
@@ -740,8 +735,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/send_email_confirmation.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
+        <state relative-caret-position="58">
+          <caret line="21" column="15" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
         </state>
       </provider>
     </entry>
