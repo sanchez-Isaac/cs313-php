@@ -68,12 +68,6 @@ else{
 </head>
 
 <body>
-
-
-
-
-
-
     <div class="container">
         <div class="col-sm-6 col-sm-offset-4 ">
             <div class="jumbotron">
@@ -90,9 +84,6 @@ else{
                             <input type="email" name="userCRT" class="form-control" id="userCRT" aria-describedby="emailHelp" placeholder="Enter email" required>
 
                         </div>
-
-
-
                         <div class="form-group">
                             <label for="passwordCRT">Password</label>
                             <input type="password" name="passwordCRT" class="form-control" id="passwordCRT" placeholder="Password" pattern=".{5,10}" required title="5 to 10 characters" >
