@@ -111,6 +111,12 @@ if(!isset($_SESSION['username']))
 <br>
 <br>
 <br>
+
+<script>
+    $('#myModal').on('shown.bs.modal', function () {
+        $('#myInput').trigger('focus')
+    })
+</script>
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
     Launch demo modal
