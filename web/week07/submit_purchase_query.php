@@ -53,7 +53,7 @@ foreach ($_SESSION['shopping_cart'] as $key => $product):
 
 
     $sql_order = "INSERT INTO orders(order_id, num_of_order_id, customer_id, to_street, ext_home_number, to_city, to_state, to_zip, ship_date, item_id, item_quantity, item_name)
-    VALUES($order_id, $num_of_order_id, $customer_id, '$street', $ext_home_number, '$city','$state' ,'$zip', $date, $item_id, '$quantity', '$item_name' );";
+    VALUES($order_id, $num_of_order_id, $customer_id, '$street', $ext_home_number, '$city','$state' ,'$zip', '$date', $item_id, '$quantity', '$item_name' );";
     pg_query($con ,$sql_order);
 
 endforeach;
