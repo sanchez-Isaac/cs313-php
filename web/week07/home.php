@@ -8,6 +8,8 @@ session_start();
 <head>
 <meta charset="utf-8">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
 
 
 
@@ -112,22 +114,24 @@ if(!isset($_SESSION['username']))
 <br>
 <br>
 
-<script>
+<script type="text/javascript">
     $('#myModal').on('shown.bs.modal', function () {
         $('#myInput').trigger('focus')
     })
 </script>
+
+
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
     Launch demo modal
 </button>
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
