@@ -2,16 +2,10 @@
 session_start();
 
 $_SESSION['first_name'] = test_input($_POST['first_name']);
-$_SESSION['middle_name'] = test_input($_POST['middle_name']);
 $_SESSION['last_name'] = test_input($_POST['last_name']);
 $_SESSION['email'] = test_input($_POST['email']);
 $_SESSION['street'] = test_input($_POST['street']);
-$_SESSION['ext_home_number'] = test_input($_POST['ext_home_number']);
-$_SESSION['city']  = test_input($_POST['city']);
-$_SESSION['country'] = test_input($_POST['country']);
-$_SESSION['state'] = test_input($_POST['state']);
-$_SESSION['zip'] = test_input($_POST['zip']);
-$_SESSION['telephone'] = test_input($_POST['telephone']);
+$_SESSION['username'] = test_input($_POST['username']);
 $_SESSION['password'] = md5(test_input($_POST['password']));
 
 
