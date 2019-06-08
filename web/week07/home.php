@@ -70,11 +70,11 @@ if(!isset($_SESSION['username']))
         <ul class="w3-ul w3-border w3-center w3-hover-shadow">
             <li class="w3-black w3-xlarge w3-padding-32">Admin</li>
             <li class="w3-padding-16">
-                <h2 class="w3-wide">Add Admins </h2>
-                <span class="w3-opacity">To manage the store</span>
+                <h2 class="w3-wide">See/Add Admins </h2>
+                <span class="w3-opacity">That manage the store</span>
             </li>
             <li class="w3-light-grey w3-padding-24">
-                <button class="w3-button w3-green w3-padding-large">Add Admins</button>
+                <button formaction="SeeAddAdmin.php" class="w3-button w3-green w3-padding-large">See/Add Admins</button>
             </li>
         </ul>
     </div>
@@ -102,7 +102,7 @@ if(!isset($_SESSION['username']))
             <li class="w3-light-grey w3-padding-24">
                 <!-- Button trigger modal -->
                 <button type="button" class="w3-button w3-green w3-padding-large" data-toggle="modal" data-target="#exampleModalCenter">
-                    Add Users form
+                    Add Users
                 </button>
 
                 <!-- Modal -->
