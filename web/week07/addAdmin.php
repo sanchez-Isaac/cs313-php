@@ -14,11 +14,22 @@ if(isset($_POST['Submit'])) {
     $query = "SELECT user_name FROM admin WHERE user_name = '$user'";
     $result = pg_query( $con, $query);
 
+    $query2 = "SELECT email FROM admin WHERE email = '$email'";
+    $result = pg_query( $con, $query2);
+
+
+
     if(pg_num_rows($result) > 0){
         $name_error ="Sorry username is already taken";
         echo "<script type='text/javascript'>alert(\"$name_error\");</script>";
 
     }
+    elseif (pg_num_rows($result2) > 0){
+        $name_error ="Sorry email is already taken";
+        echo "<script type='text/javascript'>alert(\"$name_error\");</script>";
+
+    }
+
     else{
         $_SESSION['usernamead'] = $user;
         $_SESSION['passwordad'] = $pass;
