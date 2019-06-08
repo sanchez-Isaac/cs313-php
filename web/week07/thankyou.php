@@ -1,7 +1,8 @@
 <?PHP
 session_start();
+include_once ('submit_purchase_query.php');
+include_once ('send_email_confirmation.php');
 
-/*
 pre_r($_SESSION);
 
 function pre_r($array)
@@ -10,7 +11,7 @@ function pre_r($array)
     print_r($array);
     echo '</pre>';
 }
-*/
+
 
 ?>
 
