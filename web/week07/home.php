@@ -137,8 +137,8 @@ if(!isset($_SESSION['username']))
                 </button>
             </div>
             <div class="modal-body">
-                <h3>This Action Will Log you out of your account</h3><br>
-                <h3><b>Do you want to continue?</b></h3>
+                <h4>This Action Will Log you out of your account</h4><br>
+                <h4><b>Do you want to continue?</b></h4>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
