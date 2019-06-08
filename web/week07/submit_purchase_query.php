@@ -18,7 +18,7 @@ $customer_id = $_SESSION['customer_id'];
 
 
 
-$date = date('Y/m/d');
+$date = date('y/M/d');
 
 $num_of_order_id = mt_rand(1000, 9999999999);
 
