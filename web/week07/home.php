@@ -102,6 +102,59 @@ if(!isset($_SESSION['username']))
             <li class="w3-light-grey w3-padding-24">
                 <button formaction="create_user_pass.php" data-target="#createUserModal" data-Toggle="modal" class="w3-button w3-green w3-padding-large">Add Users form</button>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <!-- Button trigger modal -->
+                <button type="button" class="w3-button w3-green w3-padding-large" data-toggle="modal" data-target="#exampleModalCenter">
+                    Add Users form
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h2 class="modal-title" id="exampleModalLongTitle">Create Users Action</h2>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <h4>This Action Will Log you out of your account</h4>
+                                <h4><b>Do you want to continue?</b></h4>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                <button type="button" formaction="create_user_pass.php" class="btn btn-primary">Continue</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
             </li>
         </ul>
     </div>
@@ -121,32 +174,7 @@ if(!isset($_SESSION['username']))
 </script>
 
 
-<!-- Button trigger modal -->
-<button type="button" class="w3-button w3-green w3-padding-large" data-toggle="modal" data-target="#exampleModalCenter">
-    Add Users form
-</button>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2 class="modal-title" id="exampleModalLongTitle">Create Users Action</h2>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <h4>This Action Will Log you out of your account</h4>
-                <h4><b>Do you want to continue?</b></h4>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                <button type="button" formaction="create_user_pass.php" class="btn btn-primary">Continue</button>
-            </div>
-        </div>
-    </div>
-</div>
 <br>
 
 
