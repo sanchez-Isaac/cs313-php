@@ -31,7 +31,7 @@ function console_log( $data ){
 
 
 $sql_admin = "INSERT INTO admin(admin_id, name, last_name, user_name, email, password)
-VALUES($admin_id, '$first_name', '$last_name', '$user', '$email', '$pass');";
+VALUES(($admin_id+1), '$first_name', '$last_name', '$user', '$email', '$pass');";
 
 pg_query($con ,$sql_admin);
 pg_close($con);
