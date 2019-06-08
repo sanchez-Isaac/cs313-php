@@ -21,13 +21,13 @@ $query = 'SELECT admin_id FROM admin';
 $result = pg_query($con, $query);
 while ($row = pg_fetch_array($result)){
     $id = $row['admin_id'];
-    console_log( $admin_id );
+
     console_log( $id );
 }
 $admin_id = $id;
 
 console_log( $admin_id );
-console_log( $id );
+
 
 function console_log( $data ){
     echo '<script>';
