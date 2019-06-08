@@ -111,7 +111,7 @@ if(!isset($_SESSION['username']))
 <br>
 <br>
 <br>
-<button data-target="#createUserModal" data-Toggle="modal" class="w3-button w3-green w3-padding-large">Add Users modal</button>
+<button type=button" data-target="#createUserModal" data-Toggle="modal" class="w3-button w3-green w3-padding-large">Add Users modal</button>
 
 <div class="modal fade" id="createUserModal" tabindex="-1">
     <div class="modal-dialog">
