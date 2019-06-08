@@ -50,7 +50,11 @@ function pre_r($array)
 
 <body>
 
-
+<br>
+<br>
+<br>
+<br>
+<br>
 <div class="header">
     <h1 class="headtitle"> Register a New Admin Account</h1>
     <br>
