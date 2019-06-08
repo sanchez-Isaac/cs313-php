@@ -77,7 +77,7 @@ if(!isset($_SESSION['username']))
                 while ($row = pg_fetch_array($result)) {
                     echo  "<div class='card bg-light'>";
                     echo "<div class='card-body text-center'>";
-                    echo "<p class='card-text'><b># of Employee: </b>" .$row[0] . "<br>" ."<b>Name: </b>". $row[1] . "<br>" ."<b>Username: </b>$". $row[2] . "<br>" ."<b>Email: </b>". $row[3] . "</p>";
+                    echo "<p class='card-text'><b># of Employee: </b>" .$row[0] . "<br>" ."<b>Name: </b>". $row[1] . "<br>" ."<b>last name: </b>". $row[2] . "<br>" ."<b>Username: </b>". $row[3] . "</p>" . "Email: " . $row[4];
                     echo "</div></div>";
 
                 }
