@@ -4,7 +4,6 @@ session_start();
 $_SESSION['first_name'] = test_input($_POST['first_name']);
 $_SESSION['last_name'] = test_input($_POST['last_name']);
 $_SESSION['email'] = test_input($_POST['email']);
-$_SESSION['street'] = test_input($_POST['street']);
 $_SESSION['username'] = test_input($_POST['username']);
 $_SESSION['password'] = md5(test_input($_POST['password']));
 
@@ -102,6 +101,13 @@ function pre_r($array)
 <br>
 <br>
 <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br><br>
 <br>
 <br>
 <br>
