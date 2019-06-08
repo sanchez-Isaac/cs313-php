@@ -49,7 +49,7 @@ foreach ($_SESSION['shopping_cart'] as $key => $product):
     $item_id = $product['item_id'];
     $item_name = $product['item_name'];
     $item_price = $product['item_price'];
-    $quantity = $product['quantity'];
+    $quantity = $product['item_quantity'];
 
 
     $sql_order = "INSERT INTO order(order_id, num_of_order_id, customer_id, to_street, ext_home_number, to_city, To_zip, ship_date, item_id, item_quantity, item_name)
