@@ -101,12 +101,7 @@ function pre_r($array)
             <br>
 
 
-            <div class="mb-3">
-                <label for="email">Email </label>
-                <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="you@example.com" required>
-                <div class="invalid-feedback">
 
-                </div>
             </div>
             <br>
             <div class="mb-3">

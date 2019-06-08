@@ -12,7 +12,7 @@ session_start();
     $_SESSION['state'] = test_input($_POST['state']);
     $_SESSION['zip'] = test_input($_POST['zip']);
     $_SESSION['telephone'] = test_input($_POST['telephone']);
-    $_SESSION['password'] = md5(test_input($_POST['telephone']));
+    $_SESSION['password'] = md5(test_input($_POST['password']));
 
 
 

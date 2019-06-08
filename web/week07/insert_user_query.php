@@ -3,32 +3,44 @@ include_once 'DbConnect.php';
 
 $con = get_db();
 
-$item_name = pg_escape_string($_POST['item_name']);
-$item_type = pg_escape_string($_POST['item_type']);
-$item_price = pg_escape_string($_POST['item_price']);
-$item_quantity = pg_escape_string($_POST['item_quantity']);
-$photo_desc = pg_escape_string($_POST['photo_desc']);
-$item_id = 1 ;
+$first_name = pg_escape_string($_POST['first_name']);
+$middle_name = pg_escape_string($_POST['middle_name']);
+$last_name = pg_escape_string($_POST['last_name']);
+$user = $_SESSION['userCRT'];
+$street = pg_escape_string($_POST['street']);
+$ext_home_number = pg_escape_string($_POST['ext_home_number']);
+$city = pg_escape_string($_POST['city']);
+$country = pg_escape_string($_POST['country']);
+$state = pg_escape_string($_POST['state']);
+$zip = pg_escape_string($_POST['zip']);
+$telephone = pg_escape_string($_POST['telephone']);
+$email = $_SESSION['passwordCRT'];
+$login_id = 1 ;
 
 
-$query = 'SELECT item_id FROM items';
+$query = 'SELECT login_id FROM identification';
 $result = pg_query( $con, $query);
-
-
 while($rows = pg_fetch_assoc($result))
 {
-    $item_id ++;
+    $login_id ++;
 }
 
 
 
 
+$sql_identification = "INSERT INTO identification(login_id, email, password)
+VALUES($login_id, ''$email, '$user';";
 
-$sql = "INSERT INTO items(item_id, item_barcode, item_name, item_type, item_price, item_quantity, photo_desc)
-VALUES($item_id, $item_id, '$item_name', '$item_type', $item_price, $item_quantity, '$photo_desc');";
+$sql_address = "INSERT INTO address(address_id, street, city, state, zip, telephone, ext_home_number, country)
+VALUES($login_id, '$street', '$city', '$state', $zip, $telephone, $ext_home_number, '$country';";
 
-pg_query($con ,$sql);
+$sql_customers = "INSERT INTO customers(customer_id, first_name, middle_name, last_name, address_id, login_id)
+VALUES($login_id, '$first_name', '$middle_name', '$last_name', $login_id, $login_id;";
 
+
+pg_query($con ,$sql_identification);
+pg_query($con ,$sql_address);
+pg_query($con ,$sql_customers);
 pg_close($con);
 
-header("Location: insert_items.php?insert=");
+header("Location: 07Prove.php?Registration=Success");
