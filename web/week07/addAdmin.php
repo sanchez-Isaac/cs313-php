@@ -4,7 +4,7 @@ include_once 'DbConnect.php';
 $con = get_db();
 
 
-if(!isset($_SESSION['username']) && $_SESSION['username'] != "You are logged in Admin" )
+if(!isset($_SESSION['username']) && $_SESSION['message'] != "You are logged in Admin" )
 {
     header('location: 07Prove.php?Login=False');
 }
