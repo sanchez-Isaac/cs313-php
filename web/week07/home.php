@@ -47,6 +47,18 @@ if(!isset($_SESSION['username']))
 {
     header('location: 07Prove.php?Login=False');
 }
+
+
+
+
+ if(isset($_SESSION['username']) && $_SESSION['message'] == "You are logged in Customer" )
+{
+    header('location: Customer_home.php?Login=True');
+}
+
+
+
+
 ?>
 <br>
 <div class="header">

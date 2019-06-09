@@ -92,7 +92,7 @@ if(!isset($_SESSION['username']))
 
     <br>
     <br>
-    <a class="btn btn-success" href="home.php" role="button">Back Home</a>
+    <a class="btn btn-success" href="Customer_home.php" role="button">Back Home</a>
 </div>
 
 <br>

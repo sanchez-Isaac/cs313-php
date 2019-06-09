@@ -7,7 +7,7 @@ if(isset($_SESSION['username']) && $_SESSION['message'] == "You are logged in Ad
 {
     header('location: home.php?Login=True');
 }
-else if(isset($_SESSION['username']) && $_SESSION['message'] == "You are logged in" )
+else if(isset($_SESSION['username']) && $_SESSION['message'] == "You are logged in Customer" )
 {
     header('location: Customer_home.php?Login=True');
 }
