@@ -30,13 +30,36 @@ $mail->isHTML(true);
 $mail->Username = 'cs313.byui.project@gmail.com';
 $mail->Password = 'san16044';
 $mail->SetFrom ("no-reply@cs313.byui.edu");
-$mail->From = "no-reply@cs313.byui.edu";
+$mail->From = ("no-reply@cs313.byui.edu");
 $mail->FromName = "CS313-Store";
 $mail->AddReplyTo("no-reply@cs313.byui.edu", "No-Reply-CS313-Store");
 $mail->Subject = 'Your order is ready - CS 313 Project';
-$mail->Body = 'Testing body Hello world';
+$mail->Body = $htmlContent;
 $mail->AddAddress($mailto, $first_name);
 $mail->Send();
 
 
 
+
+
+
+$htmlContent = '
+    <html>
+    <head>
+        <title>CS 313 - Web Engineering Project - Online Store</title>
+    </head>
+    <body>
+        <h1>Your order is ready</h1>
+        <table cellspacing="0" style="border: 2px dashed #FB4314; width: 300px; height: 200px;">
+            <tr>
+                <th>Remember to visit the store</th><td>You will see your recent orders</td>
+            </tr>
+            <tr style="background-color: #e0e0e0;">
+                <th>Its always a pleasure to help you</th><td>contact us soon</td>
+            </tr>
+            <tr>
+                <th>Website:</th><td><a href="https://rocky-atoll-73188.herokuapp.com/week07/07Prove.php">Online Store</a></td>
+            </tr>
+        </table>
+    </body>
+    </html>';
