@@ -1,7 +1,8 @@
 <?PHP
 session_start();
-include_once ('submit_purchase_query.php');
 include_once ('send_email_confirmation.php');
+include_once ('submit_purchase_query.php');
+
 
 pre_r($_SESSION);
 
