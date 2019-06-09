@@ -12,14 +12,15 @@ CREATE INDEX "FK" ON  "customers" ("address_id", "login_id");
 
 CREATE TABLE "orders" (
   "order_id" SERIAL NOT NULL,
+  "num_of_order_id" int,
   "customer_id" int,
-  "customer_name" varchar(50),
   "to_street" varchar(50),
-  "to_city" varchar(50),
-  "to_state" varchar(2),
-  "To_zip" varchar(5),
-  "item_id" int,
+  "ext_home_number" int,
+  "to_zip" varchar(20),
   "ship_date" date,
+  "item_id" int,
+  "item_name" varchar(800),
+  "item_quantity" varchar(800),
   PRIMARY KEY ("order_id")
 );
 
@@ -39,6 +40,7 @@ CREATE TABLE "address" (
 );
 
 ALTER TABLE "address" DROP "cellphone";
+ALTER TABLE "address" ADD ext_home_number varchar(800);
 
 CREATE TABLE "items" (
   "item_id" SERIAL NOT NULL,
