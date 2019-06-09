@@ -50,7 +50,7 @@ if(!isset($_SESSION['username']))
 <br>
 <br>
 <div class="header">
-    <h1 class="headtitle"> Administrators in the System </h1>
+    <h1 class="headtitle"> Order's History </h1>
     <br>
     <br>
 </div>
@@ -61,10 +61,10 @@ if(!isset($_SESSION['username']))
         <table>
             <?php
             echo "<tr>";
-            echo "<th>order_id</th>";
-            echo "<th>item_id</th>";
-            echo "<th>item_name</th>";
-            echo "<th>item_quantity</th>";
+            echo "<th>order #</th>";
+            echo "<th>item Store #</th>";
+            echo "<th>Name of the Item</th>";
+            echo "<th>Quantity bought</th>";
             echo "</tr>";
             $result = pg_query( $con, $query);
             if (pg_num_rows($result) > 0) {
