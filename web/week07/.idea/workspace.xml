@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9aa14cf5-8668-4cb8-a1e4-a96931fa91c6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../../db/myDb.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../db/myDb.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -147,8 +148,8 @@
           <entry key="address" value="1" />
           <entry key="css" value="15" />
           <entry key="htm" value="1" />
-          <entry key="php" value="91" />
-          <entry key="sql" value="7" />
+          <entry key="php" value="92" />
+          <entry key="sql" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -156,21 +157,21 @@
           <entry key="CSS" value="15" />
           <entry key="Database Element" value="1" />
           <entry key="HTML" value="1" />
-          <entry key="PHP" value="91" />
-          <entry key="Scratch" value="7" />
+          <entry key="PHP" value="92" />
+          <entry key="Scratch" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="191" />
-          <entry key="php" value="10458" />
+          <entry key="php" value="10486" />
           <entry key="sql" value="1629" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="191" />
-          <entry key="PHP" value="10457" />
+          <entry key="PHP" value="10485" />
           <entry key="SQL" value="1" />
           <entry key="Scratch" value="1629" />
         </counts>
@@ -195,7 +196,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/viewcart.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-16">
@@ -232,30 +233,26 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/07Prove.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="9" column="91" selection-start-line="9" selection-start-column="91" selection-end-line="9" selection-end-column="91" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Customer_home.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="54" column="32" lean-forward="true" selection-start-line="54" selection-start-column="32" selection-end-line="54" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/order_history.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="969">
-              <caret line="57" column="4" lean-forward="true" selection-start-line="57" selection-start-column="4" selection-end-line="57" selection-end-column="4" />
+            <state relative-caret-position="310">
+              <caret line="75" column="49" lean-forward="true" selection-start-line="75" selection-start-column="49" selection-end-line="75" selection-end-column="49" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/send_email_confirmation.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="379">
+              <caret line="726" column="20" lean-forward="true" selection-start-line="726" selection-start-column="20" selection-end-line="726" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/9298879e-f6d5-4875-8d18-b8d88f2e580d/console_1.sql">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -360,9 +357,9 @@
         <option value="$PROJECT_DIR$/Customer_home.php" />
         <option value="$PROJECT_DIR$/07Prove.php" />
         <option value="$PROJECT_DIR$/home.php" />
-        <option value="$PROJECT_DIR$/order_history.php" />
         <option value="$PROJECT_DIR$/ProveStyle.css" />
         <option value="$PROJECT_DIR$/viewcart.php" />
+        <option value="$PROJECT_DIR$/order_history.php" />
       </list>
     </option>
   </component>
@@ -376,9 +373,9 @@
     <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
-  <component name="ProjectFrameBounds">
-    <option name="x" value="880" />
-    <option name="y" value="30" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="926" />
+    <option name="y" value="15" />
     <option name="width" value="1001" />
     <option name="height" value="972" />
   </component>
@@ -410,7 +407,7 @@
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="database.console.LAST_STATE" value="true" />
+    <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -444,17 +441,18 @@
       <workItem from="1559097352018" duration="13619000" />
       <workItem from="1559177851459" duration="4611000" />
       <workItem from="1559424686994" duration="5928000" />
-      <workItem from="1559941230192" duration="66965000" />
+      <workItem from="1559941230192" duration="67719000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="148700000" />
+    <option name="totallyTimeSpent" value="149454000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="880" y="30" width="1001" height="972" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.36025506" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12686567" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -468,13 +466,13 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" weight="0.32827735" />
       <window_info anchor="bottom" id="PHP-CGI Server" order="10" weight="0.32936078" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.26218852" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.23497854" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Database Console" order="13" visible="true" weight="0.3162291" />
+      <window_info anchor="bottom" id="Database Console" order="13" weight="0.3162291" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.05419766" />
+      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.027185502" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12962963" />
@@ -720,13 +718,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/send_email_confirmation.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14520">
-          <caret line="726" column="20" lean-forward="true" selection-start-line="726" selection-start-column="20" selection-end-line="726" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/insert_admin_query.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
@@ -790,13 +781,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/order_history.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="969">
-          <caret line="57" column="4" lean-forward="true" selection-start-line="57" selection-start-column="4" selection-end-line="57" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/homestyle.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
@@ -817,6 +801,23 @@
           <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order_history.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="75" column="49" lean-forward="true" selection-start-line="75" selection-start-column="49" selection-end-line="75" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/send_email_confirmation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="726" column="20" lean-forward="true" selection-start-line="726" selection-start-column="20" selection-end-line="726" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/9298879e-f6d5-4875-8d18-b8d88f2e580d/console_1.sql">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
