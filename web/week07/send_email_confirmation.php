@@ -19,14 +19,14 @@ require("PHPMailer/PHPMailer-master/src/SMTP.php");
 
 $mail = new PHPMailer();
 $mail->IsSMTP();
-$mail->Mailer = "smtp";
+//$mail->Mailer = "smtp";
 $mail->Host = "smtp.gmail.com";
 $mail->Port = "465"; // 8025, 587 and 25 can also be used. Use Port 465 for SSL.
 $mail->SMTPAuth = true;
 $mail->SMTPSecure = 'ssl';
 $mail->Username = "cs313.byui.project@gmail.com";
 $mail->Password = "san16044";
-
+$mail->isHTML(true);
 $mail->From = "no-reply@cs313.byui.edu";
 $mail->FromName = "CS313-Store";
 $mail->AddAddress($email, $first_name);
@@ -36,10 +36,4 @@ $mail->Subject = "Hi!";
 $mail->Body = "Hi! How are you?";
 $mail->WordWrap = 50;
 
-if(!$mail->Send()) {
-    echo 'Message was not sent.';
-    echo 'Mailer error: ' . $mail->ErrorInfo;
-    exit;
-} else {
-    echo 'Message has been sent.';
-}
+$mail->Send();
