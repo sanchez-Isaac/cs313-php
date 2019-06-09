@@ -1,8 +1,6 @@
 <?php
 
 
-
-
 require_once ('PHPMailer/PHPMailerAutoload.php');
 include_once 'DbConnect.php';
 
@@ -37,7 +35,7 @@ $mail->FromName = "CS313-Store";
 $mail->AddReplyTo("no-reply@cs313.byui.edu", "No-Reply-CS313-Store");
 $mail->Subject = 'Your order is ready - CS 313 Project';
 $mail->Body = 'Testing body Hello world';
-$mail->AddAddress($email, $first_name);
+$mail->AddAddress($mailto, $first_name);
 $mail->Send();
 
 
