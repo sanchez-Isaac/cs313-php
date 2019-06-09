@@ -15,6 +15,7 @@ $state = $_SESSION['state'];
 $zip = $_SESSION['zip'];
 $telephone = $_SESSION['telephone'];
 $customer_id = $_SESSION['customer_id'];
+$mailto = $_SESSION['mail'];
 
 
 $mail = new PHPMailer();
@@ -22,14 +23,14 @@ $mail->isSMTP();
 $mail->SMTPAuth = true;
 $mail->SMTPSecure = 'ssl';
 $mail->Host = 'smtp.gmail.com';
-$mail->Port = '465';
-$mail->isHTML();
+$mail->Port = '465'; // or 587
+$mail->isHTML(true);
 $mail->Username = 'cs313.byui.project@gmail.com';
 $mail->Password = 'san16044';
-$mail->SetFrom ('no-reply@cs313.byui.edu');
-$mail->Subject = 'Testing Hello world';
+$mail->SetFrom ("no-reply@cs313.byui.edu");
+$mail->Subject = 'Your order is ready - CS 313 Project';
 $mail->Body = 'Testing body Hello world';
-$mail->AddAddress('idsm_2000@hotmail.com');
+$mail->AddAddress($mailto);
 $mail->Send();
 
 
