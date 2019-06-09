@@ -15,7 +15,7 @@ $state = $_SESSION['state'];
 $zip = $_SESSION['zip'];
 $telephone = $_SESSION['telephone'];
 $customer_id = $_SESSION['customer_id'];
-$mailto = $_SESSION['mail'];
+$mailto = $_SESSION['email'];
 
 
 $mail = new PHPMailer();
