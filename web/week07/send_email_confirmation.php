@@ -1,9 +1,4 @@
 <?php
-require_once ('PHPMailer/PHPMailerAutoload.php');
-include_once 'DbConnect.php';
-
-$con = get_db();
-
 $first_name = $_SESSION['first_name'];
 $middle_name = $_SESSION['middle_name'];
 $last_name = $_SESSION['last_name'];
@@ -18,20 +13,33 @@ $customer_id = $_SESSION['customer_id'];
 $mailto = $_SESSION['email'];
 
 
+require("PHPMailer/PHPMailer-master/src/Exception.php");
+require("PHPMailer/PHPMailer-master/src/PHPMailer.php");
+require("PHPMailer/PHPMailer-master/src/SMTP.php");
+
 $mail = new PHPMailer();
-$mail->isSMTP();
+$mail->IsSMTP();
+$mail->Mailer = "smtp";
+$mail->Host = "smtp.gmail.com";
+$mail->Port = "465"; // 8025, 587 and 25 can also be used. Use Port 465 for SSL.
 $mail->SMTPAuth = true;
 $mail->SMTPSecure = 'ssl';
-$mail->Host = 'smtp.gmail.com';
-$mail->Port = '465'; // or 587
-$mail->isHTML(true);
-$mail->Username = 'cs313.byui.project@gmail.com';
-$mail->Password = 'san16044';
-$mail->SetFrom ("no-reply@cs313.byui.edu");
-$mail->Subject = 'Your order is ready - CS 313 Project';
-$mail->Body = 'Testing body Hello world';
-$mail->AddAddress($mailto);
-$mail->Send();
+$mail->Username = "cs313.byui.project@gmail.com";
+$mail->Password = "san16044";
 
+$mail->From = "no-reply@cs313.byui.edu";
+$mail->FromName = "CS313-Store";
+$mail->AddAddress($email, $first_name);
+$mail->AddReplyTo("no-reply@cs313.byui.edu", "No-Reply-CS313-Store");
 
+$mail->Subject = "Hi!";
+$mail->Body = "Hi! How are you?";
+$mail->WordWrap = 50;
 
+if(!$mail->Send()) {
+    echo 'Message was not sent.';
+    echo 'Mailer error: ' . $mail->ErrorInfo;
+    exit;
+} else {
+    echo 'Message has been sent.';
+}
