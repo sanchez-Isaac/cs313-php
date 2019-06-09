@@ -5,7 +5,7 @@ $con = get_db();
 
 $userquery = $_SESSION['customer_id'];
 
-$query = $query = "SELECT  num_of_order_id, item_id, item_name, item_quantity FROM orders WHERE customer_id ='" . $userquery . "'";
+$query = $query = "SELECT  num_of_order_id, item_id, item_name, item_quantity, ship_date FROM orders WHERE customer_id ='" . $userquery . "'";
 
 
 
@@ -65,6 +65,7 @@ if(!isset($_SESSION['username']))
             echo "<th>item Store #</th>";
             echo "<th>Name of the Item</th>";
             echo "<th>Quantity bought</th>";
+            echo "<th>Date Ordered</th>";
             echo "</tr>";
             $result = pg_query( $con, $query);
             if (pg_num_rows($result) > 0) {
@@ -76,6 +77,7 @@ if(!isset($_SESSION['username']))
                     echo "<th>". $row[1]."</th>";
                     echo "<th>". $row[2]."</th>";
                     echo "<th>". $row[3]."</th>";
+                    echo "<th>". $row[4]."</th>";
                     echo "</tr>";
 
                 }
