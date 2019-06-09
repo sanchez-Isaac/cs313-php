@@ -66,6 +66,18 @@ if(!isset($_SESSION['username']))
                 </li>
             </ul>
         </div>
+        <div class="w3-third w3-margin-bottom">
+            <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+                <li class="w3-green w3-xlarge w3-padding-32">Store</li>
+                <li class="w3-padding-16">
+                    <h2 class="w3-wide">Buy items</h2>
+                    <span class="w3-opacity">Create an account or add your information</span>
+                </li>
+                <li class="w3-light-grey w3-padding-24">
+                    <button formaction="store.php" class="w3-button w3-green w3-padding-large">Go to the Store</button>
+                </li>
+            </ul>
+        </div>
 
     </div>
 </form>
