@@ -17,7 +17,7 @@ require("PHPMailer/PHPMailer-master/src/Exception.php");
 require("PHPMailer/PHPMailer-master/src/PHPMailer.php");
 require("PHPMailer/PHPMailer-master/src/SMTP.php");
 
-$mail = new PHPMailer();
+$mail = new \PHPMailer\PHPMailer\PHPMailer();
 $mail->IsSMTP();
 //$mail->Mailer = "smtp";
 $mail->Host = "smtp.gmail.com";
