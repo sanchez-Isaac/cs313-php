@@ -3,7 +3,7 @@ session_start();
 include_once ('send_email_confirmation.php');
 include_once ('submit_purchase_query.php');
 
-
+/*
 pre_r($_SESSION);
 
 function pre_r($array)
@@ -12,7 +12,7 @@ function pre_r($array)
     print_r($array);
     echo '</pre>';
 }
-
+*/
 
 ?>
 
