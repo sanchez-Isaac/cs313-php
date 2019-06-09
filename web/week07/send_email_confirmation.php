@@ -20,28 +20,6 @@ $customer_id = $_SESSION['customer_id'];
 $mailto = $_SESSION['email'];
 
 
-$mail = new PHPMailer();
-$mail->isSMTP();
-$mail->SMTPAuth = true;
-$mail->SMTPSecure = 'ssl';
-$mail->Host = 'smtp.gmail.com';
-$mail->Port = '465'; // or 587
-$mail->isHTML(true);
-$mail->Username = 'cs313.byui.project@gmail.com';
-$mail->Password = 'san16044';
-$mail->SetFrom ("no-reply@cs313.byui.edu");
-$mail->From = ("no-reply@cs313.byui.edu");
-$mail->FromName = "CS313-Store";
-$mail->AddReplyTo("no-reply@cs313.byui.edu", "No-Reply-CS313-Store");
-$mail->Subject = 'Your order is ready - CS 313 Project';
-$mail->Body = $htmlContent;
-$mail->AddAddress($mailto, $first_name);
-$mail->Send();
-
-
-
-
-
 
 $htmlContent = '
     <html>
@@ -63,3 +41,35 @@ $htmlContent = '
         </table>
     </body>
     </html>';
+
+
+
+
+
+
+
+
+
+
+
+$mail = new PHPMailer();
+$mail->isSMTP();
+$mail->SMTPAuth = true;
+$mail->SMTPSecure = 'ssl';
+$mail->Host = 'smtp.gmail.com';
+$mail->Port = '465'; // or 587
+$mail->isHTML(true);
+$mail->Username = 'cs313.byui.project@gmail.com';
+$mail->Password = 'san16044';
+$mail->SetFrom ("no-reply@cs313.byui.edu");
+$mail->From = ("no-reply@cs313.byui.edu");
+$mail->FromName = "CS313-Store";
+$mail->AddReplyTo("no-reply@cs313.byui.edu", "No-Reply-CS313-Store");
+$mail->Subject = 'Your order is ready - CS 313 Project';
+$mail->Body = $htmlContent;
+$mail->AddAddress($mailto, $first_name);
+$mail->Send();
+
+
+
+
