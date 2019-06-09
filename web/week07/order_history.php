@@ -72,6 +72,7 @@ if(!isset($_SESSION['username']))
                 while ($row = pg_fetch_array($result)) {
 
 
+
                     echo "<tr>";
                     echo "<th>". $row[0]."</th>";
                     echo "<th>". $row[1]."</th>";
